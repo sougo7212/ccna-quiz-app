@@ -329,35 +329,124 @@ h1 {
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
-    .container {
+    body {
         padding: 10px;
     }
 
-    header {
-        padding: 15px;
+    .container {
+        padding: 0;
     }
 
-    .question-card, .answer-card, .result-card {
+    header {
+        padding: 10px 15px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    #startScreen {
         padding: 20px;
     }
 
+    #startScreen h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .start-options {
+        margin-bottom: 20px;
+    }
+
+    .question-card, .answer-card, .result-card {
+        padding: 15px;
+    }
+
+    .question-header {
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+    }
+
+    .category {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+
+    .question-number {
+        font-size: 14px;
+    }
+
+    .question-image, .answer-image {
+        margin-bottom: 15px;
+        max-height: 300px;
+    }
+
     .question-text {
-        font-size: 16px;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .choices {
+        margin-bottom: 15px;
     }
 
     .choice {
-        padding: 12px 15px;
+        padding: 10px 12px;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .choice input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+
+    .your-answers, .correct-answers {
+        padding: 12px;
+        margin-bottom: 12px;
+        font-size: 14px;
+    }
+
+    .explanation {
+        padding: 12px;
+        margin-bottom: 15px;
+        font-size: 14px;
     }
 
     .button-group {
         flex-direction: column;
+        gap: 8px;
     }
 
     .btn-primary, .btn-secondary {
         width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+
+    .score {
+        margin-bottom: 20px;
+    }
+
+    .score-text {
+        font-size: 20px;
     }
 
     .score-percentage {
-        font-size: 36px;
+        font-size: 32px;
+    }
+
+    .wrong-questions {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .wrong-question-item {
+        padding: 8px;
+        margin-bottom: 8px;
+        font-size: 14px;
     }
 }
