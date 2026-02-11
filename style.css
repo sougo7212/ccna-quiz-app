@@ -137,11 +137,12 @@ h1 {
 }
 
 .question-image img, .answer-image img {
-    /* 画像を原寸表示（縮小しない） */
-    width: auto;
-    max-width: none;
+    width: 100%;
+    min-width: 100%;
     height: auto;
     display: block;
+    /* 画像が縮小されないようにする */
+    object-fit: contain;
 }
 
 .question-text {
