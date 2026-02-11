@@ -2001,17 +2001,992 @@ const QUIZ_DATA = {
       "question_image": "0064.jpg",
       "answer_image": "page_0034.png",
       "explanation": "RPVST+(Rapid Per-VLAN Spanning Tree Plus)は、PVST+よりも高速なコンバージェンスを提供します。PVST+は802.1Dベース、RPVST+は802.1wベースです。"
+    },
+    {
+      "id": 122,
+      "category": "兄弟スイッチド トポロジの構築",
+      "question": "以下の表示結果についての正しい説明を、次の選択肢の中から2つ選びなさい。\n\nSW1# show spanning-tree vlan 30\n\nVLAN0030\n  Spanning tree enabled protocol rstp\n  Root ID  Priority    32798\n           Address    0022.be20.f480\n           Cost       19\n           Port       1 (FastEthernet2/1)\n           Hello Time 2 sec Max Age 20 sec Forward Delay 15 sec",
+      "choices": [
+        "ルートポートはFastEthernet 2/1である",
+        "スパニングツリーモードはPVST+である",
+        "指定ポートはFastEthernet 2/1である",
+        "これはルートブリッジである",
+        "スパニングツリーモードはRapid PVST+である"
+      ],
+      "correct_answers": [0, 4],
+      "answer_count": 2,
+      "question_image": "0066.jpg",
+      "answer_image": "page_0112.png",
+      "has_diagram": true,
+      "explanation": "表示結果からルートポートはFastEthernet 2/1であり、スパニングツリーモードはRapid PVST+(rstp)です。"
+    },
+    {
+      "id": 123,
+      "category": "兄弟スイッチド トポロジの構築",
+      "question": "RSTPにおいて収束している時のポートの状態を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "listening",
+        "disabled",
+        "discarding",
+        "learning",
+        "forwarding"
+      ],
+      "correct_answers": [2, 4],
+      "answer_count": 2,
+      "question_image": "0066.jpg",
+      "answer_image": "page_0112.png",
+      "explanation": "RSTPにおいて収束している時のポートの状態は、discardingとforwardingです。RSTPではlistening状態とlearning状態は存在しません。"
+    },
+    {
+      "id": 124,
+      "category": "兄弟スイッチド トポロジの構築",
+      "question": "PortFastの説明として正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "STP計算のコンバージェンスが削減される",
+        "即座にフォワーディング状態になる",
+        "スイッチ再起動後、すぐにフォワーティング状態になる",
+        "BPDUが有効になる"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0066.jpg",
+      "answer_image": "page_0113.png",
+      "explanation": "PortFastは、エンドデバイスが接続されたポートで即座にフォワーディング状態に移行する機能です。"
+    },
+    {
+      "id": 125,
+      "category": "兄弟スイッチド トポロジの構築",
+      "question": "PortFastを実行しているインターフェイスでバイパスされるスパニングツリー状態はどれですか。次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "リスニング",
+        "フォワーディング",
+        "ラーニング",
+        "ブロッキング",
+        "無効"
+      ],
+      "correct_answers": [0, 2],
+      "answer_count": 2,
+      "question_image": "0067.jpg",
+      "answer_image": "page_0113.png",
+      "explanation": "PortFastを実行しているインターフェイスは、リスニング状態とラーニング状態をバイパスします。"
+    },
+    {
+      "id": 126,
+      "category": "兄弟スイッチド トポロジの構築",
+      "question": "追加設定を必要とせずにspanning-tree portfastコマンドをサポートしているポートタイプを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "アクセスポート",
+        "レイヤ3インターフェース",
+        "レイヤ3サブインターフェース",
+        "トランクポート"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0067.jpg",
+      "answer_image": "page_0113.png",
+      "explanation": "spanning-tree portfastコマンドは、アクセスポートで追加設定なしに使用できます。"
+    },
+    {
+      "id": 127,
+      "category": "EtherChannelによる兄弟スイッチド トポロジの改善",
+      "question": "EtherChannelでネゴシエートプロトコルを使用せず構成する方法を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "Passive",
+        "Active",
+        "on",
+        "no negotiate"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0067.jpg",
+      "answer_image": "page_0114.png",
+      "explanation": "EtherChannelでネゴシエートプロトコルを使用せず構成するには、onモードを使用します。"
+    },
+    {
+      "id": 128,
+      "category": "EtherChannelによる兄弟スイッチド トポロジの改善",
+      "question": "ネットワーク管理者は、スイッチ間のレイヤ2接続をネゴシエーションさせて、4つのポートを論理的に1つのポートに束ねる必要があります。両端のスイッチでActiveモードを使用する場合、どのプロトコルを使用していますか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "802.1q",
+        "LLDP",
+        "Cisco vPC",
+        "LACP"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0068.jpg",
+      "answer_image": "page_0114.png",
+      "explanation": "スイッチ間のレイヤ2接続をネゴシエーションし、複数のポートを論理的に束ねるには、LACP(Link Aggregation Control Protocol)を使用します。Activeモードは、LACPのモードの1つです。"
+    },
+    {
+      "id": 129,
+      "category": "EtherChannelによる兄弟スイッチド トポロジの改善",
+      "question": "以下の出力結果からポートチャネル1の作成に使用されたコマンドとして正しいものを、次の選択肢の中から2つ選びなさい。\n\nSwitch# show etherchannel summary\n(出力を一部省略)\n\nGroup Port-channel Protocol Ports\n------+-------------+-----------+-------\n1     Po1(SU)      LACP      Gi0/1(P)  Gi0/2(P)\n2     Po2(SU)      LACP      Gi0/3(P)  Gi0/4(P)",
+      "choices": [
+        "C",
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "correct_answers": [1, 2],
+      "answer_count": 2,
+      "question_image": "0068.jpg",
+      "answer_image": "page_0115.png",
+      "has_diagram": true,
+      "explanation": "LACPのモードはActiveとpassiveです。PAgPのモードはdesirableとautoです。手動設定の場合はonです。正解は(2)(3)でAとBです。"
+    },
+    {
+      "id": 130,
+      "category": "EtherChannelによる兄弟スイッチド トポロジの改善",
+      "question": "SW1とSW2でイーサチャネルを構成します。SW1の設定が図のようになっている場合、SW2のコンフィグレーションとして正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "B",
+        "A",
+        "C",
+        "D"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0069.jpg",
+      "answer_image": "page_0116.png",
+      "has_diagram": true,
+      "explanation": "SW1の設定がchannel-group 1 mode autoとなっている場合、SW2はchannel-group 1 mode passiveまたはdesirableに設定する必要があります。表示された選択肢Bが正解です。"
+    },
+    {
+      "id": 131,
+      "category": "EtherChannelによる兄弟スイッチド トポロジの改善",
+      "question": "図のような出力において、2つのスイッチ間のEtherChannelを確立させるために最も適した設定を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "LACPモードをactiveに変更する",
+        "プロトコルのモードをonに変更する",
+        "LACPモードをdesirableに変更する",
+        "プロトコルをPAgPに変更しautoモードを使用する"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0070.jpg",
+      "answer_image": "page_0118.png",
+      "has_diagram": true,
+      "explanation": "両方のスイッチでchannel-group 1 mode passiveとなっているため、EtherChannelが確立されません。一方または両方をactiveに変更する必要があります。"
+    },
+    {
+      "id": 132,
+      "category": "EtherChannelによる兄弟スイッチド トポロジの改善",
+      "question": "S1とS2が接続されています。PAgPを使用してEtherChannelを構成する時に適切な設定を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "S1に channel-group 1 mode autoコマンドを設定する",
+        "S2にchannel-group 1 mode autoコマンドを設定する",
+        "S1にchannel-group 1 mode passiveコマンドを設定する",
+        "S1にchannel-group 1 mode activeコマンドを設定する",
+        "S2にchannel-group 1 mode desirableコマンドを設定する"
+      ],
+      "correct_answers": [0, 4],
+      "answer_count": 2,
+      "question_image": "0070.jpg",
+      "answer_image": "page_0119.png",
+      "explanation": "PAgPでEtherChannelを構成する場合、一方をdesirableに、もう一方をautoまたはdesirableに設定します。"
+    },
+    {
+      "id": 133,
+      "category": "EtherChannelによる兄弟スイッチド トポロジの改善",
+      "question": "以下の出力結果から、EtherChannelを構成できない原因として考えられるものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "MTUサイズが異なる",
+        "Fa0/23が管理的にシャットダウンされている",
+        "カプセル化タイプが異なる",
+        "Fa0/23のspeedが異なる"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0071.jpg",
+      "answer_image": "page_0119.png",
+      "has_diagram": true,
+      "explanation": "SW1のFa0/23は管理的にシャットダウンされており、ライン プロトコルがダウンしています。このため、EtherChannelを構成できません。"
+    },
+    {
+      "id": 134,
+      "category": "EtherChannelによる兄弟スイッチド トポロジの改善",
+      "question": "switch1のLACPのモードとして適切なものを、次の選択肢の中から1つ選択しなさい。",
+      "choices": [
+        "passive",
+        "active",
+        "on",
+        "desirable"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0072.jpg",
+      "answer_image": "page_0119.png",
+      "has_diagram": true,
+      "explanation": "show lacp neighborコマンドの出力で、Flagsに「SP」が表示されている場合、デバイスはpassiveモードです。"
+    },
+    {
+      "id": 135,
+      "category": "EtherChannelによる兄弟スイッチド トポロジの改善",
+      "question": "オープン標準プロトコルを使用してレイヤ3EtherChannelを確立するための設定として適切なものを、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "E",
+        "C",
+        "A",
+        "B",
+        "D"
+      ],
+      "correct_answers": [1, 4],
+      "answer_count": 2,
+      "question_image": "0073.jpg",
+      "answer_image": "page_0114.png",
+      "has_diagram": true,
+      "explanation": "オープン標準プロトコルはLACPです。レイヤ3EtherChannelを構成するには、interface GigabitEthernet0/1でchannel-group 10 mode activeまたはpassiveを設定し、no switchportコマンドを実行します。"
+    },
+    {
+      "id": 136,
+      "category": "レイヤ 3 の冗長性の調査",
+      "question": "FHRPの利点として適切な説明を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "デフォルトゲートウェイの自動フェイルオーバーを有効にする",
+        "暗号化されたトラフィックを許可する",
+        "レイヤ2レベルの冗長性を提供する",
+        "複数のデバイスがネットワーク内のクライアントの単一の仮想ゲートウェイとして機能することを許可する",
+        "複数のポートをバンドルして帯域幅を増やすことができる"
+      ],
+      "correct_answers": [0, 3],
+      "answer_count": 2,
+      "question_image": "0073.jpg",
+      "answer_image": "page_0123.png",
+      "explanation": "FHRP(First Hop Redundancy Protocol)は、デフォルトゲートウェイの自動フェイルオーバーを有効にし、複数のデバイスがネットワーク内のクライアントの単一の仮想ゲートウェイとして機能することを許可します。"
+    },
+    {
+      "id": 137,
+      "category": "レイヤ 3 の冗長性の調査",
+      "question": "ファーストホップ冗長プロトコルを実装する目的として正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "複数のスイッチを1つのユニットとして動作させる",
+        "ネットワークループを防ぐ",
+        "デフォルトゲートウェイの障害から保護する",
+        "マルチリンクセグメントに負荷分散を提供する"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0074.jpg",
+      "answer_image": "page_0123.png",
+      "explanation": "ファーストホップ冗長プロトコルの主な目的は、デフォルトゲートウェイの障害から保護することです。"
+    },
+    {
+      "id": 138,
+      "category": "レイヤ 3 の冗長性の調査",
+      "question": "HSRPグループ内のアクティブルータがダウンした場合、どのルータがパケット転送の役割を引き継ぎますか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "リスニング",
+        "バックアップ",
+        "フォワーディング",
+        "スタンバイ"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0074.jpg",
+      "answer_image": "page_0123.png",
+      "explanation": "HSRPグループ内のアクティブルータがダウンした場合、スタンバイルータがパケット転送の役割を引き継ぎます。"
+    },
+    {
+      "id": 139,
+      "category": "レイヤ 3 の冗長性の調査",
+      "question": "HSRPでプライオリティが高い方がActiveになる機能を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "プライオリティ",
+        "プリエンプション",
+        "トラッキング",
+        "authentication"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0074.jpg",
+      "answer_image": "page_0124.png",
+      "explanation": "HSRPでプライオリティが高い方がActiveになる機能はプリエンプションです。"
+    },
+    {
+      "id": 140,
+      "category": "レイヤ 3 の冗長性の調査",
+      "question": "HSRPの正しい説明を、次の選択肢の中から3つ選びなさい。",
+      "choices": [
+        "HSRP仮想IPアドレスは、実ルータのアドレスと異なるサブネットから割り振る",
+        "仮想IPアドレス、仮想MACアドレスあでのトラフィックは、HSRPのマスタールータのみで転送処理する",
+        "HSRPではインタフェースごとにグループ番号0～255までのグループを作成し、ロードバランシグさせることができる",
+        "HSRPのデフォルトのHelloインターバルは3秒、Deadインターバルは10秒である",
+        "HSRPでは、クリアテキスト認証のみサポートしている",
+        "HSRP仮想IPアドレスには、実ルータのインタフェースと同じアドレスを割り振る"
+      ],
+      "correct_answers": [2, 3, 5],
+      "answer_count": 3,
+      "question_image": "0075.jpg",
+      "answer_image": "page_0125.png",
+      "explanation": "HSRPではインタフェースごとにグループ番号0～255までのグループを作成でき、デフォルトのHelloインターバルは3秒、Deadインターバルは10秒です。HSRP仮想IPアドレスには、実ルータのインタフェースと同じアドレスを割り振ることができます。"
+    },
+    {
+      "id": 141,
+      "category": "レイヤ 3 の冗長性の調査",
+      "question": "HSRPの適切な動作を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "2台のルータは、一方をアクティブ、もう一方をスタンバイとする",
+        "2台のルータは、LAN上のデバイスのデフォルトゲートウェイとして使用される仮想IP アドレスを共有する",
+        "各ルータには異なるIPアドレスがあり、両方のルータはLAN上のデフォルトゲートウェイとして機能し、トラフィックはそれらの間で負荷分散される",
+        "2台のルータは構成を同期して、一貫したパケット転送を提供する",
+        "2台のルータは同じIPアドレスを共有し、デフォルトゲートウェイトラフィックはそれらの間で負荷分散される"
+      ],
+      "correct_answers": [0, 1],
+      "answer_count": 2,
+      "question_image": "0075.jpg",
+      "answer_image": "page_0126.png",
+      "explanation": "HSRPでは、2台のルータは一方をアクティブ、もう一方をスタンバイとし、LAN上のデバイスのデフォルトゲートウェイとして使用される仮想IPアドレスを共有します。"
+    },
+    {
+      "id": 142,
+      "category": "レイヤ 3 の冗長性の調査",
+      "question": "HSRPグループ内のルータの優先度を確認するコマンドを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "show sessions",
+        "show hsrp",
+        "show standby",
+        "show interfaces"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0075.jpg",
+      "answer_image": "page_0127.png",
+      "explanation": "HSRPグループ内のルータの優先度を確認するコマンドは show standby です。"
+    },
+    {
+      "id": 143,
+      "category": "レイヤ 3 の冗長性の調査",
+      "question": "VRRPの説明として正しいものはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "2台以上のルータを使用して、デフォルトゲートウェイの冗長化を提供する",
+        "ネイバー間でルーティングテーブルの情報を共有できる",
+        "ルートブリッジにすべてのトラフィックを転送することで、レイヤ2LANでのループを防止する",
+        "送信元から2ホップ以上の宛先に対して、トラフィックを負荷分散させる"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0076.jpg",
+      "answer_image": "page_0128.png",
+      "explanation": "VRRP(Virtual Router Redundancy Protocol)は、2台以上のルータを使用して、デフォルトゲートウェイの冗長化を提供するプロトコルです。"
+    },
+    {
+      "id": 144,
+      "category": "レイヤ 3 の冗長性の調査",
+      "question": "VRRPの仮想MACアドレスを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "0005.3711.0975",
+        "0000.5E00.010a",
+        "0000.0C07.AC99",
+        "0007.C070.AB01"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0076.jpg",
+      "answer_image": "page_0128.png",
+      "explanation": "VRRPの仮想MACアドレスは 0000.5E00.01XX の形式です(XXはVRRPグループ番号)。"
+    },
+    {
+      "id": 145,
+      "category": "レイヤ 3 の冗長性の調査",
+      "question": "必要な設定量を最小化し、アップリンクの帯域使用率を最大化することができるFHRPを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "VRRP",
+        "HSRPv1",
+        "HSRPv2",
+        "GLBP"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0076.jpg",
+      "answer_image": "page_0129.png",
+      "explanation": "GLBP(Gateway Load Balancing Protocol)は、必要な設定量を最小化し、アップリンクの帯域使用率を最大化できるFHRPです。"
+    },
+    {
+      "id": 146,
+      "category": "WAN テクノロジーの概要",
+      "question": "シンプルな品質と可用性を提供するWANトポロジはどれですか。最も適切なものを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "フルメッシュ",
+        "パーシャルメッシュ",
+        "ポイントツーポイント",
+        "ハブアンドスポーク"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0076.jpg",
+      "answer_image": "page_0130.png",
+      "explanation": "ポイントツーポイントトポロジは、シンプルな品質と可用性を提供するWANトポロジです。"
+    },
+    {
+      "id": 147,
+      "category": "WAN テクノロジーの概要",
+      "question": "WANの専用線についての適切な説明を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "敷設・保守を電気通信事業者が行うので、顧客の技術的負担が私設網より小さい",
+        "コストが安価",
+        "ルータのインタフェースで複数の専用回線をシェアできる",
+        "十分な帯域幅を提供する",
+        "T1回線のみサポートする"
+      ],
+      "correct_answers": [0, 3],
+      "answer_count": 2,
+      "question_image": "0077.jpg",
+      "answer_image": "page_0130.png",
+      "explanation": "WANの専用線は、敷設・保守を電気通信事業者が行うので顧客の技術的負担が私設網より小さく、十分な帯域幅を提供します。"
+    },
+    {
+      "id": 148,
+      "category": "WAN テクノロジーの概要",
+      "question": "サイト間VPNを使用する場合、ユーザデータの転送を担当するプロトコルを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "MD5",
+        "IKEv1",
+        "IKEv2",
+        "IPSec"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0077.jpg",
+      "answer_image": "page_0131.png",
+      "explanation": "サイト間VPNを使用する場合、ユーザデータの転送を担当するプロトコルはIPSecです。"
+    },
+    {
+      "id": 149,
+      "category": "WAN テクノロジーの概要",
+      "question": "IPSecで送信されるパケットとして最も一般的なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "あるリモートサイト上のスイッチが MACアドレスを見つけるために送信するブロードキャスト",
+        "本社のサーバーにヘリモート サイトのホストから送られるユニキャストメッセージ",
+        "あるサイトのサーバーから別の場所のホストへのマルチキャストトラフィック",
+        "2つの異なるサイトにあるスイッチ間のスパニングツリーの更新"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0077.jpg",
+      "answer_image": "page_0131.png",
+      "explanation": "IPSecで送信される最も一般的なパケットは、本社のサーバーにヘリモートサイトのホストから送られるユニキャストメッセージです。"
+    },
+    {
+      "id": 150,
+      "category": "WAN テクノロジーの概要",
+      "question": "リモートサイト間でマルチキャストトラフィックを伝送し、暗号化をサポートするメカニズムとして正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "GRE",
+        "ISATAP",
+        "IPsec over ISATAP",
+        "GRE over IPsec"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0077.jpg",
+      "answer_image": "page_0132.png",
+      "explanation": "リモートサイト間でマルチキャストトラフィックを伝送し、暗号化をサポートするメカニズムは GRE over IPsec です。"
+    },
+    {
+      "id": 151,
+      "category": "WAN テクノロジーの概要",
+      "question": "DMVPNのトポロジを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "パーシャルメッシュ",
+        "リング",
+        "ハブアンドスポーク",
+        "フルメッシュ"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0078.jpg",
+      "answer_image": "page_0132.png",
+      "explanation": "DMVPN(Dynamic Multipoint VPN)のトポロジは、ハブアンドスポーク型です。"
+    },
+    {
+      "id": 152,
+      "category": "ACLの基本",
+      "question": "標準ACLと拡張ACLの違いについて正しい説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "①B D  ②A C  ③E F",
+        "①A B  ②C D  ③E F",
+        "①A C  ②B D  ③E F",
+        "①A E  ②B F  ③C D"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0078.jpg",
+      "answer_image": "page_0133.png",
+      "has_diagram": true,
+      "explanation": "標準ACLは1-99または1300-1999の番号を使用し、送信元アドレスのみで制御します。拡張ACLは100-199または2000-2699の番号を使用し、送信元・宛先アドレスとプロトコルで制御します。"
+    },
+    {
+      "id": 153,
+      "category": "ACLの基本",
+      "question": "正しい拡張IPアクセスコントロールリストを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "access-list 50 permit tcp any host 192.168.1.1",
+        "access-list 150 permit tcp any host 192.168.1.1",
+        "access-list 150 permit host 192.168.1.1",
+        "access-list 50 permit host 192.168.1.1"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0078.jpg",
+      "answer_image": "page_0133.png",
+      "explanation": "拡張ACLは100-199の番号を使用し、プロトコル、送信元、宛先を指定します。正しい構文は access-list 150 permit tcp any host 192.168.1.1 です。"
+    },
+    {
+      "id": 154,
+      "category": "ACLの基本",
+      "question": "図の構成で、SwitchBからRouterAへのPingとTelnetが失敗します。Telnet は拒否したまま、Pingのみ成功させるためにRouterAに必要な設定を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "fa0/1に設定されているip access-groupコマンドの適用をインバウンドからアウトバウンドに変更する",
+        "fa0/1に適用されているaccess-list 101を外しaccess-list 102を適用する",
+        "fa0/0にIPアドレスを設定する",
+        "fa0/1に適用されているaccess-list 101を外しaccess-list 103を適用する"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0079.jpg",
+      "answer_image": "page_0154.png",
+      "has_diagram": true,
+      "explanation": "現在のaccess-list 101はICMPとTelnetの両方を拒否しています。Pingのみ成功させるには、ICMPを許可し、Telnetを拒否するaccess-list 102を適用する必要があります。"
+    },
+    {
+      "id": 155,
+      "category": "ACLの基本",
+      "question": "VLAN 20からWebサーバへのアクセスをブロックし、その他の通信は許可する必要があります。スイッチに適用する場合、適切なコマンドを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "B",
+        "A",
+        "C",
+        "D"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0080.jpg",
+      "answer_image": "page_0155.png",
+      "has_diagram": true,
+      "explanation": "VLAN 20(192.168.20.0/24)からWebサーバ(10.10.10.2/24)へのアクセスをブロックし、その他を許可するには、deny tcp host 10.10.10.2 eq 80とpermit ip any anyの順で設定します。"
+    },
+    {
+      "id": 156,
+      "category": "ACLの基本",
+      "question": "ホストBからホストAに対する通信のうち、port 25と80の通信のみをブロックしたいが適切に動作しません。修正する場合に適切なものを、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "送信元と宛先を交換する",
+        "ACLの末尾にpermit ip any any を追加する",
+        "outboundで設定する",
+        "R1で構成する",
+        "ACLの先頭にpermit anyを追加する"
+      ],
+      "correct_answers": [1, 2],
+      "answer_count": 2,
+      "question_image": "0081.jpg",
+      "answer_image": "page_0156.png",
+      "has_diagram": true,
+      "explanation": "ACLの末尾には暗黙のdeny anyがあるため、明示的にpermit ip any anyを追加する必要があります。また、R2のfa0/1にoutboundで適用する必要があります。"
+    },
+    {
+      "id": 157,
+      "category": "ACLの基本",
+      "question": "PC-1からRTR1へのTelnetセッションを拒否して、他のホストからはRTR1へTelnetできるようにアクセスリストを設定しています。しかし、PC-2からRTR1へTelnetできません。どのように設定を修正しますか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "line vty 0 4のaccess-class 10 in を削除する",
+        "Gi0/0にip access-group 10 outを追加する",
+        "line vty 0 4のパスワードを削除する",
+        "access-list 10 permit anyを追加する"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0082.jpg",
+      "answer_image": "page_0157.png",
+      "has_diagram": true,
+      "explanation": "ACLには暗黙のdeny anyがあるため、PC-1以外のホストからTelnetできるようにするには、access-list 10 permit anyを追加する必要があります。"
+    },
+    {
+      "id": 158,
+      "category": "ACLの基本",
+      "question": "ルータに図のようなACLが設定されています。ネットワーク管理者は追加でセキュアなVTYアクセスができるようにACLの設定を追加します。どのコマンドが適切ですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "access-list 101 permit tcp 20.1.1.0 0.0.0.255 172.16.1.0 0.0.0.255 eq ssh",
+        "access-list 101 permit tcp 20.1.1.0 0.0.0.255 172.16.1.0 0.0.0.255 eq scp",
+        "access-list 101 permit tcp 20.1.1.0 0.0.0.255 172.16.1.0 0.0.0.255 eq https",
+        "access-list 101 permit tcp 20.1.1.0 0.0.0.255 172.16.1.0 0.0.0.255 eq telnet"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0083.jpg",
+      "answer_image": "page_0158.png",
+      "has_diagram": true,
+      "explanation": "セキュアなVTYアクセスのためにはtelnetを許可するACLエントリを追加します。正解は access-list 101 permit tcp 20.1.1.0 0.0.0.255 172.16.1.0 0.0.0.255 eq telnet です。"
+    },
+    {
+      "id": 159,
+      "category": "ACLの基本",
+      "question": "IPv4ACLをインターフェイスに適用していますが、インターフェイス上のすべての着信パケットが許可されてしまっています。このような動作の原因として考えられるものを、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "一致する許可ステートメントの条件が必要以上に広く定義されている",
+        "空のACLが設定されている",
+        "パケットはどの許可ステートメントにも一致していない",
+        "一致する許可ステートメントが他の条件より先に評価されている",
+        "一致する拒否ステートメントが他の条件より先に評価されている"
+      ],
+      "correct_answers": [0, 3],
+      "answer_count": 2,
+      "question_image": "0083.jpg",
+      "answer_image": "page_0159.png",
+      "explanation": "すべての着信パケットが許可される原因として、一致する許可ステートメントの条件が必要以上に広く定義されているか、一致する許可ステートメントが他の条件より先に評価されていることが考えられます。"
+    },
+    {
+      "id": 160,
+      "category": "インターネット接続の有効化",
+      "question": "インターネットインタフェースとみなされるNAT設定を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "グローバル",
+        "ローカル",
+        "内部",
+        "外部"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0084.jpg",
+      "answer_image": "page_0160.png",
+      "explanation": "インターネットインタフェースとみなされるNAT設定は「外部」(outside)です。"
+    },
+    {
+      "id": 161,
+      "category": "インターネット接続の有効化",
+      "question": "NATの設定の際、インターネット接続インタフェースに指定するコマンドを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "local",
+        "inside",
+        "outside",
+        "global"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0084.jpg",
+      "answer_image": "page_0161.png",
+      "explanation": "NATの設定の際、インターネット接続インタフェースに指定するコマンドは ip nat outside です。"
+    },
+    {
+      "id": 162,
+      "category": "インターネット接続の有効化",
+      "question": "1対1で内部アドレスと外部アドレスをマッピングするNATのタイプを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "PAT",
+        "NATオーバーロード",
+        "スタティックNAT",
+        "ダイナミックNAT"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0084.jpg",
+      "answer_image": "page_0162.png",
+      "explanation": "1対1で内部アドレスと外部アドレスをマッピングするNATのタイプはスタティックNATです。"
+    },
+    {
+      "id": 163,
+      "category": "インターネット接続の有効化",
+      "question": "エンジニアであるあなたは、172.16.1.0/24からのパケットの送信元IPアドレスを、200.1.1.1、200.1.1.2、200.1.1.3の3つのいずれかのアドレスに変換して送信できるようなNATの設定をすることになりました。NATの設定として正しいものはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "B",
+        "A",
+        "C",
+        "D"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0085.jpg",
+      "answer_image": "page_0163.png",
+      "has_diagram": true,
+      "explanation": "ダイナミックNATを設定する場合、ip nat pool mypool 200.1.1.1 200.1.1.3 prefix-length 30とaccess-list 1 permit 172.16.1.0 0.0.0.255、そしてip nat inside source list 1 pool mypoolを設定します。"
+    },
+    {
+      "id": 164,
+      "category": "インターネット接続の有効化",
+      "question": "CiscoルータにPATを設定しました。プライベートアドレスを設定した内部ホストがインターネットへ通信する際の動作について正しい説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ルータは参照テーブルに登録されているホストからのアクセスがあった場合、参照テーブルに従い送信元アドレスと宛先アドレスを変換して転送する",
+        "ルータは複数ユーザからのアクセスの際、送信元アドレスを同じアドレスに変換するが、送信元のポート番号をそれぞれのコネクション毎に変えて転送する",
+        "ルータは複数の高いコンピュータからアクセスがあった時はは送信元のアドレスを明示的に設定されているアドレスに変換して転送する",
+        "ルータはプールで登録されているアドレス数分だけアドレス変換し転送する"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0085.jpg",
+      "answer_image": "page_0164.png",
+      "explanation": "PAT(Port Address Translation)では、ルータは複数ユーザからのアクセスの際、送信元アドレスを同じアドレスに変換するが、送信元のポート番号をそれぞれのコネクション毎に変えて転送します。"
+    },
+    {
+      "id": 165,
+      "category": "インターネット接続の有効化",
+      "question": "ネットワークエンジニアがインターネットアクセスのためNATを設定しました。図を参照して変換後の送信元のIPアドレスとして適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "123.1.1.1",
+        "172.16.1.1",
+        "200.1.1.1",
+        "172.16.1.2"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0086.jpg",
+      "answer_image": "page_0165.png",
+      "has_diagram": true,
+      "explanation": "show ip nat translationsの出力から、Inside localの172.16.1.1がInside globalの200.1.1.1に変換されていることがわかります。"
+    },
+    {
+      "id": 166,
+      "category": "インターネット接続の有効化",
+      "question": "NATにおいて、アドレス変換の回数を確認するコマンドを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "show ip protocols",
+        "show ip nat statistics",
+        "show ip nat translations",
+        "show ip route"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0086.jpg",
+      "answer_image": "page_0166.png",
+      "explanation": "NATのアドレス変換の回数などの統計情報を確認するコマンドは show ip nat statistics です。"
+    },
+    {
+      "id": 167,
+      "category": "インターネット接続の有効化",
+      "question": "図の出力結果に示されている部分的なNAT設定を完了するために必要なステップを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "NAT外部インターフェイスを設定する",
+        "NATプールと重複するスタティックNATエントリを再構成する",
+        "ACLを変更する",
+        "ACLをNATプールに適用する"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0087.jpg",
+      "answer_image": "page_0167.png",
+      "has_diagram": true,
+      "explanation": "show ip nat statisticsの出力を見ると、Total active translations: 0 (0 static, 0 dynamic, 0 extended)となっており、ACLをNATプールに適用する設定が不足しています。"
+    },
+    {
+      "id": 168,
+      "category": "QoS の概要",
+      "question": "QoSは音声トラフィックをどのように最適化しますか。適切なものを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "音声トラフィックとビデオトラフィックを区別する",
+        "帯域幅の使用量を削減する",
+        "パケット損失を減らす",
+        "ジッターを増やす"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0087.jpg",
+      "answer_image": "page_0168.png",
+      "explanation": "QoSは、音声トラフィックを優先的に扱うことで、パケット損失を減らします。"
+    },
+    {
+      "id": 169,
+      "category": "QoS の概要",
+      "question": "トラフィックシェービングの目的として正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "動的フロー識別を有効にする",
+        "ポリシーベースルーティングを有効にする",
+        "ベストエフォート型のサービスを提供する",
+        "帯域幅の使用を制限する"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0088.jpg",
+      "answer_image": "page_0169.png",
+      "explanation": "トラフィックシェービングの目的は、帯域幅の使用を制限することです。"
+    },
+    {
+      "id": 170,
+      "category": "QoS の概要",
+      "question": "輻輳管理を提供するQoSツールについて、適切なものを次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "PQ",
+        "FRTS",
+        "PBR",
+        "CAR",
+        "CBWFQ"
+      ],
+      "correct_answers": [0, 4],
+      "answer_count": 2,
+      "question_image": "0088.jpg",
+      "answer_image": "page_0170.png",
+      "explanation": "輻輳管理を提供するQoSツールは、PQ(Priority Queuing)とCBWFQ(Class-Based Weighted Fair Queuing)です。"
+    },
+    {
+      "id": 171,
+      "category": "QoS の概要",
+      "question": "ネットワーク上の音声トラフィックを最適化するために使用されるQoSツールはどれですか。適切なものを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "WFQ",
+        "FIFO",
+        "PQ",
+        "WRED"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0088.jpg",
+      "answer_image": "page_0171.png",
+      "explanation": "ネットワーク上の音声トラフィックを最適化するために使用されるQoSツールは、PQ(Priority Queuing)です。"
+    },
+    {
+      "id": 172,
+      "category": "QoS の概要",
+      "question": "インタラクティブな音声とビデオに適したQoSサービスはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "トラフィックポリシング",
+        "expedited forwarding",
+        "低遅延キューイング",
+        "ラウンドロビンスケジューリング"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0088.jpg",
+      "answer_image": "page_0172.png",
+      "explanation": "インタラクティブな音声とビデオに適したQoSサービスは、expedited forwarding(EF)です。"
+    },
+    {
+      "id": 173,
+      "category": "QoS の概要",
+      "question": "重み付けランダム早期検出メカニズムの適切な説明を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "キューがいっぱいになるのを防ぐことで輻輳を緩和",
+        "優先度の高いパケットの配信を保証",
+        "精密なパケット判別を行う",
+        "低プライオリティのパケットを破棄し、高プライオリティパケットを保護する"
+      ],
+      "correct_answers": [0, 3],
+      "answer_count": 2,
+      "question_image": "0089.jpg",
+      "answer_image": "page_0173.png",
+      "explanation": "WRED(Weighted Random Early Detection)は、キューがいっぱいになるのを防ぐことで輻輳を緩和し、低プライオリティのパケットを破棄し、高プライオリティパケットを保護します。"
+    },
+    {
+      "id": 174,
+      "category": "ワイヤレスの基礎",
+      "question": "Wireless LAN Controllerを使用するメリットとして適切な説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "アクセスポイントに割り当てるIPアドレスが1つで済む",
+        "Autonomous AP管理には、より複雑な構成が必要",
+        "各アクセスポイントを個別に設定する必要がなくなる",
+        "AutonomousおよびLightweight APをサポートする"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0089.jpg",
+      "answer_image": "page_0174.png",
+      "explanation": "Wireless LAN Controllerを使用するメリットは、各アクセスポイントを個別に設定する必要がなくなることです。"
+    },
+    {
+      "id": 175,
+      "category": "ワイヤレスの基礎",
+      "question": "Wireless LAN Controllerで管理することができるものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "Autonomous AP",
+        "LightWeight AP",
+        "ブリッジ",
+        "モビリティ"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0089.jpg",
+      "answer_image": "page_0175.png",
+      "explanation": "Wireless LAN Controllerで管理することができるのは、LightWeight AP(Lightweight Access Point)です。"
+    },
+    {
+      "id": 176,
+      "category": "ワイヤレスの基礎",
+      "question": "Lightweightアクセスポイントを利用してネットワークに接続しているとき、ユーザの認証要求を制御するデバイスはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "TACACSサーバ",
+        "Wireless LANコントローラ",
+        "Lightweightアクセスポイント",
+        "RADIUSサーバ"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0089.jpg",
+      "answer_image": "page_0176.png",
+      "explanation": "Lightweightアクセスポイントを利用してネットワークに接続しているとき、ユーザの認証要求を制御するデバイスはWireless LANコントローラです。"
+    },
+    {
+      "id": 177,
+      "category": "ワイヤレスの基礎",
+      "question": "Wireless LAN Controllerへの接続が失われた後でも引き続きワイヤレスクライアントにサービスを提供するアクセスポイントモードを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "フレックスコネクト",
+        "スニファー",
+        "メッシュ",
+        "ローカル"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0090.jpg",
+      "answer_image": "page_0177.png",
+      "explanation": "Wireless LAN Controllerへの接続が失われた後でも引き続きワイヤレスクライアントにサービスを提供するアクセスポイントモードは、フレックスコネクトです。"
+    },
+    {
+      "id": 178,
+      "category": "ワイヤレスの基礎",
+      "question": "アクセスポイントのローカルモードとFlexConnectモードの違いに関する説明として適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ローカルモードは、APごとにWLCへ2つのCAPWAPトンネルを作成する",
+        "APがWLCへの接続を失うと、FlexConnectモードが機能しなくなる",
+        "ローカルスイッチングが設定されている場合、FlexConnectモードはAPからWLCにトラフィックを送信する",
+        "ローカルモードでは、APは自律型APであるかのように動作する"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0090.jpg",
+      "answer_image": "page_0178.png",
+      "explanation": "ローカルモードは、APごとにWLCへ2つのCAPWAPトンネルを作成します。1つは制御用、もう1つはデータ用です。"
+    },
+    {
+      "id": 179,
+      "category": "ワイヤレスの基礎",
+      "question": "ローカルモードで動作するAPとWLCの間では、CAPWAPはどのように動作しますか。適切な説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "APIは、WLCと同じスイッチに接続しなければならない",
+        "APIは、銅ケーブルを使用してWLCに直接接続する必要がある",
+        "ループが発生するため、APを有線LANにつないではいけない",
+        "APIは、WLCへの接続を前提としてネットワーク内の任意のスイッチに接続できる"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0090.jpg",
+      "answer_image": "page_0179.png",
+      "explanation": "ローカルモードで動作するAPとWLCの間では、CAPWAPを使用します。APIは、WLCへの接続を前提としてネットワーク内の任意のスイッチに接続できます。"
+    },
+    {
+      "id": 180,
+      "category": "ワイヤレスの基礎",
+      "question": "802.11ワイヤレス規格の種類と説明について、正しい組み合わせを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "A=① B=③ C=⑤ D=④ E=②",
+        "A=④ B=② C=① D=③ E=⑤",
+        "A=② B=① C=③ D=⑤ E=④",
+        "A=⑤ B=④ C=② D=① E=③"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0091.jpg",
+      "answer_image": "page_0180.png",
+      "has_diagram": true,
+      "explanation": "802.11aは2.4GHzと5GHzの周波数帯で機能する、802.11bは最大54Mbpsのレートで2.4GHzの周波数帯でのみ機能する、802.11gは100Mbps以上のレートで5GHzの周波数帯でのみ機能する、802.11nは最大11Mbpsのレートで動作する、802.11acは最大54Mbpsのレートで5GHzの周波数帯でのみ機能する、という組み合わせです。"
     }
   ]
 };
 
 // ===============================================================================
-// NOTE: This file currently contains 120 questions out of 267 total.
-// Questions are distributed across images 0007.jpg through 0123.jpg
+// NOTE: This file currently contains 180 questions out of 267 total.
+// Questions are distributed across images 0007.jpg through 0092.jpg
 // Total questions: 問題1 through 問題267
 //
-// COMPLETED: Questions 1-120 (120 questions complete)
-// REMAINING WORK: Questions 121-267 need to be added (147 questions remaining)
+// COMPLETED: Questions 1-180 (180 questions complete)
+// REMAINING WORK: Questions 181-267 need to be added (87 questions remaining)
 //
 // Each question follows this structure:
 // {
@@ -2041,6 +3016,13 @@ const QUIZ_DATA = {
 // - VLAN 間のルーティング
 // - OSPFの概要
 // - 兄弟スイッチド トポロジの構築
+// - EtherChannelによる兄弟スイッチド トポロジの改善
+// - レイヤ 3 の冗長性の調査
+// - WAN テクノロジーの概要
+// - ACLの基本
+// - インターネット接続の有効化
+// - QoS の概要
+// - ワイヤレスの基礎
 //
 // To continue adding questions:
 // 1. Read the remaining images (0065.jpg onwards)
