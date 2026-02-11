@@ -8,7 +8,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
-    padding: 15px;
+    padding: 12px;
 }
 
 .container {
@@ -18,17 +18,17 @@ body {
 
 header {
     background: white;
-    padding: 15px 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
+    padding: 12px 18px;
+    border-radius: 8px;
+    margin-bottom: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
     color: #333;
     text-align: center;
-    margin-bottom: 12px;
-    font-size: 24px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .progress-bar {
@@ -64,20 +64,20 @@ h1 {
 /* 開始画面 */
 #startScreen {
     background: white;
-    padding: 30px;
-    border-radius: 10px;
+    padding: 25px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 #startScreen h2 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     color: #333;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .start-options {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .start-options label {
@@ -99,8 +99,8 @@ h1 {
 /* 問題画面 */
 .question-card, .answer-card, .result-card {
     background: white;
-    padding: 25px;
-    border-radius: 10px;
+    padding: 20px;
+    border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -108,30 +108,31 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 18px;
-    padding-bottom: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
     border-bottom: 2px solid #f0f0f0;
 }
 
 .category {
     background: #667eea;
     color: white;
-    padding: 5px 15px;
+    padding: 4px 12px;
     border-radius: 20px;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .question-number {
     color: #666;
     font-weight: bold;
+    font-size: 13px;
 }
 
 .question-image, .answer-image {
     width: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     border-radius: 8px;
     overflow: auto;
-    max-height: 350px;
+    max-height: 400px;
     border: 2px solid #e0e0e0;
     background: #f8f9fa;
 }
@@ -186,27 +187,28 @@ h1 {
 }
 
 .question-text {
-    font-size: 17px;
+    font-size: 15px;
     color: #333;
-    margin-bottom: 18px;
-    line-height: 1.6;
+    margin-bottom: 15px;
+    line-height: 1.5;
     font-weight: 500;
 }
 
 .choices {
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
 
 .choice {
     background: #f8f9fa;
     border: 2px solid #e0e0e0;
-    padding: 12px 18px;
-    margin-bottom: 10px;
-    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 8px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
+    font-size: 14px;
 }
 
 .choice:hover {
@@ -234,13 +236,13 @@ h1 {
 /* 解答画面 */
 .answer-header {
     text-align: center;
-    margin-bottom: 18px;
-    padding-bottom: 12px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
     border-bottom: 2px solid #f0f0f0;
 }
 
 .answer-header h3 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .answer-header h3.correct {
@@ -253,14 +255,16 @@ h1 {
 
 .your-answers, .correct-answers {
     background: #f8f9fa;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 14px;
 }
 
 .your-answers h4, .correct-answers h4 {
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
+    font-size: 14px;
 }
 
 #yourAnswersText {
@@ -284,56 +288,59 @@ h1 {
 .explanation {
     background: #fff3cd;
     border-left: 4px solid #ffc107;
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     color: #856404;
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 14px;
 }
 
 /* 結果画面 */
 .result-card h2 {
     text-align: center;
     color: #333;
-    margin-bottom: 25px;
-    font-size: 22px;
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
 .score {
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
 }
 
 .score-text {
-    font-size: 22px;
+    font-size: 18px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .score-percentage {
-    font-size: 42px;
+    font-size: 36px;
     font-weight: bold;
     color: #667eea;
 }
 
 .wrong-questions {
     background: #f8f9fa;
-    padding: 18px;
-    border-radius: 8px;
-    margin-bottom: 18px;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 15px;
 }
 
 .wrong-questions h4 {
     color: #333;
-    margin-bottom: 15px;
+    margin-bottom: 12px;
+    font-size: 14px;
 }
 
 .wrong-question-item {
-    padding: 10px;
+    padding: 8px;
     background: white;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     border-radius: 5px;
     border-left: 4px solid #dc3545;
+    font-size: 13px;
 }
 
 /* ボタン */
@@ -344,10 +351,10 @@ h1 {
 }
 
 .btn-primary, .btn-secondary {
-    padding: 15px 30px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-size: 15px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: bold;
