@@ -31,7 +31,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 4],
       "answer_count": 2,
       "question_image": "0007.jpg",
-      "answer_image": "page_0004.png",
+      "answer_image": "page_0003.png",
       "explanation": "Cat5eとCat6aケーブルは、どちらも1ギガビット以上の速度をサポートし、最大100メートルの距離をサポートします。"
     },
     {
@@ -48,7 +48,7 @@ const QUIZ_DATA = {
       "correct_answers": [3, 4],
       "answer_count": 2,
       "question_image": "0007.jpg",
-      "answer_image": "page_0005.png",
+      "answer_image": "page_0004.png",
       "explanation": "光ファイバーケーブルでは、ガラスコアコンポーネントがクラッドに入っており、光はファイバーのコアを通過します。"
     },
     {
@@ -65,7 +65,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 4],
       "answer_count": 2,
       "question_image": "0008.jpg",
-      "answer_image": "page_0006.png",
+      "answer_image": "page_0004.png",
       "explanation": "Ethernetフレームフォーマットには、FCS(frame check sequence)とタイプフィールドが含まれます。"
     },
     {
@@ -81,7 +81,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0008.jpg",
-      "answer_image": "page_0007.png",
+      "answer_image": "page_0005.png",
       "has_diagram": true,
       "explanation": "スイッチは送信元MACアドレスとポートをMACアドレステーブルに挿入し、既知の宛先であるPC1にフレームを転送します。"
     },
@@ -98,7 +98,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0009.jpg",
-      "answer_image": "page_0008.png",
+      "answer_image": "page_0006.png",
       "explanation": "この動作はフラッディングと呼ばれます。"
     },
     {
@@ -116,7 +116,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 3, 5],
       "answer_count": 3,
       "question_image": "0009.jpg",
-      "answer_image": "page_0009.png",
+      "answer_image": "page_0006.png",
       "explanation": "10.3.160.0/20のサブネットに含まれるホストアドレスは、10.3.160.255、10.3.174.255、10.3.175.255です。"
     },
     {
@@ -132,7 +132,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0009.jpg",
-      "answer_image": "page_0010.png",
+      "answer_image": "page_0007.png",
       "explanation": "マルチキャストアドレス239.254.0.1を使用して、複数のホストに同時にデータを送信できます。"
     },
     {
@@ -151,7 +151,7 @@ const QUIZ_DATA = {
       "correct_answers": [4],
       "answer_count": 1,
       "question_image": "0010.jpg",
-      "answer_image": "page_0011.png",
+      "answer_image": "page_0008.png",
       "explanation": "/22サブネットマスクを適用すると、172.18.156.0がネットワークアドレスになります。"
     },
     {
@@ -168,7 +168,7 @@ const QUIZ_DATA = {
       "correct_answers": [3, 4],
       "answer_count": 2,
       "question_image": "0010.jpg",
-      "answer_image": "page_0012.png",
+      "answer_image": "page_0009.png",
       "explanation": "/23サブネットでは、サブネットアドレスは10.15.24.0で、最小の有効なホストアドレスは10.15.25.1です。"
     },
     {
@@ -184,7 +184,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0011.jpg",
-      "answer_image": "page_0013.png",
+      "answer_image": "page_0010.png",
       "has_diagram": true,
       "explanation": "20台のホストには最低32個のアドレスが必要なので、/27(255.255.255.224)を使用します。"
     },
@@ -201,7 +201,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 1],
       "answer_count": 2,
       "question_image": "0011.jpg",
-      "answer_image": "page_0014.png",
+      "answer_image": "page_0011.png",
       "has_diagram": true,
       "explanation": "10.0.1.244/30サブネットでは、10.0.1.245と10.0.1.246がホストアドレスとして利用可能です。"
     },
@@ -218,7 +218,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0012.jpg",
-      "answer_image": "page_0015.png",
+      "answer_image": "page_0012.png",
       "has_diagram": true,
       "explanation": "各IPアドレスと範囲を正しくマッピングする必要があります。"
     },
@@ -235,7 +235,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0012.jpg",
-      "answer_image": "page_0016.png",
+      "answer_image": "page_0013.png",
       "explanation": "最大29台のホストに対応するには/27が必要です。4つのサブネットを集約するには/25が適切です。"
     },
     {
@@ -251,7 +251,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0013.jpg",
-      "answer_image": "page_0017.png",
+      "answer_image": "page_0014.png",
       "explanation": "RFC1918プライベートアドレスは、パブリックIPv4アドレスを節約するために使用されます。"
     },
     {
@@ -267,7 +267,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0013.jpg",
-      "answer_image": "page_0018.png",
+      "answer_image": "page_0015.png",
       "explanation": "プライベートIPアドレスは、複数の企業が同じアドレス空間を独立して使用できます。"
     },
     {
@@ -283,7 +283,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0014.jpg",
-      "answer_image": "page_0019.png",
+      "answer_image": "page_0016.png",
       "has_diagram": true,
       "explanation": "Windows ipconfigの出力結果から各項目を正しく識別します。"
     },
@@ -300,7 +300,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0015.jpg",
-      "answer_image": "page_0020.png",
+      "answer_image": "page_0017.png",
       "has_diagram": true,
       "explanation": "Linuxのip addrコマンドの出力から各項目を正しく識別します。"
     },
@@ -318,7 +318,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 3],
       "answer_count": 2,
       "question_image": "0015.jpg",
-      "answer_image": "page_0021.png",
+      "answer_image": "page_0018.png",
       "explanation": "TCPは同期を実現し、パケットに順序番号を付けて信頼性の高い通信を提供します。"
     },
     {
@@ -334,7 +334,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0016.jpg",
-      "answer_image": "page_0022.png",
+      "answer_image": "page_0019.png",
       "explanation": "TCPは確認応答と再送信で信頼性を提供し、UDPはチェックサムのみを使用します。"
     },
     {
@@ -350,7 +350,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0016.jpg",
-      "answer_image": "page_0023.png",
+      "answer_image": "page_0020.png",
       "has_diagram": true,
       "explanation": "TCPはデータチャネルを必要とするパケットに含まれる情報特に基づいて送信される、データを送信する前にクライアントとサーバが接続を確立する必要がある。UDPはデータを確実に送信する必要がない場合に適している、音声ストリーミングなどの低遅延データ転送に適している。"
     },
@@ -367,7 +367,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0017.jpg",
-      "answer_image": "page_0024.png",
+      "answer_image": "page_0021.png",
       "explanation": "TCPは3ウェイハンドシェイクで接続を確立しますが、UDPは接続確立なしでデータを送信します。"
     },
     {
@@ -383,7 +383,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0017.jpg",
-      "answer_image": "page_0025.png",
+      "answer_image": "page_0022.png",
       "has_diagram": true,
       "explanation": "DHCP、DNSの各プロトコルの役割を正しく理解する必要があります。"
     },
@@ -400,7 +400,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0018.jpg",
-      "answer_image": "page_0026.png",
+      "answer_image": "page_0023.png",
       "has_diagram": true,
       "explanation": "DHCP、FTP、SMTP、DNS、SSH、TFTPの各プロトコルが使用するトランスポート層を理解する必要があります。"
     },
@@ -418,7 +418,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 2],
       "answer_count": 2,
       "question_image": "0018.jpg",
-      "answer_image": "page_0027.png",
+      "answer_image": "page_0024.png",
       "explanation": "DHCPサーバはIPアドレスを動的に割り当て、特定のアドレスを除外することができます。"
     },
     {
@@ -435,7 +435,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 4],
       "answer_count": 2,
       "question_image": "0019.jpg",
-      "answer_image": "page_0028.png",
+      "answer_image": "page_0025.png",
       "has_diagram": true,
       "explanation": "DHCPリレーエージェントの設定にはip helper-addressコマンドが必要です。"
     },
@@ -452,7 +452,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0019.jpg",
-      "answer_image": "page_0029.png",
+      "answer_image": "page_0026.png",
       "explanation": "DHCPリレーエージェントは、ブロードキャストをユニキャストに変換してDHCPサーバに転送します。"
     },
     {
@@ -468,7 +468,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0020.jpg",
-      "answer_image": "page_0030.png",
+      "answer_image": "page_0026.png",
       "explanation": "DHCPヘルパーアドレスは、クライアントに最も近いルータのインターフェイスに設定します。"
     },
     {
@@ -484,7 +484,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0020.jpg",
-      "answer_image": "page_0031.png",
+      "answer_image": "page_0027.png",
       "explanation": "DHCPサーバには、割り当て可能なIPアドレスのプールが設定されます。"
     },
     {
@@ -500,7 +500,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0020.jpg",
-      "answer_image": "page_0032.png",
+      "answer_image": "page_0027.png",
       "explanation": "DHCPプール設定でdefault-routerコマンドを使用してデフォルトゲートウェイを配布します。"
     },
     {
@@ -516,7 +516,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0021.jpg",
-      "answer_image": "page_0033.png",
+      "answer_image": "page_0028.png",
       "has_diagram": true,
       "explanation": "DNSの各コンポーネント(キャッシュ、DNS、ドメイン、ネームリゾルバ、no ip domain lookup)の役割を正しく理解する必要があります。"
     },
@@ -533,7 +533,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0022.jpg",
-      "answer_image": "page_0034.png",
+      "answer_image": "page_0029.png",
       "has_diagram": true,
       "explanation": "FTPとTFTPの特徴を正しく理解する必要があります。FTPはIOS展開時の信頼性を提供、ユーザ認証を必要としない、TCPを使用。TFTPは69番ポートを使用、20,21番ポートを使用、UDPを使用。"
     },
@@ -550,7 +550,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0023.jpg",
-      "answer_image": "page_0035.png",
+      "answer_image": "page_0030.png",
       "has_diagram": true,
       "explanation": "ルーティングテーブルのエントリからプレフィックスとサブネットマスクを正しく識別します。"
     },
@@ -567,7 +567,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0023.jpg",
-      "answer_image": "page_0036.png",
+      "answer_image": "page_0031.png",
       "explanation": "EIGRPはメトリック値(帯域幅と遅延から計算)を使用して最適パスを選択します。"
     },
     {
@@ -583,7 +583,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0024.jpg",
-      "answer_image": "page_0037.png",
+      "answer_image": "page_0032.png",
       "has_diagram": true,
       "explanation": "インターネットアクセスには通常デフォルトルート(0.0.0.0/0)を使用します。"
     },
@@ -600,7 +600,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0025.jpg",
-      "answer_image": "page_0038.png",
+      "answer_image": "page_0033.png",
       "has_diagram": true,
       "explanation": "ルーティングテーブルの内容から、複数のパスが存在する場合の転送動作を理解します。"
     },
@@ -618,7 +618,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0025.jpg",
-      "answer_image": "page_0039.png",
+      "answer_image": "page_0034.png",
       "explanation": "OSPFのデフォルトAD値は110で、選択肢の中では比較的小さい値です。"
     },
     {
@@ -634,7 +634,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0026.jpg",
-      "answer_image": "page_0040.png",
+      "answer_image": "page_0035.png",
       "explanation": "CONNECTEDルート(直接接続)のAD値は0で最も優先されます。"
     },
     {
@@ -650,7 +650,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0026.jpg",
-      "answer_image": "page_0041.png",
+      "answer_image": "page_0036.png",
       "explanation": "EIGRPのAD値は90、OSPFは110なので、EIGRPが優先されます。"
     },
     {
@@ -666,7 +666,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0026.jpg",
-      "answer_image": "page_0042.png",
+      "answer_image": "page_0037.png",
       "explanation": "内部EIGRPのAD値は90で、他のプロトコルより優先されます。"
     },
     {
@@ -682,7 +682,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0027.jpg",
-      "answer_image": "page_0043.png",
+      "answer_image": "page_0038.png",
       "has_diagram": true,
       "explanation": "複数のルーティングプロトコルが同じ宛先を学習した場合、AD値が小さい方が優先されます。"
     },
@@ -699,7 +699,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0027.jpg",
-      "answer_image": "page_0044.png",
+      "answer_image": "page_0039.png",
       "explanation": "最長一致の原則により、最も具体的な(プレフィックスが長い)ルートが選択されます。"
     },
     {
@@ -715,7 +715,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0028.jpg",
-      "answer_image": "page_0045.png",
+      "answer_image": "page_0040.png",
       "has_diagram": true,
       "explanation": "192.168.10.4に最も一致する(プレフィックス長が最も長い)ルートを選択します。"
     },
@@ -732,7 +732,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0028.jpg",
-      "answer_image": "page_0046.png",
+      "answer_image": "page_0041.png",
       "has_diagram": true,
       "explanation": "ルート選択では最長プレフィックスマッチが最優先されます。"
     },
@@ -749,7 +749,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0029.jpg",
-      "answer_image": "page_0047.png",
+      "answer_image": "page_0042.png",
       "has_diagram": true,
       "explanation": "宛先ネットワークへのルートが存在しない場合、パケットは破棄されます。"
     },
@@ -766,7 +766,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0029.jpg",
-      "answer_image": "page_0048.png",
+      "answer_image": "page_0043.png",
       "has_diagram": true,
       "explanation": "最長プレフィックスマッチの原則により、/26が選択されます。"
     },
@@ -783,7 +783,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0030.jpg",
-      "answer_image": "page_0049.png",
+      "answer_image": "page_0044.png",
       "has_diagram": true,
       "explanation": "同じプレフィックス長の場合、AD値が最も低いルートが選択されます。"
     },
@@ -800,7 +800,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0030.jpg",
-      "answer_image": "page_0050.png",
+      "answer_image": "page_0045.png",
       "has_diagram": true,
       "explanation": "10.10.13.214を含む最も具体的なルートは10.10.13.208/29です。"
     },
@@ -817,7 +817,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0031.jpg",
-      "answer_image": "page_0051.png",
+      "answer_image": "page_0046.png",
       "has_diagram": true,
       "explanation": "ルーティングテーブルを確認して適切なネクストホップを選択します。"
     },
@@ -834,7 +834,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0031.jpg",
-      "answer_image": "page_0052.png",
+      "answer_image": "page_0047.png",
       "has_diagram": true,
       "explanation": "ルーティングテーブルのエントリから適切なネクストホップインターフェイスを特定します。"
     },
@@ -851,7 +851,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0032.jpg",
-      "answer_image": "page_0053.png",
+      "answer_image": "page_0048.png",
       "has_diagram": true,
       "explanation": "最長プレフィックスマッチに基づいてネクストホップを選択します。"
     },
@@ -869,7 +869,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 2],
       "answer_count": 2,
       "question_image": "0032.jpg",
-      "answer_image": "page_0054.png",
+      "answer_image": "page_0049.png",
       "has_diagram": true,
       "explanation": "172.16.1.0/26サブネットに含まれるアドレスを選択します。"
     },
@@ -886,7 +886,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0033.jpg",
-      "answer_image": "page_0055.png",
+      "answer_image": "page_0050.png",
       "has_diagram": true,
       "explanation": "インターフェイスがadministratively downの状態は、shutdownコマンドが実行されていることを示します。"
     },
@@ -905,7 +905,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 2, 4],
       "answer_count": 3,
       "question_image": "0033.jpg",
-      "answer_image": "page_0056.png",
+      "answer_image": "page_0051.png",
       "explanation": "CDPはCisco独自のデータリンク層プロトコルで、直接接続されたCisco機器を検出します。"
     },
     {
@@ -921,7 +921,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0033.jpg",
-      "answer_image": "page_0057.png",
+      "answer_image": "page_0051.png",
       "explanation": "インターフェイスレベルでCDPを無効にするには、no cdp enableコマンドを使用します。"
     },
     {
@@ -937,7 +937,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0034.jpg",
-      "answer_image": "page_0058.png",
+      "answer_image": "page_0052.png",
       "has_diagram": true,
       "explanation": "CDPネイバー情報とケイパビリティコードを表示するのは、show cdp neighborsコマンドです。"
     },
@@ -955,7 +955,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0034.jpg",
-      "answer_image": "page_0059.png",
+      "answer_image": "page_0053.png",
       "explanation": "グローバルコンフィグレーションモードでlldp runコマンドを使用してLLDPを有効にします。"
     },
     {
@@ -971,7 +971,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0034.jpg",
-      "answer_image": "page_0060.png",
+      "answer_image": "page_0053.png",
       "explanation": "マルチベンダー環境では、標準プロトコルのLLDPを使用します。"
     },
     {
@@ -987,7 +987,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0035.jpg",
-      "answer_image": "page_0061.png",
+      "answer_image": "page_0054.png",
       "has_diagram": true,
       "explanation": "LLDPタイマーを1分、ホールドタイムを3分に設定します。"
     },
@@ -1004,7 +1004,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0036.jpg",
-      "answer_image": "page_0062.png",
+      "answer_image": "page_0055.png",
       "has_diagram": true,
       "explanation": "pingの出力文字: Q=存続時間経過、U=ICMPを受信、!=宛先不達、.=ビジー状態、&=タイムアウト"
     },
@@ -1021,7 +1021,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0036.jpg",
-      "answer_image": "page_0063.png",
+      "answer_image": "page_0056.png",
       "explanation": "リモートネットワークのホストアドレスにpingすることで、エンドツーエンドの通信を確認できます。"
     },
     {
@@ -1037,7 +1037,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 3],
       "answer_count": 2,
       "question_image": "0036.jpg",
-      "answer_image": "page_0064.png",
+      "answer_image": "page_0057.png",
       "explanation": "FCSエラーが発生すると、入力エラーとCRCエラーのカウンタが上昇します。"
     },
     {
@@ -1054,7 +1054,7 @@ const QUIZ_DATA = {
       "correct_answers": [2, 4],
       "answer_count": 2,
       "question_image": "0037.jpg",
-      "answer_image": "page_0065.png",
+      "answer_image": "page_0058.png",
       "explanation": "ケーブルが長い場合や、片方のデバイスのみ半二重状態である場合にレイトコリジョンが発生します。"
     },
     {
@@ -1070,7 +1070,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0037.jpg",
-      "answer_image": "page_0066.png",
+      "answer_image": "page_0058.png",
       "explanation": "64バイト送信後の衝突はレイトコリジョンとしてカウントされます。"
     },
     {
@@ -1086,7 +1086,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0037.jpg",
-      "answer_image": "page_0067.png",
+      "answer_image": "page_0059.png",
       "explanation": "IPv6アドレスの省略表記では、先頭のゼロを省略し、連続するゼロのグループを::で表します。"
     },
     {
@@ -1102,7 +1102,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0037.jpg",
-      "answer_image": "page_0068.png",
+      "answer_image": "page_0059.png",
       "explanation": "グローバルユニキャストアドレスは、IPv4のパブリックアドレスと同様にインターネット上でルーティング可能です。"
     },
     {
@@ -1118,7 +1118,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 3],
       "answer_count": 2,
       "question_image": "0038.jpg",
-      "answer_image": "page_0069.png",
+      "answer_image": "page_0060.png",
       "explanation": "リンクローカルアドレスとユニークローカルアドレスは、インターネット上でルーティングされません。"
     },
     {
@@ -1134,7 +1134,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0038.jpg",
-      "answer_image": "page_0070.png",
+      "answer_image": "page_0061.png",
       "has_diagram": true,
       "explanation": "リンクローカルアドレスの特性とユニークローカルアドレスの範囲を正しく組み合わせます。"
     },
@@ -1151,7 +1151,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0038.jpg",
-      "answer_image": "page_0071.png",
+      "answer_image": "page_0062.png",
       "explanation": "FF00::/8はマルチキャストアドレスの範囲で、グループアドレスに送信します。"
     },
     {
@@ -1167,7 +1167,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 3],
       "answer_count": 2,
       "question_image": "0039.jpg",
-      "answer_image": "page_0072.png",
+      "answer_image": "page_0062.png",
       "explanation": "FF02::1は全ノードマルチキャスト、FF02::2は全ルータマルチキャストアドレスです。"
     },
     {
@@ -1183,7 +1183,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0039.jpg",
-      "answer_image": "page_0073.png",
+      "answer_image": "page_0063.png",
       "explanation": "ユニキャストアドレスは単一のインタフェースを識別するユニークなアドレスです。"
     },
     {
@@ -1199,7 +1199,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0039.jpg",
-      "answer_image": "page_0074.png",
+      "answer_image": "page_0063.png",
       "explanation": "EUI-64では、MACアドレスの7番目のビットを反転してインタフェースIDを生成します。"
     },
     {
@@ -1215,7 +1215,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0039.jpg",
-      "answer_image": "page_0075.png",
+      "answer_image": "page_0064.png",
       "explanation": "SLAACを有効にすることで、MACアドレスからIPv6アドレスを自動生成できます。"
     },
     {
@@ -1233,7 +1233,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 2, 3],
       "answer_count": 3,
       "question_image": "0040.jpg",
-      "answer_image": "page_0076.png",
+      "answer_image": "page_0065.png",
       "explanation": "IPv6を有効にするには、グローバルでipv6 unicast-routingを設定し、インタフェースにIPv6アドレスを割り当て、インタフェースを有効化します。"
     },
     {
@@ -1249,7 +1249,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0040.jpg",
-      "answer_image": "page_0077.png",
+      "answer_image": "page_0065.png",
       "explanation": "eui-64オプションを使用すると、MACアドレスからインタフェースIDを自動生成します。"
     },
     {
@@ -1265,7 +1265,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0041.jpg",
-      "answer_image": "page_0078.png",
+      "answer_image": "page_0066.png",
       "explanation": "IPv6アドレスの省略では、先頭のゼロを省略し、連続するゼロのグループを::で一度だけ表現できます。"
     },
     {
@@ -1281,7 +1281,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0042.jpg",
-      "answer_image": "page_0079.png",
+      "answer_image": "page_0067.png",
       "has_diagram": true,
       "explanation": "スタティックルートでデフォルト以外の管理距離を設定するには、コマンドの最後にAD値を指定します。正しい構文は「ip route [宛先ネットワーク] [サブネットマスク] [ネクストホップ] [AD値]」です。"
     },
@@ -1298,7 +1298,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0042.jpg",
-      "answer_image": "page_0080.png",
+      "answer_image": "page_0068.png",
       "explanation": "10.10.1.22を含むサブネットは10.10.1.20/30(255.255.255.252)です。このサブネットには10.10.1.20-10.10.1.23が含まれます。"
     },
     {
@@ -1314,7 +1314,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0043.jpg",
-      "answer_image": "page_0081.png",
+      "answer_image": "page_0069.png",
       "explanation": "デフォルトルートを設定するには、ip route 192.168.1.1 0.0.0.0 0.0.0.0コマンドを使用します。これにより、すべての不明な宛先トラフィックが指定されたネクストホップに転送されます。"
     },
     {
@@ -1330,7 +1330,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0043.jpg",
-      "answer_image": "page_0082.png",
+      "answer_image": "page_0070.png",
       "explanation": "フローティングスタティックルートは、プライマリルートよりも大きいAD値を設定することで、バックアップとして機能します。プライマリが停止した場合のみルーティングテーブルに追加されます。"
     },
     {
@@ -1347,7 +1347,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 4],
       "answer_count": 2,
       "question_image": "0044.jpg",
-      "answer_image": "page_0083.png",
+      "answer_image": "page_0071.png",
       "explanation": "フローティングスタティックルートは、プライマリパスの障害時の自動フェイルオーバーと、ダイナミックルーティングプロトコルの障害時のバックアップとして使用されます。"
     },
     {
@@ -1363,7 +1363,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0044.jpg",
-      "answer_image": "page_0084.png",
+      "answer_image": "page_0072.png",
       "has_diagram": true,
       "explanation": "スタティックルート(ip route)のAD値は1で、他のダイナミックルーティングプロトコルよりも優先されます。"
     },
@@ -1380,7 +1380,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0045.jpg",
-      "answer_image": "page_0085.png",
+      "answer_image": "page_0073.png",
       "has_diagram": true,
       "explanation": "AD値120を持つデフォルトルートは、より小さいAD値を持つルートがダウンした場合のみルーティングテーブルにインストールされます。"
     },
@@ -1398,7 +1398,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 3],
       "answer_count": 2,
       "question_image": "0045.jpg",
-      "answer_image": "page_0086.png",
+      "answer_image": "page_0074.png",
       "has_diagram": true,
       "explanation": "R2からR1のLoopback0(2000::1/128)へは2012::1経由、R3のLoopback0(2000::3/128)へは2023::3経由のスタティックルートを設定します。"
     },
@@ -1416,7 +1416,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 2],
       "answer_count": 2,
       "question_image": "0046.jpg",
-      "answer_image": "page_0087.png",
+      "answer_image": "page_0075.png",
       "has_diagram": true,
       "explanation": "ネットワーク全体(2001:12:23::/64)へはR2経由、特定のホスト(2001:12:23::1/128)へはR3経由のルートを設定します。最長プレフィックスマッチにより、より具体的なルートが優先されます。"
     },
@@ -1433,7 +1433,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0047.jpg",
-      "answer_image": "page_0088.png",
+      "answer_image": "page_0077.png",
       "has_diagram": true,
       "explanation": "音声とデータを分離するには、インターフェイスをトランクモードに設定し、データVLAN(300)をトランクVLANとして、音声VLAN(400)をvoice vlanとして設定します。"
     },
@@ -1450,7 +1450,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0048.jpg",
-      "answer_image": "page_0089.png",
+      "answer_image": "page_0078.png",
       "explanation": "Voice VLANを設定すると、IP Phoneは指定されたVLAN(50)で音声を送信し、接続されているPCはアクセスVLAN(デフォルトVLAN1)でデータを送信します。"
     },
     {
@@ -1466,7 +1466,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0048.jpg",
-      "answer_image": "page_0090.png",
+      "answer_image": "page_0079.png",
       "explanation": "show interface [インターフェイス] switchportコマンドで、Voice VLANの設定を含むスイッチポートの詳細情報を確認できます。"
     },
     {
@@ -1482,7 +1482,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0049.jpg",
-      "answer_image": "page_0091.png",
+      "answer_image": "page_0080.png",
       "has_diagram": true,
       "explanation": "Gi0/1はPC2用にアクセスモードでVLAN4を設定し、Gi0/2はIP-Phone用にトランクモードでVLAN4とVLAN5を設定します。"
     },
@@ -1499,7 +1499,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0050.jpg",
-      "answer_image": "page_0092.png",
+      "answer_image": "page_0081.png",
       "explanation": "VTP(VLAN Trunking Protocol)は、複数のスイッチ間でVLAN設定情報を同期するために使用されます。"
     },
     {
@@ -1517,7 +1517,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 2, 4],
       "answer_count": 3,
       "question_image": "0050.jpg",
-      "answer_image": "page_0093.png",
+      "answer_image": "page_0082.png",
       "explanation": "DTPを使用したトランクネゴシエーションのモードには、trunk(常時トランク)、desirable(積極的にトランクを要求)、auto(相手の要求に応じる)があります。"
     },
     {
@@ -1533,7 +1533,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 1],
       "answer_count": 2,
       "question_image": "0050.jpg",
-      "answer_image": "page_0094.png",
+      "answer_image": "page_0083.png",
       "explanation": "アクティブにトランクを形成するには、switchport mode trunkで固定トランクにするか、switchport mode dynamic desirableで積極的にトランクをネゴシエートします。"
     },
     {
@@ -1549,7 +1549,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0051.jpg",
-      "answer_image": "page_0095.png",
+      "answer_image": "page_0084.png",
       "has_diagram": true,
       "explanation": "SW-AのトランクポートでVLAN13を許可する必要があります。switchport trunk allowed vlan add 13コマンドで既存の設定にVLAN13を追加します。"
     },
@@ -1566,7 +1566,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0051.jpg",
-      "answer_image": "page_0096.png",
+      "answer_image": "page_0085.png",
       "explanation": "Native VLANのトラフィックはタグなしで送信されます。switchport trunk native vlan 10コマンドでVLAN10をネイティブVLANに設定します。"
     },
     {
@@ -1582,7 +1582,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0052.jpg",
-      "answer_image": "page_0097.png",
+      "answer_image": "page_0086.png",
       "has_diagram": true,
       "explanation": "両方のスイッチでトランク設定とencapsulation dot1qが一致し、VLAN 99と999がallowed vlanリストに含まれているため、トランクは正常に形成されます。"
     },
@@ -1599,7 +1599,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0052.jpg",
-      "answer_image": "page_0098.png",
+      "answer_image": "page_0087.png",
       "has_diagram": true,
       "explanation": "Switch1がdynamic desirable、Switch2がdynamic autoの場合、DTPネゴシエーションによりトランクリンクが形成されます。"
     },
@@ -1616,7 +1616,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0053.jpg",
-      "answer_image": "page_0099.png",
+      "answer_image": "page_0089.png",
       "has_diagram": true,
       "explanation": "Switch1のネイティブVLANは999、Switch2のネイティブVLANは99で不一致です。ネイティブVLANの不一致により、VLAN1のトラフィックが正しく転送されません。"
     },
@@ -1633,7 +1633,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0053.jpg",
-      "answer_image": "page_0100.png",
+      "answer_image": "page_0090.png",
       "explanation": "IP Phoneに接続されたPCからのデータフレームは、ネイティブVLAN(通常はアクセスVLAN)を使用してタグなしで転送されます。"
     },
     {
@@ -1649,7 +1649,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0054.jpg",
-      "answer_image": "page_0101.png",
+      "answer_image": "page_0091.png",
       "has_diagram": true,
       "explanation": "Native VLANに指定されたVLANはタグなしで送信されます。switchport trunk native vlan 76コマンドで設定します。"
     },
@@ -1666,7 +1666,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0054.jpg",
-      "answer_image": "page_0102.png",
+      "answer_image": "page_0092.png",
       "has_diagram": true,
       "explanation": "トランクポートで受信したタグなしフレームは、Native VLAN(この場合VLAN6)のトラフィックとして処理されます。"
     },
@@ -1685,7 +1685,7 @@ const QUIZ_DATA = {
       "correct_answers": [2, 5],
       "answer_count": 2,
       "question_image": "0055.jpg",
-      "answer_image": "page_0103.png",
+      "answer_image": "page_0093.png",
       "has_diagram": true,
       "explanation": "Router-on-a-Stick構成では、ルータとスイッチ間のトランクカプセル化タイプを一致させ、ルータに各VLAN用のサブインタフェースを作成する必要があります。"
     },
@@ -1702,7 +1702,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0055.jpg",
-      "answer_image": "page_0104.png",
+      "answer_image": "page_0094.png",
       "explanation": "OSPFはリンクステートルーティングプロトコルで、ネットワークトポロジ全体を把握してSPFアルゴリズムで最短経路を計算します。"
     },
     {
@@ -1718,7 +1718,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0056.jpg",
-      "answer_image": "page_0105.png",
+      "answer_image": "page_0095.png",
       "has_diagram": true,
       "explanation": "OSPFのルータIDは、Loopbackインタフェースがある場合、その中で最も大きいIPアドレスが選択されます。この場合、Loopback0の1.1.1.1が選択されます。"
     },
@@ -1735,7 +1735,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0056.jpg",
-      "answer_image": "page_0106.png",
+      "answer_image": "page_0096.png",
       "explanation": "OSPFプロセスをリロード(clear ip ospf process)することで、ルータID変更を反映できます。これはルータ再起動よりも影響が小さい方法です。"
     },
     {
@@ -1751,7 +1751,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0056.jpg",
-      "answer_image": "page_0107.png",
+      "answer_image": "page_0096.png",
       "explanation": "Loopbackインタフェースがない場合、up/up状態の物理インタフェースの中で最も大きいIPアドレスがルータIDとして選択されます。"
     },
     {
@@ -1767,7 +1767,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0057.jpg",
-      "answer_image": "page_0108.png",
+      "answer_image": "page_0097.png",
       "has_diagram": true,
       "explanation": "OSPFネイバー関係を形成するには、IPアドレス(②一致である)、タイマー(①一致する)、ルータID(②一意である)、エリアID(①一致する)、ネットマスク(①一致する)、プロセスID(①該当なし)が重要です。"
     },
@@ -1784,7 +1784,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0058.jpg",
-      "answer_image": "page_0109.png",
+      "answer_image": "page_0098.png",
       "has_diagram": true,
       "explanation": "R1のHello intervalは10秒、R2は20秒で不一致です。OSPFネイバーを形成するには、Hello intervalとDead intervalが一致している必要があります。"
     },
@@ -1801,7 +1801,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0059.jpg",
-      "answer_image": "page_0110.png",
+      "answer_image": "page_0099.png",
       "has_diagram": true,
       "explanation": "R1のnetworkステートメントが正しく設定されていないため、OSPFがインタフェースで有効化されていません。"
     },
@@ -1819,7 +1819,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 4],
       "answer_count": 2,
       "question_image": "0059.jpg",
-      "answer_image": "page_0111.png",
+      "answer_image": "page_0100.png",
       "explanation": "OSPFネイバーを形成するには、両方のインターフェイスでOSPFを有効化し、同じエリアIDを設定する必要があります。"
     },
     {
@@ -1835,7 +1835,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0060.jpg",
-      "answer_image": "page_0112.png",
+      "answer_image": "page_0101.png",
       "explanation": "OSPFは参照帯域幅を実際の帯域幅で除算してコストを計算し、最小コストの合計を持つパスを選択します。"
     },
     {
@@ -1851,7 +1851,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0060.jpg",
-      "answer_image": "page_0113.png",
+      "answer_image": "page_0101.png",
       "explanation": "DR選出では、最も高いOSPFプライオリティ値を持つルータが選択されます。プライオリティが同じ場合は、最も高いルータIDを持つルータが選択されます。"
     },
     {
@@ -1867,7 +1867,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0060.jpg",
-      "answer_image": "page_0114.png",
+      "answer_image": "page_0102.png",
       "explanation": "OSPFネイバー状態がFULLになると、DRとの完全な隣接関係が確立され、LSDBが完全に同期されたことを示します。"
     },
     {
@@ -1883,7 +1883,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0061.jpg",
-      "answer_image": "page_0115.png",
+      "answer_image": "page_0103.png",
       "has_diagram": true,
       "explanation": "DR/BDR選出から除外するには、OSPFプライオリティを0に設定します。R4とR5で「ip ospf priority 120」と「ip ospf priority 110」を設定すると、これらのルータが優先的にDR/BDRに選出されます。"
     },
@@ -1900,7 +1900,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0061.jpg",
-      "answer_image": "page_0116.png",
+      "answer_image": "page_0104.png",
       "explanation": "イーサネットインタフェースのOSPFネットワークタイプのデフォルトはブロードキャストです。"
     },
     {
@@ -1916,7 +1916,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0062.jpg",
-      "answer_image": "page_0117.png",
+      "answer_image": "page_0104.png",
       "explanation": "PPPなどのポイントツーポイントリンクでは、OSPFネットワークタイプはポイントツーポイントになります。"
     },
     {
@@ -1932,7 +1932,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0062.jpg",
-      "answer_image": "page_0118.png",
+      "answer_image": "page_0105.png",
       "has_diagram": true,
       "explanation": "ポイントツーポイントリンクではDR/BDRは不要です。ip ospf cost 0を設定することで、OSPFネットワークタイプをポイントツーポイントに変更し、DR/BDR選出を回避できます。"
     },
@@ -1949,7 +1949,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0063.jpg",
-      "answer_image": "page_0119.png",
+      "answer_image": "page_0106.png",
       "has_diagram": true,
       "explanation": "R1でdefault-information originate alwaysコマンドを使用すると、デフォルトルートをOSPFで配布できます。これによりR2はインターネットにアクセスできるようになります。"
     },
@@ -1966,7 +1966,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0064.jpg",
-      "answer_image": "page_0120.png",
+      "answer_image": "page_0107.png",
       "has_diagram": true,
       "explanation": "STPルートブリッジは最小のブリッジID(プライオリティ+MACアドレス)を持つスイッチが選出されます。SWAのプライオリティ(614440)が最も低いため、SWAがルートブリッジになります。"
     },
@@ -1983,7 +1983,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0064.jpg",
-      "answer_image": "page_0121.png",
+      "answer_image": "page_0107.png",
       "explanation": "最小のプライオリティ(32768)を持つスイッチの中で、最小のMACアドレス(11-22-33-44-55-66)を持つスイッチがルートブリッジになります。"
     },
     {
@@ -1999,8 +1999,27 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0064.jpg",
-      "answer_image": "page_0122.png",
+      "answer_image": "page_0108.png",
       "explanation": "RPVST+(Rapid Per-VLAN Spanning Tree Plus)は、PVST+よりも高速なコンバージェンスを提供します。PVST+は802.1Dベース、RPVST+は802.1wベースです。"
+    },
+    {
+      "id": 121,
+      "category": "冗長スイッチド トポロジの構築",
+      "question": "図の構成で4台のスイッチでRSTPが動作しています。選択肢の中からRSTPのポートロールの正しい組み合わせを、次の選択肢の中から3つ選びなさい。",
+      "choices": [
+        "スイッチD,Gi0/2,ルートポート",
+        "スイッチB,Gi0/2,ルートポート",
+        "スイッチA,Fa0/2,指定ポート",
+        "スイッチC,Fa0/2,ルートポート",
+        "スイッチA,Fa0/1,ルートポート",
+        "スイッチB,Gi0/1,指定ポート"
+      ],
+      "correct_answers": [0, 2, 3],
+      "answer_count": 3,
+      "question_image": "0065.jpg",
+      "answer_image": "page_0109.png",
+      "has_diagram": true,
+      "explanation": "図の構成ではプライオリティが設定されていないため、MACアドレスの値が最小のスイッチCがルートブリッジに選定されます。各スイッチのルートポートはルートブリッジへのパスコストが最小のポートとなり、各セグメントの指定ポートはパスコストが低いスイッチ側のポートとなります。"
     },
     {
       "id": 122,
@@ -2016,7 +2035,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 4],
       "answer_count": 2,
       "question_image": "0066.jpg",
-      "answer_image": "page_0124.png",
+      "answer_image": "page_0111.png",
       "has_diagram": true,
       "explanation": "表示結果からルートポートはFastEthernet 2/1であり、スパニングツリーモードはRapid PVST+(rstp)です。"
     },
@@ -2034,7 +2053,7 @@ const QUIZ_DATA = {
       "correct_answers": [2, 4],
       "answer_count": 2,
       "question_image": "0066.jpg",
-      "answer_image": "page_0125.png",
+      "answer_image": "page_0112.png",
       "explanation": "RSTPにおいて収束している時のポートの状態は、discardingとforwardingです。RSTPではlistening状態とlearning状態は存在しません。"
     },
     {
@@ -2050,7 +2069,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0066.jpg",
-      "answer_image": "page_0126.png",
+      "answer_image": "page_0112.png",
       "explanation": "PortFastは、エンドデバイスが接続されたポートで即座にフォワーディング状態に移行する機能です。"
     },
     {
@@ -2067,7 +2086,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 2],
       "answer_count": 2,
       "question_image": "0067.jpg",
-      "answer_image": "page_0127.png",
+      "answer_image": "page_0113.png",
       "explanation": "PortFastを実行しているインターフェイスは、リスニング状態とラーニング状態をバイパスします。"
     },
     {
@@ -2083,7 +2102,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0067.jpg",
-      "answer_image": "page_0128.png",
+      "answer_image": "page_0113.png",
       "explanation": "spanning-tree portfastコマンドは、アクセスポートで追加設定なしに使用できます。"
     },
     {
@@ -2099,7 +2118,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0067.jpg",
-      "answer_image": "page_0129.png",
+      "answer_image": "page_0114.png",
       "explanation": "EtherChannelでネゴシエートプロトコルを使用せず構成するには、onモードを使用します。"
     },
     {
@@ -2115,7 +2134,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0068.jpg",
-      "answer_image": "page_0130.png",
+      "answer_image": "page_0114.png",
       "explanation": "スイッチ間のレイヤ2接続をネゴシエーションし、複数のポートを論理的に束ねるには、LACP(Link Aggregation Control Protocol)を使用します。Activeモードは、LACPのモードの1つです。"
     },
     {
@@ -2132,7 +2151,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 2],
       "answer_count": 2,
       "question_image": "0068.jpg",
-      "answer_image": "page_0131.png",
+      "answer_image": "page_0115.png",
       "has_diagram": true,
       "explanation": "LACPのモードはActiveとpassiveです。PAgPのモードはdesirableとautoです。手動設定の場合はonです。正解は(2)(3)でAとBです。"
     },
@@ -2149,7 +2168,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0069.jpg",
-      "answer_image": "page_0132.png",
+      "answer_image": "page_0116.png",
       "has_diagram": true,
       "explanation": "SW1の設定がchannel-group 1 mode autoとなっている場合、SW2はchannel-group 1 mode passiveまたはdesirableに設定する必要があります。表示された選択肢Bが正解です。"
     },
@@ -2166,7 +2185,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0070.jpg",
-      "answer_image": "page_0133.png",
+      "answer_image": "page_0118.png",
       "has_diagram": true,
       "explanation": "両方のスイッチでchannel-group 1 mode passiveとなっているため、EtherChannelが確立されません。一方または両方をactiveに変更する必要があります。"
     },
@@ -2184,7 +2203,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 4],
       "answer_count": 2,
       "question_image": "0070.jpg",
-      "answer_image": "page_0134.png",
+      "answer_image": "page_0119.png",
       "explanation": "PAgPでEtherChannelを構成する場合、一方をdesirableに、もう一方をautoまたはdesirableに設定します。"
     },
     {
@@ -2200,7 +2219,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0071.jpg",
-      "answer_image": "page_0135.png",
+      "answer_image": "page_0120.png",
       "has_diagram": true,
       "explanation": "SW1のFa0/23は管理的にシャットダウンされており、ライン プロトコルがダウンしています。このため、EtherChannelを構成できません。"
     },
@@ -2217,7 +2236,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0072.jpg",
-      "answer_image": "page_0136.png",
+      "answer_image": "page_0121.png",
       "has_diagram": true,
       "explanation": "show lacp neighborコマンドの出力で、Flagsに「SP」が表示されている場合、デバイスはpassiveモードです。"
     },
@@ -2235,7 +2254,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 4],
       "answer_count": 2,
       "question_image": "0073.jpg",
-      "answer_image": "page_0137.png",
+      "answer_image": "page_0122.png",
       "has_diagram": true,
       "explanation": "オープン標準プロトコルはLACPです。レイヤ3EtherChannelを構成するには、interface GigabitEthernet0/1でchannel-group 10 mode activeまたはpassiveを設定し、no switchportコマンドを実行します。"
     },
@@ -2253,7 +2272,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 3],
       "answer_count": 2,
       "question_image": "0073.jpg",
-      "answer_image": "page_0138.png",
+      "answer_image": "page_0123.png",
       "explanation": "FHRP(First Hop Redundancy Protocol)は、デフォルトゲートウェイの自動フェイルオーバーを有効にし、複数のデバイスがネットワーク内のクライアントの単一の仮想ゲートウェイとして機能することを許可します。"
     },
     {
@@ -2269,7 +2288,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0074.jpg",
-      "answer_image": "page_0139.png",
+      "answer_image": "page_0123.png",
       "explanation": "ファーストホップ冗長プロトコルの主な目的は、デフォルトゲートウェイの障害から保護することです。"
     },
     {
@@ -2285,7 +2304,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0074.jpg",
-      "answer_image": "page_0140.png",
+      "answer_image": "page_0124.png",
       "explanation": "HSRPグループ内のアクティブルータがダウンした場合、スタンバイルータがパケット転送の役割を引き継ぎます。"
     },
     {
@@ -2301,7 +2320,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0074.jpg",
-      "answer_image": "page_0141.png",
+      "answer_image": "page_0124.png",
       "explanation": "HSRPでプライオリティが高い方がActiveになる機能はプリエンプションです。"
     },
     {
@@ -2319,7 +2338,7 @@ const QUIZ_DATA = {
       "correct_answers": [2, 3, 5],
       "answer_count": 3,
       "question_image": "0075.jpg",
-      "answer_image": "page_0142.png",
+      "answer_image": "page_0125.png",
       "explanation": "HSRPではインタフェースごとにグループ番号0～255までのグループを作成でき、デフォルトのHelloインターバルは3秒、Deadインターバルは10秒です。HSRP仮想IPアドレスには、実ルータのインタフェースと同じアドレスを割り振ることができます。"
     },
     {
@@ -2336,7 +2355,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 1],
       "answer_count": 2,
       "question_image": "0075.jpg",
-      "answer_image": "page_0143.png",
+      "answer_image": "page_0126.png",
       "explanation": "HSRPでは、2台のルータは一方をアクティブ、もう一方をスタンバイとし、LAN上のデバイスのデフォルトゲートウェイとして使用される仮想IPアドレスを共有します。"
     },
     {
@@ -2352,7 +2371,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0075.jpg",
-      "answer_image": "page_0144.png",
+      "answer_image": "page_0127.png",
       "explanation": "HSRPグループ内のルータの優先度を確認するコマンドは show standby です。"
     },
     {
@@ -2368,7 +2387,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0076.jpg",
-      "answer_image": "page_0145.png",
+      "answer_image": "page_0128.png",
       "explanation": "VRRP(Virtual Router Redundancy Protocol)は、2台以上のルータを使用して、デフォルトゲートウェイの冗長化を提供するプロトコルです。"
     },
     {
@@ -2384,7 +2403,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0076.jpg",
-      "answer_image": "page_0146.png",
+      "answer_image": "page_0128.png",
       "explanation": "VRRPの仮想MACアドレスは 0000.5E00.01XX の形式です(XXはVRRPグループ番号)。"
     },
     {
@@ -2400,7 +2419,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0076.jpg",
-      "answer_image": "page_0147.png",
+      "answer_image": "page_0129.png",
       "explanation": "GLBP(Gateway Load Balancing Protocol)は、必要な設定量を最小化し、アップリンクの帯域使用率を最大化できるFHRPです。"
     },
     {
@@ -2416,7 +2435,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0076.jpg",
-      "answer_image": "page_0148.png",
+      "answer_image": "page_0130.png",
       "explanation": "ポイントツーポイントトポロジは、シンプルな品質と可用性を提供するWANトポロジです。"
     },
     {
@@ -2433,7 +2452,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 3],
       "answer_count": 2,
       "question_image": "0077.jpg",
-      "answer_image": "page_0149.png",
+      "answer_image": "page_0130.png",
       "explanation": "WANの専用線は、敷設・保守を電気通信事業者が行うので顧客の技術的負担が私設網より小さく、十分な帯域幅を提供します。"
     },
     {
@@ -2449,7 +2468,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0077.jpg",
-      "answer_image": "page_0150.png",
+      "answer_image": "page_0131.png",
       "explanation": "サイト間VPNを使用する場合、ユーザデータの転送を担当するプロトコルはIPSecです。"
     },
     {
@@ -2465,7 +2484,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0077.jpg",
-      "answer_image": "page_0151.png",
+      "answer_image": "page_0131.png",
       "explanation": "IPSecで送信される最も一般的なパケットは、本社のサーバーにヘリモートサイトのホストから送られるユニキャストメッセージです。"
     },
     {
@@ -2481,7 +2500,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0077.jpg",
-      "answer_image": "page_0152.png",
+      "answer_image": "page_0132.png",
       "explanation": "リモートサイト間でマルチキャストトラフィックを伝送し、暗号化をサポートするメカニズムは GRE over IPsec です。"
     },
     {
@@ -2497,7 +2516,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0078.jpg",
-      "answer_image": "page_0153.png",
+      "answer_image": "page_0132.png",
       "explanation": "DMVPN(Dynamic Multipoint VPN)のトポロジは、ハブアンドスポーク型です。"
     },
     {
@@ -2513,7 +2532,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0078.jpg",
-      "answer_image": "page_0154.png",
+      "answer_image": "page_0133.png",
       "has_diagram": true,
       "explanation": "標準ACLは1-99または1300-1999の番号を使用し、送信元アドレスのみで制御します。拡張ACLは100-199または2000-2699の番号を使用し、送信元・宛先アドレスとプロトコルで制御します。"
     },
@@ -2530,7 +2549,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0078.jpg",
-      "answer_image": "page_0155.png",
+      "answer_image": "page_0134.png",
       "explanation": "拡張ACLは100-199の番号を使用し、プロトコル、送信元、宛先を指定します。正しい構文は access-list 150 permit tcp any host 192.168.1.1 です。"
     },
     {
@@ -2546,7 +2565,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0079.jpg",
-      "answer_image": "page_0156.png",
+      "answer_image": "page_0135.png",
       "has_diagram": true,
       "explanation": "現在のaccess-list 101はICMPとTelnetの両方を拒否しています。Pingのみ成功させるには、ICMPを許可し、Telnetを拒否するaccess-list 102を適用する必要があります。"
     },
@@ -2563,7 +2582,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0080.jpg",
-      "answer_image": "page_0157.png",
+      "answer_image": "page_0136.png",
       "has_diagram": true,
       "explanation": "VLAN 20(192.168.20.0/24)からWebサーバ(10.10.10.2/24)へのアクセスをブロックし、その他を許可するには、deny tcp host 10.10.10.2 eq 80とpermit ip any anyの順で設定します。"
     },
@@ -2581,7 +2600,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 2],
       "answer_count": 2,
       "question_image": "0081.jpg",
-      "answer_image": "page_0158.png",
+      "answer_image": "page_0137.png",
       "has_diagram": true,
       "explanation": "ACLの末尾には暗黙のdeny anyがあるため、明示的にpermit ip any anyを追加する必要があります。また、R2のfa0/1にoutboundで適用する必要があります。"
     },
@@ -2598,7 +2617,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0082.jpg",
-      "answer_image": "page_0159.png",
+      "answer_image": "page_0138.png",
       "has_diagram": true,
       "explanation": "ACLには暗黙のdeny anyがあるため、PC-1以外のホストからTelnetできるようにするには、access-list 10 permit anyを追加する必要があります。"
     },
@@ -2615,7 +2634,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0083.jpg",
-      "answer_image": "page_0160.png",
+      "answer_image": "page_0139.png",
       "has_diagram": true,
       "explanation": "セキュアなVTYアクセスのためにはtelnetを許可するACLエントリを追加します。正解は access-list 101 permit tcp 20.1.1.0 0.0.0.255 172.16.1.0 0.0.0.255 eq telnet です。"
     },
@@ -2633,7 +2652,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 3],
       "answer_count": 2,
       "question_image": "0083.jpg",
-      "answer_image": "page_0161.png",
+      "answer_image": "page_0140.png",
       "explanation": "すべての着信パケットが許可される原因として、一致する許可ステートメントの条件が必要以上に広く定義されているか、一致する許可ステートメントが他の条件より先に評価されていることが考えられます。"
     },
     {
@@ -2649,7 +2668,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0084.jpg",
-      "answer_image": "page_0162.png",
+      "answer_image": "page_0140.png",
       "explanation": "インターネットインタフェースとみなされるNAT設定は「外部」(outside)です。"
     },
     {
@@ -2665,7 +2684,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0084.jpg",
-      "answer_image": "page_0163.png",
+      "answer_image": "page_0141.png",
       "explanation": "NATの設定の際、インターネット接続インタフェースに指定するコマンドは ip nat outside です。"
     },
     {
@@ -2681,7 +2700,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0084.jpg",
-      "answer_image": "page_0164.png",
+      "answer_image": "page_0141.png",
       "explanation": "1対1で内部アドレスと外部アドレスをマッピングするNATのタイプはスタティックNATです。"
     },
     {
@@ -2697,7 +2716,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0085.jpg",
-      "answer_image": "page_0165.png",
+      "answer_image": "page_0142.png",
       "has_diagram": true,
       "explanation": "ダイナミックNATを設定する場合、ip nat pool mypool 200.1.1.1 200.1.1.3 prefix-length 30とaccess-list 1 permit 172.16.1.0 0.0.0.255、そしてip nat inside source list 1 pool mypoolを設定します。"
     },
@@ -2714,7 +2733,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0085.jpg",
-      "answer_image": "page_0166.png",
+      "answer_image": "page_0143.png",
       "explanation": "PAT(Port Address Translation)では、ルータは複数ユーザからのアクセスの際、送信元アドレスを同じアドレスに変換するが、送信元のポート番号をそれぞれのコネクション毎に変えて転送します。"
     },
     {
@@ -2730,7 +2749,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0086.jpg",
-      "answer_image": "page_0167.png",
+      "answer_image": "page_0144.png",
       "has_diagram": true,
       "explanation": "show ip nat translationsの出力から、Inside localの172.16.1.1がInside globalの200.1.1.1に変換されていることがわかります。"
     },
@@ -2747,7 +2766,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0086.jpg",
-      "answer_image": "page_0168.png",
+      "answer_image": "page_0145.png",
       "explanation": "NATのアドレス変換の回数などの統計情報を確認するコマンドは show ip nat statistics です。"
     },
     {
@@ -2763,7 +2782,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0087.jpg",
-      "answer_image": "page_0169.png",
+      "answer_image": "page_0146.png",
       "has_diagram": true,
       "explanation": "show ip nat statisticsの出力を見ると、Total active translations: 0 (0 static, 0 dynamic, 0 extended)となっており、ACLをNATプールに適用する設定が不足しています。"
     },
@@ -2780,7 +2799,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0087.jpg",
-      "answer_image": "page_0170.png",
+      "answer_image": "page_0147.png",
       "explanation": "QoSは、音声トラフィックを優先的に扱うことで、パケット損失を減らします。"
     },
     {
@@ -2796,7 +2815,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0088.jpg",
-      "answer_image": "page_0171.png",
+      "answer_image": "page_0148.png",
       "explanation": "トラフィックシェービングの目的は、帯域幅の使用を制限することです。"
     },
     {
@@ -2813,7 +2832,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 4],
       "answer_count": 2,
       "question_image": "0088.jpg",
-      "answer_image": "page_0172.png",
+      "answer_image": "page_0148.png",
       "explanation": "輻輳管理を提供するQoSツールは、PQ(Priority Queuing)とCBWFQ(Class-Based Weighted Fair Queuing)です。"
     },
     {
@@ -2829,7 +2848,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0088.jpg",
-      "answer_image": "page_0173.png",
+      "answer_image": "page_0149.png",
       "explanation": "ネットワーク上の音声トラフィックを最適化するために使用されるQoSツールは、PQ(Priority Queuing)です。"
     },
     {
@@ -2845,7 +2864,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0088.jpg",
-      "answer_image": "page_0174.png",
+      "answer_image": "page_0149.png",
       "explanation": "インタラクティブな音声とビデオに適したQoSサービスは、expedited forwarding(EF)です。"
     },
     {
@@ -2861,7 +2880,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 3],
       "answer_count": 2,
       "question_image": "0089.jpg",
-      "answer_image": "page_0175.png",
+      "answer_image": "page_0150.png",
       "explanation": "WRED(Weighted Random Early Detection)は、キューがいっぱいになるのを防ぐことで輻輳を緩和し、低プライオリティのパケットを破棄し、高プライオリティパケットを保護します。"
     },
     {
@@ -2877,7 +2896,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0089.jpg",
-      "answer_image": "page_0176.png",
+      "answer_image": "page_0150.png",
       "explanation": "Wireless LAN Controllerを使用するメリットは、各アクセスポイントを個別に設定する必要がなくなることです。"
     },
     {
@@ -2893,7 +2912,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0089.jpg",
-      "answer_image": "page_0177.png",
+      "answer_image": "page_0151.png",
       "explanation": "Wireless LAN Controllerで管理することができるのは、LightWeight AP(Lightweight Access Point)です。"
     },
     {
@@ -2909,7 +2928,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0089.jpg",
-      "answer_image": "page_0178.png",
+      "answer_image": "page_0151.png",
       "explanation": "Lightweightアクセスポイントを利用してネットワークに接続しているとき、ユーザの認証要求を制御するデバイスはWireless LANコントローラです。"
     },
     {
@@ -2925,7 +2944,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0090.jpg",
-      "answer_image": "page_0179.png",
+      "answer_image": "page_0152.png",
       "explanation": "Wireless LAN Controllerへの接続が失われた後でも引き続きワイヤレスクライアントにサービスを提供するアクセスポイントモードは、フレックスコネクトです。"
     },
     {
@@ -2941,7 +2960,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0090.jpg",
-      "answer_image": "page_0180.png",
+      "answer_image": "page_0153.png",
       "explanation": "ローカルモードは、APごとにWLCへ2つのCAPWAPトンネルを作成します。1つは制御用、もう1つはデータ用です。"
     },
     {
@@ -2957,7 +2976,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0090.jpg",
-      "answer_image": "page_0181.png",
+      "answer_image": "page_0154.png",
       "explanation": "ローカルモードで動作するAPとWLCの間では、CAPWAPを使用します。APIは、WLCへの接続を前提としてネットワーク内の任意のスイッチに接続できます。"
     },
     {
@@ -2973,7 +2992,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0091.jpg",
-      "answer_image": "page_0182.png",
+      "answer_image": "page_0155.png",
       "has_diagram": true,
       "explanation": "802.11aは2.4GHzと5GHzの周波数帯で機能する、802.11bは最大54Mbpsのレートで2.4GHzの周波数帯でのみ機能する、802.11gは100Mbps以上のレートで5GHzの周波数帯でのみ機能する、802.11nは最大11Mbpsのレートで動作する、802.11acは最大54Mbpsのレートで5GHzの周波数帯でのみ機能する、という組み合わせです。"
     },
@@ -2990,7 +3009,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0092.jpg",
-      "answer_image": "page_0183.png",
+      "answer_image": "page_0156.png",
       "explanation": "Lightweight APがWLCに接続する際に使用するプロトコルは、CAPWAP(Control And Provisioning of Wireless Access Points)です。"
     },
     {
@@ -3006,7 +3025,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0092.jpg",
-      "answer_image": "page_0184.png",
+      "answer_image": "page_0156.png",
       "explanation": "直接シーケンススペクトラム拡散を使用して、コリジョンを制限するために使用される3つの2.4 GHzチャネルは、1、6、11です。これらは重複しない3つのチャネルです。"
     },
     {
@@ -3022,7 +3041,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0092.jpg",
-      "answer_image": "page_0185.png",
+      "answer_image": "page_0157.png",
       "explanation": "Wi-Fiチャネルの重複が発生した場合、ユーザーのワイヤレスネットワークのパフォーマンスが低下します。"
     },
     {
@@ -3038,7 +3057,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0092.jpg",
-      "answer_image": "page_0186.png",
+      "answer_image": "page_0158.png",
       "explanation": "WLANコントローラのService interfaceは、管理者によって手動で設定されるVLANインターフェイスです。"
     },
     {
@@ -3054,7 +3073,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0092.jpg",
-      "answer_image": "page_0187.png",
+      "answer_image": "page_0159.png",
       "explanation": "通常のアクセスポイントトラフィックを通過させる際、スイッチと接続されるWLCのポートは、serviceポートです。"
     },
     {
@@ -3071,7 +3090,7 @@ const QUIZ_DATA = {
       "correct_answers": [2, 4],
       "answer_count": 2,
       "question_image": "0093.jpg",
-      "answer_image": "page_0188.png",
+      "answer_image": "page_0160.png",
       "explanation": "Wireless LAN Controller で新しいWLANを設定するときに入力する必要がある項目は、SSIDとプロファイル名です。"
     },
     {
@@ -3087,7 +3106,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0093.jpg",
-      "answer_image": "page_0189.png",
+      "answer_image": "page_0161.png",
       "has_diagram": true,
       "explanation": "WLANの各コンポーネントと用語の正しい組み合わせは、アクセスポイント-AP管理、仮想インタフェース-管理専用ポート、ダイナミックインタフェース-モビリティ機能を提供、サービスポート-WiFiデバイスに有線ネットワークの接続を提供、Wireless LAN Controller-SSIDとVLANのマッピング、という組み合わせです。"
     },
@@ -3105,7 +3124,7 @@ const QUIZ_DATA = {
       "correct_answers": [3, 4],
       "answer_count": 2,
       "question_image": "0094.jpg",
-      "answer_image": "page_0190.png",
+      "answer_image": "page_0162.png",
       "explanation": "サービスポートインターフェイスでサポートされているプロトコルは、SSHとSCPです。"
     },
     {
@@ -3122,7 +3141,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 2],
       "answer_count": 2,
       "question_image": "0094.jpg",
-      "answer_image": "page_0191.png",
+      "answer_image": "page_0162.png",
       "explanation": "3層ネットワークアーキテクチャのディストリビューションレイヤーの特徴は、レイヤー2とレイヤー3の通信境界を提供し、ネットワーク集約ポイントとして機能することです。"
     },
     {
@@ -3138,7 +3157,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0094.jpg",
-      "answer_image": "page_0192.png",
+      "answer_image": "page_0163.png",
       "explanation": "3層モデルネットワークに接続されたクライアント間で通信が通るパスは、アクセス – ディストリビューション – コア – ディストリビューション – アクセス です。"
     },
     {
@@ -3154,7 +3173,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0095.jpg",
-      "answer_image": "page_0193.png",
+      "answer_image": "page_0163.png",
       "explanation": "スパインリーフトポロジのスイッチは、各リーフスイッチが各スパインスイッチに接続されます。これによりフルメッシュ構成となります。"
     },
     {
@@ -3170,7 +3189,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0095.jpg",
-      "answer_image": "page_0194.png",
+      "answer_image": "page_0164.png",
       "explanation": "スパインリーフアーキテクチャの特徴は、各デバイスが同じホップ数でトラフィックを通過させることです。これにより予測可能な低レイテンシーを実現します。"
     },
     {
@@ -3186,7 +3205,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0095.jpg",
-      "answer_image": "page_0195.png",
+      "answer_image": "page_0164.png",
       "explanation": "追加のアクセスポートが必要な場合、スパインリーフ構成のネットワークで拡張性を保つには、リーフスイッチを追加して、すべてのスパインスイッチに接続します。"
     },
     {
@@ -3202,7 +3221,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0095.jpg",
-      "answer_image": "page_0196.png",
+      "answer_image": "page_0165.png",
       "explanation": "仮想化では、ハイパーバイザーはCPUを含む物理コンポーネントを複数の仮想マシンで共有します。"
     },
     {
@@ -3218,7 +3237,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0096.jpg",
-      "answer_image": "page_0197.png",
+      "answer_image": "page_0165.png",
       "explanation": "1台のホストコンピューターで複数のオペレーティングシステムを実行できるテクノロジーは、サーバーの仮想化です。"
     },
     {
@@ -3235,7 +3254,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 2],
       "answer_count": 2,
       "question_image": "0096.jpg",
-      "answer_image": "page_0198.png",
+      "answer_image": "page_0166.png",
       "explanation": "仮想化の基本は、論理ネットワークデバイスが仮想マシンと物理ネットワークの間でトラフィックを転送できるようにし、1つの物理サーバー上で複数のオペレーティングシステムとアプリケーションを個別に実行できることです。"
     },
     {
@@ -3251,7 +3270,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0096.jpg",
-      "answer_image": "page_0199.png",
+      "answer_image": "page_0167.png",
       "explanation": "ルータがSyslogサーバへ通知レベルのメッセージを送信するイベントは、インタフェースの状態が変化したときです。"
     },
     {
@@ -3267,7 +3286,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0096.jpg",
-      "answer_image": "page_0200.png",
+      "answer_image": "page_0168.png",
       "explanation": "通知レベルのSyslogを発生させるアクションは、インタフェースのアップダウンです。"
     },
     {
@@ -3286,7 +3305,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 3, 5, 6],
       "answer_count": 4,
       "question_image": "0097.jpg",
-      "answer_image": "page_0201.png",
+      "answer_image": "page_0169.png",
       "explanation": "logging trap 4 コマンドは、レベル4(Warning)以上の重大度のメッセージをトラップします。つまり、Emergency(0)、Alert(1)、Critical(2)、Error(3)、Warning(4)がトラップされます。選択肢では、Warning、Notice、Emergency、Errorが該当します。"
     },
     {
@@ -3302,7 +3321,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0097.jpg",
-      "answer_image": "page_0202.png",
+      "answer_image": "page_0170.png",
       "explanation": "informationalレベルのsyslogを取得するには、debugging(レベル7)を設定する必要があります。syslogでは、設定したレベル以上の重大度のメッセージが記録されます。"
     },
     {
@@ -3318,7 +3337,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0097.jpg",
-      "answer_image": "page_0203.png",
+      "answer_image": "page_0170.png",
       "explanation": "SNMPエージェントの機能は、ネットワーク管理システム(NMS)からの要求に応答して、MIB変数に関する情報を送信することです。"
     },
     {
@@ -3334,7 +3353,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0098.jpg",
-      "answer_image": "page_0204.png",
+      "answer_image": "page_0171.png",
       "explanation": "MIBの情報を利用することができるプロトコルは、SNMP(Simple Network Management Protocol)です。"
     },
     {
@@ -3350,7 +3369,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0098.jpg",
-      "answer_image": "page_0205.png",
+      "answer_image": "page_0172.png",
       "has_diagram": true,
       "explanation": "R2がNTPサーバーとして動作するために必要なコマンドは、ntp master 4 です。これによりR2は自身をNTPマスターとして設定します。"
     },
@@ -3367,7 +3386,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0098.jpg",
-      "answer_image": "page_0206.png",
+      "answer_image": "page_0173.png",
       "explanation": "TFTPは、サーバからルータへIOSイメージを転送する機能を果たします。"
     },
     {
@@ -3383,7 +3402,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0099.jpg",
-      "answer_image": "page_0207.png",
+      "answer_image": "page_0174.png",
       "explanation": "copy機能を使用して、ルータ構成情報のバックアップを行うことができるプロトコルは、FTP(File Transfer Protocol)です。"
     },
     {
@@ -3399,7 +3418,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0099.jpg",
-      "answer_image": "page_0208.png",
+      "answer_image": "page_0174.png",
       "explanation": "FTPの機能は、制御コネクションとデータコネクションを使用して、サーバとクライアント間でファイルを転送することです。"
     },
     {
@@ -3415,7 +3434,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0099.jpg",
-      "answer_image": "page_0209.png",
+      "answer_image": "page_0175.png",
       "explanation": "個人用のIDバッジを複数の従業員で使いまわして建物に入館した場合、物理アクセス制御のセキュリティプログラムに違反しています。"
     },
     {
@@ -3431,7 +3450,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0099.jpg",
-      "answer_image": "page_0210.png",
+      "answer_image": "page_0175.png",
       "explanation": "サーバールームの入り口ドアにバッジリーダーを設置し、従業員の出入りを権限に応じて制限するセキュリティ対策は、物理的アクセス制御です。"
     },
     {
@@ -3448,7 +3467,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0100.jpg",
-      "answer_image": "page_0211.png",
+      "answer_image": "page_0176.png",
       "explanation": "従業員に対して送信されたメールにWebリンクがあり、リンク先のWebページは安全であると表示されている場合、ソーシャルエンジニアリングのリスクが考えられます。"
     },
     {
@@ -3464,7 +3483,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0100.jpg",
-      "answer_image": "page_0212.png",
+      "answer_image": "page_0176.png",
       "explanation": "多要素認証の説明として適切なものは、ユーザがユーザ名とパスワードを入力してから、モバイルデバイスの認証アプリ上の通知をクリックすることです。"
     },
     {
@@ -3480,7 +3499,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0100.jpg",
-      "answer_image": "page_0213.png",
+      "answer_image": "page_0177.png",
       "explanation": "スマートフォンが紛失または盗難にあった場合、アプリケーションは2番目の要素を提供する前にユーザにPINの入力を要求することで保護されます。"
     },
     {
@@ -3496,7 +3515,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0101.jpg",
-      "answer_image": "page_0214.png",
+      "answer_image": "page_0177.png",
       "explanation": "独自のセキュリティポリシーを持つ個別のゾーンにネットワークを分離するデバイスは、ファイアウォールです。"
     },
     {
@@ -3512,7 +3531,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0101.jpg",
-      "answer_image": "page_0215.png",
+      "answer_image": "page_0178.png",
       "explanation": "ステートフルインスペクションを実行するデバイスは、ファイアウォールです。"
     },
     {
@@ -3528,7 +3547,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0101.jpg",
-      "answer_image": "page_0216.png",
+      "answer_image": "page_0178.png",
       "explanation": "サイト間VPN構成において、元のIPパケット全体のカプセル化と暗号化を提供するIPsecモードは、ESPを使用したIPsecトンネルモードです。"
     },
     {
@@ -3544,7 +3563,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0101.jpg",
-      "answer_image": "page_0217.png",
+      "answer_image": "page_0179.png",
       "explanation": "ワイヤレス認証はレイヤ2で行われます。"
     },
     {
@@ -3560,7 +3579,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0102.jpg",
-      "answer_image": "page_0218.png",
+      "answer_image": "page_0179.png",
       "explanation": "WPA2で最も適切な暗号方式は、AES(Advanced Encryption Standard)です。"
     },
     {
@@ -3576,7 +3595,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0102.jpg",
-      "answer_image": "page_0219.png",
+      "answer_image": "page_0180.png",
       "explanation": "事前共有キーのワイヤレスネットワークWPA2の暗号化には、AES-128が使用されます。"
     },
     {
@@ -3593,7 +3612,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 2],
       "answer_count": 2,
       "question_image": "0102.jpg",
-      "answer_image": "page_0220.png",
+      "answer_image": "page_0180.png",
       "explanation": "ワイヤレスコントローラのGUIでWPA2-PSKを構成する際に利用できるデータ形式は、ASCIIと16進数です。"
     },
     {
@@ -3609,7 +3628,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0102.jpg",
-      "answer_image": "",
+      "answer_image": "page_0181.png",
       "explanation": "WPA2-PSKについてASCII形式の最小文字数は、8文字です。"
     },
     {
@@ -3626,7 +3645,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0103.jpg",
-      "answer_image": "",
+      "answer_image": "page_0181.png",
       "has_diagram": true,
       "explanation": "WLANコントローラのGUI管理画面でセキュリティ設定としてWPA+WPA2を選択するタブは、Security>Layer 2です。"
     },
@@ -3643,7 +3662,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0103.jpg",
-      "answer_image": "",
+      "answer_image": "page_0182.png",
       "explanation": "Wi-Fiネットワークのデータ表示を防ぐWPA3拡張機能は、SAE(Simultaneous Authentication of Equals)暗号化です。"
     },
     {
@@ -3659,7 +3678,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0103.jpg",
-      "answer_image": "",
+      "answer_image": "page_0182.png",
       "explanation": "パスワードを設定後、プレーンテキストとして保存されるのを防ぐコマンドは、service password-encryptionです。"
     },
     {
@@ -3675,7 +3694,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0104.jpg",
-      "answer_image": "",
+      "answer_image": "page_0183.png",
       "explanation": "service password-encryptionコマンドの効果は、権限のないユーザが実行コンフィギュレーションでクリアテキストのパスワードを表示することを制限することです。"
     },
     {
@@ -3691,7 +3710,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0104.jpg",
-      "answer_image": "",
+      "answer_image": "page_0184.png",
       "explanation": "SSH用のRSAキーを生成するに必要な要素は、DNSドメイン名です。"
     },
     {
@@ -3708,7 +3727,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 3],
       "answer_count": 2,
       "question_image": "0104.jpg",
-      "answer_image": "",
+      "answer_image": "page_0185.png",
       "explanation": "SSHが正常に動作するために必要な要素は、ip domain-nameコマンドとk9(crypto)IOSイメージです。"
     },
     {
@@ -3724,7 +3743,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0105.jpg",
-      "answer_image": "",
+      "answer_image": "page_0186.png",
       "has_diagram": true,
       "explanation": "暗号パスワードを使用したローカル認証とSSHアクセスをサポートするために正しく構成されているスイッチは、SW4です。SW4は、username、secret、line vty 0 15、login localの設定がされています。"
     },
@@ -3741,7 +3760,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0105.jpg",
-      "answer_image": "",
+      "answer_image": "page_0187.png",
       "explanation": "ルータへのリモートアクセスにおいて、公開鍵+秘密鍵のペアを使用し管理トラフィックの暗号化を行うためにSSHを構成する際、使用するコマンドは、crypto key generate rsa modulus 1024です。"
     },
     {
@@ -3758,7 +3777,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 2],
       "answer_count": 2,
       "question_image": "0106.jpg",
-      "answer_image": "",
+      "answer_image": "page_0188.png",
       "has_diagram": true,
       "explanation": "安全で暗号化されたリモート構成を可能にするために必要なコマンドは、D(crypto key generate rsa)とA(enable secret R3mote123)です。"
     },
@@ -3775,7 +3794,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0107.jpg",
-      "answer_image": "",
+      "answer_image": "page_0189.png",
       "has_diagram": true,
       "explanation": "暗号化プロトコルを使用したリモート管理を許可するために、R1にSSHバージョン2を設定するには、設定Cが正しいです。hostname、service password-encryption、crypto key generate rsa、username、ip ssh version 2、line vty、transport input sshが必要です。"
     },
@@ -3793,7 +3812,7 @@ const QUIZ_DATA = {
       "correct_answers": [2, 4],
       "answer_count": 2,
       "question_image": "0108.jpg",
-      "answer_image": "",
+      "answer_image": "page_0190.png",
       "explanation": "無線LANコントローラーへの管理接続のセキュリティを強化するために無効にする必要があるプロトコルは、TelnetとHTTPです。"
     },
     {
@@ -3809,7 +3828,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0108.jpg",
-      "answer_image": "",
+      "answer_image": "page_0191.png",
       "explanation": "AAAの機能は、認証(Authentication)がユーザを識別し、アカウンティング(Accounting)がユーザのサービスの利用をトラッキングします。"
     },
     {
@@ -3825,7 +3844,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0108.jpg",
-      "answer_image": "",
+      "answer_image": "page_0192.png",
       "explanation": "認証と認可の違いは、認証がシステムにアクセスしようとしているユーザを識別および検証し、認可がユーザが実行できるタスクを制御することです。"
     },
     {
@@ -3841,7 +3860,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0109.jpg",
-      "answer_image": "",
+      "answer_image": "page_0193.png",
       "has_diagram": true,
       "explanation": "AAAの各要素と説明の正しい組み合わせは、A(ユーザを認証する)=①認証、B(パスワードを確認)=①認証、C(ユーザが実行できるアクセスを制御)=②認可、D(ユーザの活動記録)=③アカウンティング、E(ユーザが利用できるサービスを制限)=②認可、F(管理者に分析情報を提供)=③アカウンティング、です。"
     },
@@ -3858,7 +3877,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0109.jpg",
-      "answer_image": "",
+      "answer_image": "page_0194.png",
       "explanation": "RADIUSとTACACS+について正しい説明は、TACACS+が別個の認証を使用することです。TACACS+は認証、認可、アカウンティングを分離して実行します。"
     },
     {
@@ -3874,7 +3893,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0110.jpg",
-      "answer_image": "",
+      "answer_image": "page_0195.png",
       "explanation": "RADIUSとTACACS+の違いは、TACACS+が認証と認可を分離して実現できるが、RADIUSは認証と認可を切り離せないことです。"
     },
     {
@@ -3890,7 +3909,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0110.jpg",
-      "answer_image": "",
+      "answer_image": "page_0195.png",
       "explanation": "ワイヤレスアクセスポイントで個別の認証および認可ソリューションをサポートするには、TACACS+を実装する必要があります。"
     },
     {
@@ -3906,7 +3925,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0110.jpg",
-      "answer_image": "",
+      "answer_image": "page_0196.png",
       "explanation": "LANにアクセスする前に接続したデバイスの認証を行う規格は、802.1Xです。"
     },
     {
@@ -3922,7 +3941,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0111.jpg",
-      "answer_image": "",
+      "answer_image": "page_0196.png",
       "explanation": "ID情報を用いたアクセス層のセキュリティ脅威軽減手法は、802.1Xです。"
     },
     {
@@ -3938,7 +3957,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 1],
       "answer_count": 2,
       "question_image": "0111.jpg",
-      "answer_image": "",
+      "answer_image": "page_0197.png",
       "explanation": "デフォルトVLANに所属するスイッチの未使用ポートのセキュリティを向上させる構成は、未使用ポート用にVLAN99を作成してアクセスポートとして割り当て、インタフェースをシャットダウンすることです。"
     },
     {
@@ -3954,7 +3973,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0111.jpg",
-      "answer_image": "",
+      "answer_image": "page_0197.png",
       "explanation": "プリンタのMACアドレスを自動的に学習して保持できるようにするには、スティッキーラーニングを有効にします。"
     },
     {
@@ -3970,7 +3989,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0111.jpg",
-      "answer_image": "",
+      "answer_image": "page_0198.png",
       "explanation": "ポートがerr-disabled状態になる原因として正しいものは、ポートセキュリティ違反です。"
     },
     {
@@ -3986,7 +4005,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0112.jpg",
-      "answer_image": "",
+      "answer_image": "page_0199.png",
       "explanation": "ポートがerr-disabled状態になる原因として正しいものは、リンクフラッピングです。"
     },
     {
@@ -4002,7 +4021,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0112.jpg",
-      "answer_image": "",
+      "answer_image": "page_0200.png",
       "explanation": "MACアドレス違反があった際、違反カウンタの増加とSNMPトラップの生成を行うためのコマンドは、switchport port-security violation restrictです。"
     },
     {
@@ -4018,7 +4037,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0112.jpg",
-      "answer_image": "",
+      "answer_image": "page_0201.png",
       "explanation": "VLANホッピング攻撃の軽減手法は、トランクポートを手動で構成し、DTPを無効にすることです。"
     },
     {
@@ -4034,7 +4053,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0112.jpg",
-      "answer_image": "",
+      "answer_image": "page_0202.png",
       "explanation": "ダイナミックARPインスペクションによりセキュリティリスクを軽減できる攻撃タイプは、中間者攻撃です。"
     },
     {
@@ -4050,7 +4069,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0113.jpg",
-      "answer_image": "",
+      "answer_image": "page_0203.png",
       "has_diagram": true,
       "explanation": "以下のセキュリティ設定の動作として適切なのは、スイッチインターフェイスの信頼状態がuntrustedになることです。"
     },
@@ -4067,7 +4086,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0113.jpg",
-      "answer_image": "",
+      "answer_image": "page_0204.png",
       "has_diagram": true,
       "explanation": "以下のセキュリティ設定の効果として適切なのは、スイッチが無効なMAC-IPアドレスバインディングを持つすべての入力ARPフレームを破棄することです。"
     },
@@ -4084,7 +4103,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0114.jpg",
-      "answer_image": "",
+      "answer_image": "page_0205.png",
       "has_diagram": true,
       "explanation": "ip arp inspection trustの設定がされているため、このインタフェースには信頼できるデバイス、つまりDHCPクライアントが接続されます。"
     },
@@ -4102,7 +4121,7 @@ const QUIZ_DATA = {
       "correct_answers": [1, 2],
       "answer_count": 2,
       "question_image": "0114.jpg",
-      "answer_image": "",
+      "answer_image": "page_0205.png",
       "explanation": "ネットワークを自動化するメリットは、ネットワークの変更に迅速に対応でき、運用コストを削減することができることです。"
     },
     {
@@ -4118,7 +4137,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0114.jpg",
-      "answer_image": "",
+      "answer_image": "page_0206.png",
       "explanation": "SDNコントローラによって集中管理されるプレーンは、コントロールプレーンです。"
     },
     {
@@ -4135,7 +4154,7 @@ const QUIZ_DATA = {
       "correct_answers": [0, 1],
       "answer_count": 2,
       "question_image": "0115.jpg",
-      "answer_image": "",
+      "answer_image": "page_0206.png",
       "explanation": "コントローラベースのネットワークの利点は、管理機能を一元化し、ネットワーク構成の複雑さを軽減することです。"
     },
     {
@@ -4152,7 +4171,7 @@ const QUIZ_DATA = {
       "correct_answers": [4],
       "answer_count": 1,
       "question_image": "0115.jpg",
-      "answer_image": "",
+      "answer_image": "page_0207.png",
       "has_diagram": true,
       "explanation": "コントローラベースのネットワークと従来型のネットワークの特性の正しい組み合わせは、A(ネットワーク中心)→2(従来型)、B(デバイス中心)→1(コントローラベース)、C(コンフィギュレーション設定)→2(従来型)、D(ポリシー設定)→1(コントローラベース)、E(ホワイトリストセキュリティモデル)→2(従来型)、F(ブラックリストセキュリティモデル)→1(コントローラベース)です。"
     },
@@ -4169,7 +4188,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0116.jpg",
-      "answer_image": "",
+      "answer_image": "page_0208.png",
       "explanation": "レイヤ2の到達可能性とレイヤ3のルーティング情報を提供することにより、ネットワークデバイスがパケット転送の決定を行うことを支援するソフトウェア定義アーキテクチャプレーンは、コントロールプレーンです。"
     },
     {
@@ -4185,7 +4204,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0116.jpg",
-      "answer_image": "",
+      "answer_image": "page_0208.png",
       "explanation": "コントローラベースのネットワークアーキテクチャにおけるノースバウンドAPIの目的は、コントローラとアプリケーション間の通信を容易にすることです。"
     },
     {
@@ -4201,7 +4220,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0116.jpg",
-      "answer_image": "",
+      "answer_image": "page_0209.png",
       "explanation": "コントローラベースのネットワークアーキテクチャにおいて、サウスバウンドAPIの役割は、ネットワークハードウェアとコントローラ間で通信することです。"
     },
     {
@@ -4219,7 +4238,7 @@ const QUIZ_DATA = {
       "correct_answers": [2, 4],
       "answer_count": 2,
       "question_image": "0117.jpg",
-      "answer_image": "",
+      "answer_image": "page_0210.png",
       "explanation": "SDNのAPIについて、ノースバウンドAPIだけがSAL(Service Abstraction Layer:サービス抽象化層)を使用し、ふたつのAPIともにネットワークのプログラム制御ができます。"
     },
     {
@@ -4235,7 +4254,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0117.jpg",
-      "answer_image": "",
+      "answer_image": "page_0211.png",
       "explanation": "SDNコントローラーとアプリケーション間の通信に適したテクノロジーは、REST APIです。"
     },
     {
@@ -4251,7 +4270,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0117.jpg",
-      "answer_image": "",
+      "answer_image": "page_0211.png",
       "explanation": "REST APIリクエストが成功した後に返されるHTTPステータスコードは、200です。"
     },
     {
@@ -4269,7 +4288,7 @@ const QUIZ_DATA = {
       "correct_answers": [2, 5],
       "answer_count": 2,
       "question_image": "0118.jpg",
-      "answer_image": "",
+      "answer_image": "page_0212.png",
       "explanation": "REST APIで利用できるエンコード方式は、XMLとJSONです。"
     },
     {
@@ -4285,7 +4304,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0118.jpg",
-      "answer_image": "",
+      "answer_image": "page_0213.png",
       "explanation": "JSONについて適切な説明は、配列を含む構造化データの記述に使用されることです。"
     },
     {
@@ -4301,7 +4320,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0119.jpg",
-      "answer_image": "",
+      "answer_image": "page_0214.png",
       "has_diagram": true,
       "explanation": "JSONデータのフォーマットとして正しいものは、Bです。JSONでは、オブジェクトは{}で囲み、配列は[]で囲みます。"
     },
@@ -4318,7 +4337,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0120.jpg",
-      "answer_image": "",
+      "answer_image": "page_0215.png",
       "has_diagram": true,
       "explanation": "適切なJSONファイルは、Bです。JSONでは、文字列は\"\"で囲み、key:value形式で記述します。"
     },
@@ -4335,7 +4354,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0120.jpg",
-      "answer_image": "",
+      "answer_image": "page_0216.png",
       "explanation": "属性と値がペアとなり、なおかつ順序をもたないJSONデータ型は、オブジェクトです。"
     },
     {
@@ -4351,7 +4370,7 @@ const QUIZ_DATA = {
       "correct_answers": [3],
       "answer_count": 1,
       "question_image": "0121.jpg",
-      "answer_image": "",
+      "answer_image": "page_0217.png",
       "has_diagram": true,
       "explanation": "各構成ツールに該当する適切な組み合わせは、A(リモートアクセスにSSH)=①Ansible、B(YAML形式)=②Chef、C(マニフェストに保存)=③Puppet、D(Rubyを使用)=①Ansible、E(TCP8140)=③Puppet、F(TCP10002)=②Chef、です。"
     },
@@ -4368,7 +4387,7 @@ const QUIZ_DATA = {
       "correct_answers": [2],
       "answer_count": 1,
       "question_image": "0122.jpg",
-      "answer_image": "",
+      "answer_image": "page_0218.png",
       "has_diagram": true,
       "explanation": "デバイス管理の適切な組み合わせは、1(Cisco DNA Centerデバイス管理)がB(デバイスごとに構成を管理する)、C(クラウドを監視し、ソフトウェアアップデートを確認する)、F(NetFlowを使用してネットワークの潜在的な脅威を分析し、適切なアクションを実行する)で、2(従来型デバイス管理)がA(SSH経由で変更を行う)、D(セキュリティは、ファイアウォール、VPN、IPSを使用して、ネットワーク境界で管理される)、E(CLIテンプレートを使用して、複数のデバイスに一貫した設定を適用する)です。"
     },
@@ -4385,7 +4404,7 @@ const QUIZ_DATA = {
       "correct_answers": [0],
       "answer_count": 1,
       "question_image": "0122.jpg",
-      "answer_image": "",
+      "answer_image": "page_0219.png",
       "explanation": "Cisco DNA Centerによる管理が従来のネットワーク管理と異なる点は、実際のデバイス構成からポリシーを抽象化することです。"
     },
     {
@@ -4401,7 +4420,7 @@ const QUIZ_DATA = {
       "correct_answers": [1],
       "answer_count": 1,
       "question_image": "0123.jpg",
-      "answer_image": "",
+      "answer_image": "page_0220.png",
       "explanation": "展開に関して、Cisco DNA Centerデバイス管理は、従来のキャンパス管理よりも迅速にネットワークを展開できます。"
     }
   ]
