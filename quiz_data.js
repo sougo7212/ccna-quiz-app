@@ -1251,16 +1251,767 @@ const QUIZ_DATA = {
       "question_image": "0040.jpg",
       "answer_image": "page_0024.png",
       "explanation": "eui-64オプションを使用すると、MACアドレスからインタフェースIDを自動生成します。"
+    },
+    {
+      "id": 76,
+      "category": "基本的なIPv6の概要",
+      "question": "IPv6アドレス「2001:0DB8:0000:0000:0000:0000:0000:0001」の正しい省略方法を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "2001:0DB8::1",
+        "2001:DB8::1",
+        "2001::DB8::1",
+        "2001:DB8:0:0:0:0:0:1"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0041.jpg",
+      "answer_image": "page_0024.png",
+      "explanation": "IPv6アドレスの省略では、先頭のゼロを省略し、連続するゼロのグループを::で一度だけ表現できます。"
+    },
+    {
+      "id": 77,
+      "category": "スタティックルーティングの設定",
+      "question": "R1の静的ルートをデフォルト以外の管理距離でネットワーク192.168.3.0/24に設定するコマンドを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ip route 5 192.168.3.0 255.255.255.0 192.168.2.2",
+        "ip route 192.168.3.0 255.255.255.0 192.168.2.2 1",
+        "ip route 1 192.168.3.1 255.255.255.0 192.168.2.2",
+        "ip route 192.168.3.0 255.255.255.0 192.168.2.2 5"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0042.jpg",
+      "answer_image": "page_0025.png",
+      "has_diagram": true,
+      "explanation": "スタティックルートでデフォルト以外の管理距離を設定するには、コマンドの最後にAD値を指定します。正しい構文は「ip route [宛先ネットワーク] [サブネットマスク] [ネクストホップ] [AD値]」です。"
+    },
+    {
+      "id": 78,
+      "category": "スタティックルーティングの設定",
+      "question": "宛先IPアドレス10.10.1.22のパケットを転送するためにどのスタティックルートを選択しますか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ip route 10.10.1.20 255.255.255.254 10.10.255.1",
+        "ip route 10.10.1.0 255.255.255.240 10.10.255.1",
+        "ip route 10.10.1.16 255.255.255.252 10.10.255.1",
+        "ip route 10.10.1.20 255.255.255.252 10.10.255.1"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0042.jpg",
+      "answer_image": "page_0025.png",
+      "explanation": "10.10.1.22を含むサブネットは10.10.1.20/30(255.255.255.252)です。このサブネットには10.10.1.20-10.10.1.23が含まれます。"
+    },
+    {
+      "id": 79,
+      "category": "スタティックルーティングの設定",
+      "question": "R1は、ルーティングテーブルエントリが一致しないすべてのトラフィックを192.168.1.1に送信する必要があります。このタスクを実行する構成はどれですか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "C",
+        "A",
+        "B",
+        "D"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0043.jpg",
+      "answer_image": "page_0025.png",
+      "explanation": "デフォルトルートを設定するには、ip route 192.168.1.1 0.0.0.0 0.0.0.0コマンドを使用します。これにより、すべての不明な宛先トラフィックが指定されたネクストホップに転送されます。"
+    },
+    {
+      "id": 80,
+      "category": "スタティックルーティングの設定",
+      "question": "フローティングスタティックルートが設定されている場合、プライマリルートに障害が発生したときにバックアップルートが使用されることを保証するアクションを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "バックアップルートがセカンダリになるように、プライマリルートでアドミニストレーティブディスタンスを大きくする",
+        "フローティングスタティックルートは、バックアップとして使用されるように、プライマリルートよりもアドミニストレーティブディスタンスを大きくする",
+        "負荷分散を構成する",
+        "バックアップルートでメトリック値を小さくする"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0043.jpg",
+      "answer_image": "page_0025.png",
+      "explanation": "フローティングスタティックルートは、プライマリルートよりも大きいAD値を設定することで、バックアップとして機能します。プライマリが停止した場合のみルーティングテーブルに追加されます。"
+    },
+    {
+      "id": 81,
+      "category": "スタティックルーティングの設定",
+      "question": "フローティングスタティックルートを設定する理由として適切なものを、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "プライマリパスがダウンしたときにトラフィックをセカンダリパスに自動的にルーティングする",
+        "ルータから送信されるトラフィックのリターンパスを制御する",
+        "パケットの送信元IPに基づいて異なる方法でトラフィックをルーティングする",
+        "静的ルーティングによる負荷分散をサポートする",
+        "ダイナミックルーティングプロトコルが失敗したときにフォールバック静的ルーティングを有効にする"
+      ],
+      "correct_answers": [0, 4],
+      "answer_count": 2,
+      "question_image": "0044.jpg",
+      "answer_image": "page_0026.png",
+      "explanation": "フローティングスタティックルートは、プライマリパスの障害時の自動フェイルオーバーと、ダイナミックルーティングプロトコルの障害時のバックアップとして使用されます。"
+    },
+    {
+      "id": 82,
+      "category": "スタティックルーティングの設定",
+      "question": "図を見て答えなさい。R2が、宛先ネットワーク10.1.1.0/24に到達するために選択するプロトコルはどれですか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "スタティック(静的)",
+        "eBGP",
+        "OSPF",
+        "EIGRP"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0044.jpg",
+      "answer_image": "page_0026.png",
+      "has_diagram": true,
+      "explanation": "スタティックルート(ip route)のAD値は1で、他のダイナミックルーティングプロトコルよりも優先されます。"
+    },
+    {
+      "id": 83,
+      "category": "スタティックルーティングの設定",
+      "question": "以下のコマンドを実行した後の説明として正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "コマンドが入力できない",
+        "既存のデフォルトルートを上書きする",
+        "負荷分散が構成される",
+        "ルーティングテーブルに情報がインストールされず、メイン経路がダウンした場合のみ利用される"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0045.jpg",
+      "answer_image": "page_0026.png",
+      "has_diagram": true,
+      "explanation": "AD値120を持つデフォルトルートは、より小さいAD値を持つルートがダウンした場合のみルーティングテーブルにインストールされます。"
+    },
+    {
+      "id": 84,
+      "category": "スタティックルーティングの設定",
+      "question": "図のような構成でR1 Lo0とR3 Lo0間で通信するためには、R2でスタティックルートをどのように設定すればよいですか、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "ipv6 route 2000::1/128 2012::2",
+        "ipv6 route 2000::1/128 2012::1",
+        "ipv6 route 2000::1/128 gi0/1",
+        "ipv6 route 2000::3/128 2023::3",
+        "ipv6 route 2000::3/128 gi0/0"
+      ],
+      "correct_answers": [1, 3],
+      "answer_count": 2,
+      "question_image": "0045.jpg",
+      "answer_image": "page_0026.png",
+      "has_diagram": true,
+      "explanation": "R2からR1のLoopback0(2000::1/128)へは2012::1経由、R3のLoopback0(2000::3/128)へは2023::3経由のスタティックルートを設定します。"
+    },
+    {
+      "id": 85,
+      "category": "スタティックルーティングの設定",
+      "question": "図のような構成において、以下の条件を満たすためにR1で設定すべき項目を、次の選択肢の中から2つ選びなさい。・2001:12:23::/64宛てのパケットは、R2を通る・2001:12:23::1/64宛てのパケットは、R3を通る",
+      "choices": [
+        "ipv6 route 2001:12:23::/128 fd00:1:2::2",
+        "ipv6 route 2001:12:23::/64 fd00:1:2::2",
+        "ipv6 route 2001:12:23::1/128 fd00:1:3::3",
+        "ipv6 route 2001:12:23::1/64 fd00:1:2::2",
+        "ipv6 route 2001:12:23::1/64 fd00:12:2 200"
+      ],
+      "correct_answers": [1, 2],
+      "answer_count": 2,
+      "question_image": "0046.jpg",
+      "answer_image": "page_0027.png",
+      "has_diagram": true,
+      "explanation": "ネットワーク全体(2001:12:23::/64)へはR2経由、特定のホスト(2001:12:23::1/128)へはR3経由のルートを設定します。最長プレフィックスマッチにより、より具体的なルートが優先されます。"
+    },
+    {
+      "id": 86,
+      "category": "VLANとトランクの実装",
+      "question": "図のような構成において音声及びデータトラフィックを扱うための適切な設定を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "B",
+        "A",
+        "C",
+        "D"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0047.jpg",
+      "answer_image": "page_0027.png",
+      "has_diagram": true,
+      "explanation": "音声とデータを分離するには、インターフェイスをトランクモードに設定し、データVLAN(300)をトランクVLANとして、音声VLAN(400)をvoice vlanとして設定します。"
+    },
+    {
+      "id": 87,
+      "category": "VLANとトランクの実装",
+      "question": "ネットワーク管理者は下記のようにVoice VLANを設定しています。スイッチのGi1/1/1にCisco IP Phoneを接続した場合、IP Phoneのフレームをどのように扱いますか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "IP PhoneはVLAN50内で音声データを送受信する。IP Phoneに接続されているホストはVLAN1内でデータを送受信する",
+        "IP PhoneとIP Phoneに接続されているホストはともにVLANへ接続できない",
+        "IP PhoneとIP Phoneに接続されているホストはともにVLAN50内でデータを送受信する",
+        "IP PhoneはVLAN50内で音声データを送受信する。IP Phoneに接続されているホストはVLANへ接続できない"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0048.jpg",
+      "answer_image": "page_0027.png",
+      "explanation": "Voice VLANを設定すると、IP Phoneは指定されたVLAN(50)で音声を送信し、接続されているPCはアクセスVLAN(デフォルトVLAN1)でデータを送信します。"
+    },
+    {
+      "id": 88,
+      "category": "VLANとトランクの実装",
+      "question": "Voice VLANが設定されているかを確認するコマンドを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "show cdp neighbor",
+        "show interface trunk",
+        "show ip interface brief",
+        "show interface fa0/2 switchport"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0048.jpg",
+      "answer_image": "page_0027.png",
+      "explanation": "show interface [インターフェイス] switchportコマンドで、Voice VLANの設定を含むスイッチポートの詳細情報を確認できます。"
+    },
+    {
+      "id": 89,
+      "category": "VLANとトランクの実装",
+      "question": "SW1で、インターフェイスGi0/1とGi0/2を設定する必要があります。PC1とPC2はデータVLANに含める必要があり、IP-Phoneは音声VLANに含める必要があります。要件を満たす設定を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "B",
+        "A",
+        "C",
+        "D"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0049.jpg",
+      "answer_image": "page_0028.png",
+      "has_diagram": true,
+      "explanation": "Gi0/1はPC2用にアクセスモードでVLAN4を設定し、Gi0/2はIP-Phone用にトランクモードでVLAN4とVLAN5を設定します。"
+    },
+    {
+      "id": 90,
+      "category": "VLANとトランクの実装",
+      "question": "複数のスイッチでVLAN設定を共有するためのプロトコルとして正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "CDP",
+        "DTP",
+        "VTP",
+        "STP"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0050.jpg",
+      "answer_image": "page_0028.png",
+      "explanation": "VTP(VLAN Trunking Protocol)は、複数のスイッチ間でVLAN設定情報を同期するために使用されます。"
+    },
+    {
+      "id": 91,
+      "category": "VLANとトランクの実装",
+      "question": "トランクになりうるスイッチポートの設定モードを、次の選択肢の中から3つ選びなさい。",
+      "choices": [
+        "desirable",
+        "forwarding",
+        "auto",
+        "negotiate",
+        "trunk",
+        "transparent"
+      ],
+      "correct_answers": [0, 2, 4],
+      "answer_count": 3,
+      "question_image": "0050.jpg",
+      "answer_image": "page_0028.png",
+      "explanation": "DTPを使用したトランクネゴシエーションのモードには、trunk(常時トランク)、desirable(積極的にトランクを要求)、auto(相手の要求に応じる)があります。"
+    },
+    {
+      "id": 92,
+      "category": "VLANとトランクの実装",
+      "question": "エンジニアであるあなたは、隣接するスイッチとアクティブにトランクリンクを形成できるようなインタフェースを計画しています。インタフェースにはどのコマンドを設定しますか、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "switchport mode dynamic desirable",
+        "switchport mode trunk",
+        "switchport mode dynamic auto",
+        "switchport no negotiation"
+      ],
+      "correct_answers": [0, 1],
+      "answer_count": 2,
+      "question_image": "0050.jpg",
+      "answer_image": "page_0028.png",
+      "explanation": "アクティブにトランクを形成するには、switchport mode trunkで固定トランクにするか、switchport mode dynamic desirableで積極的にトランクをネゴシエートします。"
+    },
+    {
+      "id": 93,
+      "category": "VLANとトランクの実装",
+      "question": "PC AとServer間の通信ができるようにするために、SW-Aの設定をどのように変更すればよいですか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "switchport trunk allowed vlan none",
+        "switchport trunk allowed vlan remove 10-11",
+        "switchport trunk allowed vlan 12",
+        "switchport trunk allowed vlan add 13"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0051.jpg",
+      "answer_image": "page_0029.png",
+      "has_diagram": true,
+      "explanation": "SW-AのトランクポートでVLAN13を許可する必要があります。switchport trunk allowed vlan add 13コマンドで既存の設定にVLAN13を追加します。"
+    },
+    {
+      "id": 94,
+      "category": "VLANとトランクの実装",
+      "question": "エンジニアであるあなたは、トランクリンクを通過するVLAN10のトラフィックにタグ付けしないように設定する必要があります。どのコマンドを使用すればよいですか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "switchport trunk encapsulation dot1q",
+        "switchport trunk allowed vlan 10",
+        "switchport mode trunk",
+        "switchport trunk native vlan 10"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0051.jpg",
+      "answer_image": "page_0029.png",
+      "explanation": "Native VLANのトラフィックはタグなしで送信されます。switchport trunk native vlan 10コマンドでVLAN10をネイティブVLANに設定します。"
+    },
+    {
+      "id": 95,
+      "category": "VLANとトランクの実装",
+      "question": "2台のSW間の接続の構成として正しい説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "トランクは形成されるが、VLAN 99とVLAN 999はシャットダウン状態",
+        "トランクは形成されず、ポートはerr-disabled",
+        "トランクは形成されるが、一致しないネイティブVLANは単一のブロードキャストドメインにマージされる",
+        "トランクは形成され、VLAN 99とVLAN 999はリンクを通過できる"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0052.jpg",
+      "answer_image": "page_0029.png",
+      "has_diagram": true,
+      "explanation": "両方のスイッチでトランク設定とencapsulation dot1qが一致し、VLAN 99と999がallowed vlanリストに含まれているため、トランクは正常に形成されます。"
+    },
+    {
+      "id": 96,
+      "category": "VLANとトランクの実装",
+      "question": "以下のようにスイッチが設定されています。スイッチ間リンクの適切な動作モードを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "アクセス",
+        "トランク",
+        "err-disabled",
+        "リンクダウン"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0052.jpg",
+      "answer_image": "page_0029.png",
+      "has_diagram": true,
+      "explanation": "Switch1がdynamic desirable、Switch2がdynamic autoの場合、DTPネゴシエーションによりトランクリンクが形成されます。"
+    },
+    {
+      "id": 97,
+      "category": "VLANとトランクの実装",
+      "question": "ホスト同士がスイッチ間で通信できない理由として考えられるものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ネイティブVLANの不一致",
+        "アクセスポートになっている",
+        "インタフェースがシャットダウン",
+        "すべてのVLANがトランクで有効になっていない"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0053.jpg",
+      "answer_image": "page_0030.png",
+      "has_diagram": true,
+      "explanation": "Switch1のネイティブVLANは999、Switch2のネイティブVLANは99で不一致です。ネイティブVLANの不一致により、VLAN1のトラフィックが正しく転送されません。"
+    },
+    {
+      "id": 98,
+      "category": "VLANとトランクの実装",
+      "question": "Cisco IP Phoneに接続されたホストから受信したフレームに対するCisco IP Phoneのアクションとして適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ネイティブVLANを使用して送信する",
+        "フレームを変換して送信する",
+        "アクセスVLANのタグをつける",
+        "ドロップする"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0053.jpg",
+      "answer_image": "page_0030.png",
+      "explanation": "IP Phoneに接続されたPCからのデータフレームは、ネイティブVLAN(通常はアクセスVLAN)を使用してタグなしで転送されます。"
+    },
+    {
+      "id": 99,
+      "category": "VLANとトランクの実装",
+      "question": "スイッチ1とスイッチ2の間でVLAN 76トラフィックのタグ付けを解除し、他のすべてのVLANはタグ付けしたままにしたい。適切なコマンドを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "switchport private-vlan association host 76",
+        "switchport access vlan 76",
+        "switchport trunk allowed vlan 76",
+        "switchport trunk native vlan 76"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0054.jpg",
+      "answer_image": "page_0030.png",
+      "has_diagram": true,
+      "explanation": "Native VLANに指定されたVLANはタグなしで送信されます。switchport trunk native vlan 76コマンドで設定します。"
+    },
+    {
+      "id": 100,
+      "category": "VLANとトランクの実装",
+      "question": "図を見て答えなさい。タグなしフレームがGigabit Ethernet0/1インタフェースで受信された場合、SW1はどのように動作しますか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "タグなしフレームは、VLAN1のトラフィックとして処理される",
+        "タグなしフレームは、VLAN11のトラフィックとして処理される",
+        "タグなしフレームは、VLAN6のトラフィックとして処理される",
+        "タグなしフレームはドロップされる"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0054.jpg",
+      "answer_image": "page_0030.png",
+      "has_diagram": true,
+      "explanation": "トランクポートで受信したタグなしフレームは、Native VLAN(この場合VLAN6)のトラフィックとして処理されます。"
+    },
+    {
+      "id": 101,
+      "category": "VLAN 間のルーティング",
+      "question": "図のVLAN間ルーティングについて正しい説明を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "RouterにはVLAN10とVLAN20インタフェースを作成しなければならない",
+        "Routerを導入してもPC aとPC b間の通信は不可能である",
+        "RouterのGi0/0とSwitch AのGi0/24のトランクのカプセル化タイプは合致していなければいけない",
+        "PC aとPC bには同じデフォルトゲートウェイアドレスを設定する",
+        "RouterとSwitch Aの接続ケーブルにはクロスオーバーケーブルを使用する",
+        "RouterのGi0/0にはサブインタフェースを設定しなければならない"
+      ],
+      "correct_answers": [2, 5],
+      "answer_count": 2,
+      "question_image": "0055.jpg",
+      "answer_image": "page_0030.png",
+      "has_diagram": true,
+      "explanation": "Router-on-a-Stick構成では、ルータとスイッチ間のトランクカプセル化タイプを一致させ、ルータに各VLAN用のサブインタフェースを作成する必要があります。"
+    },
+    {
+      "id": 102,
+      "category": "OSPFの概要",
+      "question": "ルーティングプロトコルに関する正しい説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ディスタンスベクタールーティングプロトコルはSPFアルゴリズムを使用する",
+        "OSPFはリンクステートルーティングプロトコルである",
+        "IS-ISはディスタンスベクタールーティングプロトコルである",
+        "リンクステートルーティングプロトコルは宛先までのホップ数で経路を選択する"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0055.jpg",
+      "answer_image": "page_0031.png",
+      "explanation": "OSPFはリンクステートルーティングプロトコルで、ネットワークトポロジ全体を把握してSPFアルゴリズムで最短経路を計算します。"
+    },
+    {
+      "id": 103,
+      "category": "OSPFの概要",
+      "question": "このルータのルータIDとして適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "1.1.1.1",
+        "192.168.10.2",
+        "192.168.20.1",
+        "172.16.1.1"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0056.jpg",
+      "answer_image": "page_0031.png",
+      "has_diagram": true,
+      "explanation": "OSPFのルータIDは、Loopbackインタフェースがある場合、その中で最も大きいIPアドレスが選択されます。この場合、Loopback0の1.1.1.1が選択されます。"
+    },
+    {
+      "id": 104,
+      "category": "OSPFの概要",
+      "question": "OSPFルータIDコマンドを使用してルータを構成しました。しかしながら、依然として物理インタフェースのIPアドレスがルータIDとして使われています。この問題をネットワークへの影響がより小さい方法で修正するためには、どのアクションがふさわしいですか？次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ルータの構成を保存する",
+        "ループバックアドレスを指定する",
+        "ルータを再起動する",
+        "OSPFプロセスをリロードする"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0056.jpg",
+      "answer_image": "page_0031.png",
+      "explanation": "OSPFプロセスをリロード(clear ip ospf process)することで、ルータID変更を反映できます。これはルータ再起動よりも影響が小さい方法です。"
+    },
+    {
+      "id": 105,
+      "category": "OSPFの概要",
+      "question": "OSPFにおいて、LoopbackインタフェースやDR的なルータIDの設定がされていない場合、ルータIDはどのように決定されますか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "最も小さいIPアドレスにを加算した値がルータIDとなる",
+        "ルータIDが設定されるまで、OSPFプロトコルは動作しない",
+        "up/upしている物理インタフェースのうち、最も大きいアドレスがルータIDに選ばれる",
+        "0.0.0.0がルータIDとなる"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0056.jpg",
+      "answer_image": "page_0031.png",
+      "explanation": "Loopbackインタフェースがない場合、up/up状態の物理インタフェースの中で最も大きいIPアドレスがルータIDとして選択されます。"
+    },
+    {
+      "id": 106,
+      "category": "OSPFの概要",
+      "question": "OSPFのネイバー構成について適切な組み合わせを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "A① B① C② D② E① F該当なし",
+        "A② B① C② D① E① F①",
+        "A② B① C② D② E① F②",
+        "A② B① C② D① E① F該当なし"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0057.jpg",
+      "answer_image": "page_0032.png",
+      "has_diagram": true,
+      "explanation": "OSPFネイバー関係を形成するには、IPアドレス(②一致である)、タイマー(①一致する)、ルータID(②一意である)、エリアID(①一致する)、ネットマスク(①一致する)、プロセスID(①該当なし)が重要です。"
+    },
+    {
+      "id": 107,
+      "category": "OSPFの概要",
+      "question": "R1とR2では、OSPFネイバーを形成できていません。ネイバーを形成させるためには、どうしたらいいですか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "プライオリティを変更する",
+        "ネットワークタイプを変更する",
+        "Hello intervalを変更する",
+        "プロセスIDを変更する"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0058.jpg",
+      "answer_image": "page_0032.png",
+      "has_diagram": true,
+      "explanation": "R1のHello intervalは10秒、R2は20秒で不一致です。OSPFネイバーを形成するには、Hello intervalとDead intervalが一致している必要があります。"
+    },
+    {
+      "id": 108,
+      "category": "OSPFの概要",
+      "question": "図のような構成を適用した後、2つのルータでOSPFネイバー関係を確立できません。原因として考えられるものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "OSPFルータIDが一致していない",
+        "R2はデフォルトのHelloタイマーを使用している",
+        "R1のnetworkステートメントが正しく構成されていない",
+        "OSPFのプロセスIDが一致していない"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0059.jpg",
+      "answer_image": "page_0032.png",
+      "has_diagram": true,
+      "explanation": "R1のnetworkステートメントが正しく設定されていないため、OSPFがインタフェースで有効化されていません。"
+    },
+    {
+      "id": 109,
+      "category": "OSPFの概要",
+      "question": "R1とR3の間にOSPFネイバー関係を構成する必要があります。認証が構成され、各ルータのインターフェイスは同じ192.168.1.0/30サブネットに接続されています。構成を完了するための次のステップとして適切なものを、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "HelloタイマーとDeadタイマーを両側で一致するように設定する",
+        "両方のインターフェイスでOSPFアクティブとして構成する",
+        "各ルータのOSPFプロセスに同じプロセスIDを構成する",
+        "各ルータのOSPFプロセスに同じルータIDを構成する",
+        "両方のインターフェイスを同じエリアIDで構成する"
+      ],
+      "correct_answers": [1, 4],
+      "answer_count": 2,
+      "question_image": "0059.jpg",
+      "answer_image": "page_0032.png",
+      "explanation": "OSPFネイバーを形成するには、両方のインターフェイスでOSPFを有効化し、同じエリアIDを設定する必要があります。"
+    },
+    {
+      "id": 110,
+      "category": "OSPFの概要",
+      "question": "OSPFがネットワークへの複数のパスを学習した場合、どのようにルートを選択しますか？適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "参照帯域幅を実際の帯域幅で除算した最小コストの合計",
+        "K値に256を掛けて、最小メトリックのルートを計算",
+        "ホップカウント",
+        "インタフェースごとに、ソースルーターから宛先にメトリックを追加して、帯域幅が最小のルートを計算"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0060.jpg",
+      "answer_image": "page_0032.png",
+      "explanation": "OSPFは参照帯域幅を実際の帯域幅で除算してコストを計算し、最小コストの合計を持つパスを選択します。"
+    },
+    {
+      "id": 111,
+      "category": "OSPFの概要",
+      "question": "R1をDRとして選択されるようにするには、どの設定が必要ですか。正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "R1に固定のOSPFルータIDを設定する",
+        "R1に、3つのルータの中で最も小さいOSPF優先度を設定する",
+        "R2とR3を、R1のOSPFネイバーとして設定する",
+        "R1のインターフェイスに最も大きいOSPFプライオリティ値を設定する"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0060.jpg",
+      "answer_image": "page_0033.png",
+      "explanation": "DR選出では、最も高いOSPFプライオリティ値を持つルータが選択されます。プライオリティが同じ場合は、最も高いルータIDを持つルータが選択されます。"
+    },
+    {
+      "id": 112,
+      "category": "OSPFの概要",
+      "question": "OSPF指定ルータとして構成しました。指定ルータが適切なモードであることを確認できる状態を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "初期化",
+        "双方向",
+        "FULL",
+        "交換"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0060.jpg",
+      "answer_image": "page_0033.png",
+      "explanation": "OSPFネイバー状態がFULLになると、DRとの完全な隣接関係が確立され、LSDBが完全に同期されたことを示します。"
+    },
+    {
+      "id": 113,
+      "category": "OSPFの概要",
+      "question": "図のような構成において、R4とR5がDR、BDRのいずれにも選出されないようにするために最も適切な設定コマンドを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "A",
+        "D",
+        "B",
+        "C"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0061.jpg",
+      "answer_image": "page_0033.png",
+      "has_diagram": true,
+      "explanation": "DR/BDR選出から除外するには、OSPFプライオリティを0に設定します。R4とR5で「ip ospf priority 120」と「ip ospf priority 110」を設定すると、これらのルータが優先的にDR/BDRに選出されます。"
+    },
+    {
+      "id": 114,
+      "category": "OSPFの概要",
+      "question": "ルータのギガビットイーサネットのインタフェースでOSPFを有効化したときのOSPFネットワークタイプのデフォルトを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "非ブロードキャスト",
+        "ブロードキャスト",
+        "ポイントツーポイント",
+        "ポイントツーマルチポイント"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0061.jpg",
+      "answer_image": "page_0033.png",
+      "explanation": "イーサネットインタフェースのOSPFネットワークタイプのデフォルトはブロードキャストです。"
+    },
+    {
+      "id": 115,
+      "category": "OSPFの概要",
+      "question": "PPPプロトコルを有効化したインタフェースのOSPFのネットワークタイプを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ポイントツーポイント",
+        "ブロードキャスト",
+        "非ブロードキャスト",
+        "ポイントツーマルチポイント"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0062.jpg",
+      "answer_image": "page_0033.png",
+      "explanation": "PPPなどのポイントツーポイントリンクでは、OSPFネットワークタイプはポイントツーポイントになります。"
+    },
+    {
+      "id": 116,
+      "category": "OSPFの概要",
+      "question": "R1とR2の間でOSPFを構成します。DR/BDRとして選択されないようにするためにR1で必要な設定を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "D",
+        "A",
+        "C",
+        "B"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0062.jpg",
+      "answer_image": "page_0034.png",
+      "has_diagram": true,
+      "explanation": "ポイントツーポイントリンクではDR/BDRは不要です。ip ospf cost 0を設定することで、OSPFネットワークタイプをポイントツーポイントに変更し、DR/BDR選出を回避できます。"
+    },
+    {
+      "id": 117,
+      "category": "OSPFの概要",
+      "question": "R2からインターネットにアクセスできません。修正するのに適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "R2でRIPを有効にする",
+        "R2でdefault-information originate alwaysを設定する",
+        "R1でip route 0.0.0.0 0.0.0.0 1.1.1.1を設定する",
+        "R1のインターネット側のインタフェースでOSPFを有効にする"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0063.jpg",
+      "answer_image": "page_0034.png",
+      "has_diagram": true,
+      "explanation": "R1でdefault-information originate alwaysコマンドを使用すると、デフォルトルートをOSPFで配布できます。これによりR2はインターネットにアクセスできるようになります。"
+    },
+    {
+      "id": 118,
+      "category": "兄弟スイッチド トポロジの構築",
+      "question": "図のようなスイッチネットワークにおいて、ルートブリッジに選出されるスイッチはどれですか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "SWB",
+        "SWA",
+        "SWC",
+        "SWD"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0064.jpg",
+      "answer_image": "page_0034.png",
+      "has_diagram": true,
+      "explanation": "STPルートブリッジは最小のブリッジID(プライオリティ+MACアドレス)を持つスイッチが選出されます。SWAのプライオリティ(614440)が最も低いため、SWAがルートブリッジになります。"
+    },
+    {
+      "id": 119,
+      "category": "兄弟スイッチド トポロジの構築",
+      "question": "どのスイッチがSTPのルートブリッジに選出されますか、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "32769: 33-44-55-66-77-99",
+        "32768: 11-22-33-44-55-66",
+        "32768: 33-44-55-66-77-88",
+        "32769: 11-22-33-44-55-55"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0064.jpg",
+      "answer_image": "page_0034.png",
+      "explanation": "最小のプライオリティ(32768)を持つスイッチの中で、最小のMACアドレス(11-22-33-44-55-66)を持つスイッチがルートブリッジになります。"
+    },
+    {
+      "id": 120,
+      "category": "兄弟スイッチド トポロジの構築",
+      "question": "PVST+とRPVST+の特徴として適切な説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "PVST＋はCisco独自規格である",
+        "RPVST+の方がPVST+よりコンバージェンスが速い",
+        "PVST+は802.1sベース、RPVST+は802.1wベース",
+        "PVST+は802.1sベース、RPVST+は802.1Dベース"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0064.jpg",
+      "answer_image": "page_0034.png",
+      "explanation": "RPVST+(Rapid Per-VLAN Spanning Tree Plus)は、PVST+よりも高速なコンバージェンスを提供します。PVST+は802.1Dベース、RPVST+は802.1wベースです。"
     }
   ]
 };
 
 // ===============================================================================
-// NOTE: This file currently contains 59 questions out of 267 total.
+// NOTE: This file currently contains 120 questions out of 267 total.
 // Questions are distributed across images 0007.jpg through 0123.jpg
 // Total questions: 問題1 through 問題267
 //
-// REMAINING WORK: Questions 60-267 need to be added (208 questions remaining)
+// COMPLETED: Questions 1-120 (120 questions complete)
+// REMAINING WORK: Questions 121-267 need to be added (147 questions remaining)
 //
 // Each question follows this structure:
 // {
@@ -1283,9 +2034,16 @@ const QUIZ_DATA = {
 // - TCP/IPトランスポート レイヤおよびアプリケーション レイヤの説明
 // - ルーティングの機能について
 // - Ciscoルータの設定
+// - 簡易ネットワークのトラブルシューティング
+// - 基本的なIPv6の概要
+// - スタティックルーティングの設定
+// - VLANとトランクの実装
+// - VLAN 間のルーティング
+// - OSPFの概要
+// - 兄弟スイッチド トポロジの構築
 //
 // To continue adding questions:
-// 1. Read the remaining images (0036.jpg through 0123.jpg)
+// 1. Read the remaining images (0065.jpg onwards)
 // 2. Extract question number and category from the header
 // 3. Extract question text and all choices
 // 4. Identify correct answer count from "正解を X つ選択" header
