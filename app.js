@@ -123,7 +123,9 @@ class QuizApp {
         document.getElementById('questionText').textContent = question.question;
 
         // 問題画像を表示
-        document.getElementById('questionImage').src = `問題画像/${question.question_image}`;
+        const questionImg = document.getElementById('questionImage');
+        questionImg.src = `問題画像/${question.question_image}`;
+        questionImg.onclick = () => this.openImageModal(questionImg.src);
 
         // 選択肢を表示
         const choicesContainer = document.getElementById('choices');
@@ -227,7 +229,9 @@ class QuizApp {
         resultText.className = isCorrect ? 'correct' : 'incorrect';
 
         // 解答画像を表示
-        document.getElementById('answerImage').src = `解答画像/${question.answer_image}`;
+        const answerImg = document.getElementById('answerImage');
+        answerImg.src = `解答画像/${question.answer_image}`;
+        answerImg.onclick = () => this.openImageModal(answerImg.src);
 
         // あなたの回答を表示
         const yourAnswersText = selectedAnswers.map(index => {
@@ -343,6 +347,30 @@ class QuizApp {
         const screens = document.querySelectorAll('.screen');
         screens.forEach(screen => screen.classList.remove('active'));
         document.getElementById(screenId).classList.add('active');
+    }
+
+    openImageModal(imageSrc) {
+        const modal = document.getElementById('imageModal');
+        const modalImg = document.getElementById('modalImage');
+
+        modal.classList.add('active');
+        modalImg.src = imageSrc;
+
+        // 閉じるボタン
+        const closeBtn = document.querySelector('.modal-close');
+        closeBtn.onclick = () => this.closeImageModal();
+
+        // 背景クリックで閉じる
+        modal.onclick = (e) => {
+            if (e.target === modal) {
+                this.closeImageModal();
+            }
+        };
+    }
+
+    closeImageModal() {
+        const modal = document.getElementById('imageModal');
+        modal.classList.remove('active');
     }
 }
 
