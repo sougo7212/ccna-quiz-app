@@ -132,12 +132,17 @@ h1 {
     max-height: 400px;
     border: 2px solid #e0e0e0;
     background: #f8f9fa;
+    /* スクロール時のスムーズ化 */
+    -webkit-overflow-scrolling: touch;
 }
 
 .question-image img, .answer-image img {
     width: 100%;
+    min-width: 100%;
     height: auto;
     display: block;
+    /* 画像が縮小されないようにする */
+    object-fit: contain;
 }
 
 .question-text {
