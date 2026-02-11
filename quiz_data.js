@@ -2976,12 +2976,1439 @@ const QUIZ_DATA = {
       "answer_image": "page_0180.png",
       "has_diagram": true,
       "explanation": "802.11aは2.4GHzと5GHzの周波数帯で機能する、802.11bは最大54Mbpsのレートで2.4GHzの周波数帯でのみ機能する、802.11gは100Mbps以上のレートで5GHzの周波数帯でのみ機能する、802.11nは最大11Mbpsのレートで動作する、802.11acは最大54Mbpsのレートで5GHzの周波数帯でのみ機能する、という組み合わせです。"
+    },
+    {
+      "id": 181,
+      "category": "ワイヤレスの基礎",
+      "question": "Lightweight APがWLCに接続する際に使用するプロトコルを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "CAPWAP",
+        "SNMP",
+        "LWAPP",
+        "LAP"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0092.jpg",
+      "answer_image": "page_0181.png",
+      "explanation": "Lightweight APがWLCに接続する際に使用するプロトコルは、CAPWAP(Control And Provisioning of Wireless Access Points)です。"
+    },
+    {
+      "id": 182,
+      "category": "ワイヤレスの基礎",
+      "question": "直接シーケンススペクトラム拡散を使用して、コリジョンを制限するために使用される3つの2.4 GHzチャネルはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "5、6、7",
+        "1、5、10",
+        "1、2、3",
+        "1、6、11"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0092.jpg",
+      "answer_image": "page_0182.png",
+      "explanation": "直接シーケンススペクトラム拡散を使用して、コリジョンを制限するために使用される3つの2.4 GHzチャネルは、1、6、11です。これらは重複しない3つのチャネルです。"
+    },
+    {
+      "id": 183,
+      "category": "ワイヤレスの基礎",
+      "question": "Wi-Fiチャネルの重複が発生した場合に考えられる事象について、適切なものを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ワイヤレスデバイスは異なるSSIDを区別できなくなる",
+        "ワイヤレスネットワークは不正アクセスに対して脆弱になる",
+        "ユーザーのワイヤレスネットワークのパフォーマンスが低下する",
+        "盗聴の被害を受けやすくなる"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0092.jpg",
+      "answer_image": "page_0183.png",
+      "explanation": "Wi-Fiチャネルの重複が発生した場合、ユーザーのワイヤレスネットワークのパフォーマンスが低下します。"
+    },
+    {
+      "id": 184,
+      "category": "ワイヤレスの基礎",
+      "question": "WLANコントローラのService interfaceの説明として正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "管理者によって手動で設定されるVLANインターフェイスである",
+        "Web認証のゲートウェイIPとして利用するインターフェイスである",
+        "コントローラに管理アクセスするための物理インターフェイスである",
+        "コントローラ自体の管理を行うためのインターフェイスである"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0092.jpg",
+      "answer_image": "page_0184.png",
+      "explanation": "WLANコントローラのService interfaceは、管理者によって手動で設定されるVLANインターフェイスです。"
+    },
+    {
+      "id": 185,
+      "category": "ワイヤレスの基礎",
+      "question": "通常のアクセスポイントトラフィックを通過させる際、スイッチと接続されるWLCのポートはどれですか。適切なものを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "redundancy",
+        "distribution system",
+        "console",
+        "service"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0092.jpg",
+      "answer_image": "page_0185.png",
+      "explanation": "通常のアクセスポイントトラフィックを通過させる際、スイッチと接続されるWLCのポートは、serviceポートです。"
+    },
+    {
+      "id": 186,
+      "category": "ワイヤレスの基礎",
+      "question": "Wireless LAN Controller で新しいWLANを設定するときに入力する必要がある項目を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "管理インタフェース",
+        "最低1台のAPのアドレス",
+        "SSID",
+        "QoS",
+        "プロファイル名"
+      ],
+      "correct_answers": [2, 4],
+      "answer_count": 2,
+      "question_image": "0093.jpg",
+      "answer_image": "page_0186.png",
+      "explanation": "Wireless LAN Controller で新しいWLANを設定するときに入力する必要がある項目は、SSIDとプロファイル名です。"
+    },
+    {
+      "id": 187,
+      "category": "ワイヤレスの基礎",
+      "question": "WLANの各用語について適切な説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "A④ B③ C⑤ D② E①",
+        "A① B③ C⑤ D② E④",
+        "A② B③ C⑤ D④ E①",
+        "A④ B③ C② D⑤ E①"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0093.jpg",
+      "answer_image": "page_0187.png",
+      "has_diagram": true,
+      "explanation": "WLANの各コンポーネントと用語の正しい組み合わせは、アクセスポイント-AP管理、仮想インタフェース-管理専用ポート、ダイナミックインタフェース-モビリティ機能を提供、サービスポート-WiFiデバイスに有線ネットワークの接続を提供、Wireless LAN Controller-SSIDとVLANのマッピング、という組み合わせです。"
+    },
+    {
+      "id": 188,
+      "category": "ワイヤレスの基礎",
+      "question": "サービスポートインターフェイスでサポートされているプロトコルを、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "Telnet",
+        "TACACS+",
+        "RADIUS",
+        "SSH",
+        "SCP"
+      ],
+      "correct_answers": [3, 4],
+      "answer_count": 2,
+      "question_image": "0094.jpg",
+      "answer_image": "page_0188.png",
+      "explanation": "サービスポートインターフェイスでサポートされているプロトコルは、SSHとSCPです。"
+    },
+    {
+      "id": 189,
+      "category": "アーキテクチャと仮想化の概要",
+      "question": "3層ネットワークアーキテクチャのディストリビューションレイヤーの特徴について、適切なものを次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "LANプリンターの物理接続ポイントである",
+        "レイヤー2とレイヤー3の通信境界を提供する",
+        "ネットワーク集約ポイントとして機能する",
+        "ネットワークトポロジのバックボーンである",
+        "冗長かつ継続的な稼働時間を満たすように設計されている"
+      ],
+      "correct_answers": [1, 2],
+      "answer_count": 2,
+      "question_image": "0094.jpg",
+      "answer_image": "page_0189.png",
+      "explanation": "3層ネットワークアーキテクチャのディストリビューションレイヤーの特徴は、レイヤー2とレイヤー3の通信境界を提供し、ネットワーク集約ポイントとして機能することです。"
+    },
+    {
+      "id": 190,
+      "category": "アーキテクチャと仮想化の概要",
+      "question": "3層モデルネットワークに接続されたクライアント間で通信が通るパスとして、適切なものを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "アクセス – ディストリビューション – コア – ディストリビューション – アクセス",
+        "アクセス – コア – ディストリビューション – アクセス",
+        "アクセス – ディストリビューション – ディストリビューション – アクセス",
+        "アクセス – コア – アクセス"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0094.jpg",
+      "answer_image": "page_0190.png",
+      "explanation": "3層モデルネットワークに接続されたクライアント間で通信が通るパスは、アクセス – ディストリビューション – コア – ディストリビューション – アクセス です。"
+    },
+    {
+      "id": 191,
+      "category": "アーキテクチャと仮想化の概要",
+      "question": "スパインリーフトポロジのスイッチはどのように相互接続されていますか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "各リーフスイッチは中央のリーフスイッチに接続され、コアスパインスイッチにアップリンクされる",
+        "各リーフスイッチは、いずれかのスパインスイッチに接続される",
+        "各リーフスイッチは、2つのスパインスイッチに接続され、ループを形成する",
+        "各リーフスイッチは、各スパインスイッチに接続される"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0095.jpg",
+      "answer_image": "page_0191.png",
+      "explanation": "スパインリーフトポロジのスイッチは、各リーフスイッチが各スパインスイッチに接続されます。これによりフルメッシュ構成となります。"
+    },
+    {
+      "id": 192,
+      "category": "アーキテクチャと仮想化の概要",
+      "question": "スパインリーフアーキテクチャの特徴について適切な説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "リーフスイッチ間の各リンクは、広帯域である",
+        "可変レイテンシーを提供する",
+        "STPブロックポートが予測しやすい",
+        "各デバイスは同じホップ数でトラフィックを通過させる"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0095.jpg",
+      "answer_image": "page_0192.png",
+      "explanation": "スパインリーフアーキテクチャの特徴は、各デバイスが同じホップ数でトラフィックを通過させることです。これにより予測可能な低レイテンシーを実現します。"
+    },
+    {
+      "id": 193,
+      "category": "アーキテクチャと仮想化の概要",
+      "question": "追加のアクセスポートが必要な場合、スパインリーフ構成のネットワークで拡張性を保つ構成を次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "少なくとも40GBのアップリンクでスパインスイッチを追加",
+        "スパインスイッチを追加する",
+        "リーフスイッチを追加して、すべてのスパインスイッチに接続",
+        "リーフスイッチは、コアスパインスイッチへの単一の接続で追加"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0095.jpg",
+      "answer_image": "page_0193.png",
+      "explanation": "追加のアクセスポートが必要な場合、スパインリーフ構成のネットワークで拡張性を保つには、リーフスイッチを追加して、すべてのスパインスイッチに接続します。"
+    },
+    {
+      "id": 194,
+      "category": "アーキテクチャと仮想化の概要",
+      "question": "仮想化の説明として適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ハイパーバイザーは単一の仮想マシンと単一のソフトウェアスイッチをサポートできる",
+        "ハイパーバイザーは別のスイッチに物理的に接続されている場合に最も効率的な通信が可能",
+        "ハイパーバイザーはCPUを含む物理コンポーネントを複数の仮想マシンで共有する",
+        "ハイパーバイザーはレイヤ3レベルで直接スイッチと接続することができる"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0095.jpg",
+      "answer_image": "page_0194.png",
+      "explanation": "仮想化では、ハイパーバイザーはCPUを含む物理コンポーネントを複数の仮想マシンで共有します。"
+    },
+    {
+      "id": 195,
+      "category": "アーキテクチャと仮想化の概要",
+      "question": "1台のホストコンピューターで複数のオペレーティングシステムを実行できるテクノロジーはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "仮想ルーティングと転送",
+        "サーバーの仮想化",
+        "ネットワークポートIDの仮想化",
+        "デバイスコンテキスト"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0096.jpg",
+      "answer_image": "page_0195.png",
+      "explanation": "1台のホストコンピューターで複数のオペレーティングシステムを実行できるテクノロジーは、サーバーの仮想化です。"
+    },
+    {
+      "id": 196,
+      "category": "アーキテクチャと仮想化の概要",
+      "question": "仮想化の基本について適切な説明を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "論理ネットワークデバイスが仮想マシンと物理ネットワークの間でトラフィックを転送できるようにする",
+        "SNMPトラフィックを監視するネットワークマネージャーとなる1つのハイパーバイザーで環境を構築する必要がある",
+        "1つの物理サーバー上で複数のオペレーティングシステムとアプリケーションを個別に実行できる",
+        "物理ルータが各仮想マシンのNICをネットワークに直接接続するように構成する",
+        "一部のサーバー、仮想マシン、ネットワーク機器がインターネット上に存在する必要がある"
+      ],
+      "correct_answers": [0, 2],
+      "answer_count": 2,
+      "question_image": "0096.jpg",
+      "answer_image": "page_0196.png",
+      "explanation": "仮想化の基本は、論理ネットワークデバイスが仮想マシンと物理ネットワークの間でトラフィックを転送できるようにし、1つの物理サーバー上で複数のオペレーティングシステムとアプリケーションを個別に実行できることです。"
+    },
+    {
+      "id": 197,
+      "category": "システム モニタリングの概要",
+      "question": "ルータがSyslogサーバへ通知レベルのメッセージを送信するイベントはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "インタフェースの状態が変化したとき",
+        "証明書の有効期限が切れたとき",
+        "TCPコネクションが切断されたとき",
+        "ICMPコネクションが確立したとき"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0096.jpg",
+      "answer_image": "page_0197.png",
+      "explanation": "ルータがSyslogサーバへ通知レベルのメッセージを送信するイベントは、インタフェースの状態が変化したときです。"
+    },
+    {
+      "id": 198,
+      "category": "システム モニタリングの概要",
+      "question": "通知レベルのSyslogを発生させるアクションを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ルートのフラッピング",
+        "インタフェースのアップダウン",
+        "debug",
+        "ARPインスペクション"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0096.jpg",
+      "answer_image": "page_0198.png",
+      "explanation": "通知レベルのSyslogを発生させるアクションは、インタフェースのアップダウンです。"
+    },
+    {
+      "id": 199,
+      "category": "システム モニタリングの概要",
+      "question": "以下のコマンドを実行した際にトラップされるメッセージ・シビリティを、次の選択肢の中から4つ選びなさい。\n\n(config)# logging trap 4",
+      "choices": [
+        "Alert",
+        "Warning",
+        "Debug",
+        "Notice",
+        "Information",
+        "Emergency",
+        "Error"
+      ],
+      "correct_answers": [1, 3, 5, 6],
+      "answer_count": 4,
+      "question_image": "0097.jpg",
+      "answer_image": "page_0199.png",
+      "explanation": "logging trap 4 コマンドは、レベル4(Warning)以上の重大度のメッセージをトラップします。つまり、Emergency(0)、Alert(1)、Critical(2)、Error(3)、Warning(4)がトラップされます。選択肢では、Warning、Notice、Emergency、Errorが該当します。"
+    },
+    {
+      "id": 200,
+      "category": "システム モニタリングの概要",
+      "question": "informationalレベルのsyslogを取得するのに必要なレベル設定として適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "debugging",
+        "alerts",
+        "critical",
+        "warnings"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0097.jpg",
+      "answer_image": "page_0200.png",
+      "explanation": "informationalレベルのsyslogを取得するには、debugging(レベル7)を設定する必要があります。syslogでは、設定したレベル以上の重大度のメッセージが記録されます。"
+    },
+    {
+      "id": 201,
+      "category": "システム モニタリングの概要",
+      "question": "SNMPエージェントの機能について適切な説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ネットワークデバイスとTACACS+またはRADIUSサーバ間のユーザ認証を調整する",
+        "壊滅的なシステムイベントに関する情報をリモートネットワークノードに要求する",
+        "レイヤ3デバイス間のルーティングを管理する",
+        "ネットワーク管理システム(NMS)からの要求に応答して、MIB変数に関する情報を送信する"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0097.jpg",
+      "answer_image": "page_0201.png",
+      "explanation": "SNMPエージェントの機能は、ネットワーク管理システム(NMS)からの要求に応答して、MIB変数に関する情報を送信することです。"
+    },
+    {
+      "id": 202,
+      "category": "システム モニタリングの概要",
+      "question": "20台のルータのバックアップを取得したい。MIBの情報を利用することができるプロトコルを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "CDP",
+        "SMTP",
+        "Telnet",
+        "SNMP"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0098.jpg",
+      "answer_image": "page_0202.png",
+      "explanation": "MIBの情報を利用することができるプロトコルは、SNMP(Simple Network Management Protocol)です。"
+    },
+    {
+      "id": 203,
+      "category": "システム モニタリングの概要",
+      "question": "図の構成において、R1はR2のNTPクライアントになるよう\"ntp server 172.16.10.2\"コマンドが設定されています。R2がNTPサーバーとして動作するために必要なコマンドを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "R2(config)#ntp server 2.2.2.2",
+        "R2(config)#ntp passive",
+        "R2(config)#ntp master 4",
+        "R2(config)#ntp server 172.16.10.1"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0098.jpg",
+      "answer_image": "page_0203.png",
+      "has_diagram": true,
+      "explanation": "R2がNTPサーバーとして動作するために必要なコマンドは、ntp master 4 です。これによりR2は自身をNTPマスターとして設定します。"
+    },
+    {
+      "id": 204,
+      "category": "シスコ デバイスの管理",
+      "question": "ネットワークの運用では、TFTPはどのような機能を果たしますか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ユーザ名/パスワードを利用して、サーバからスイッチへバックアップしているコンフィグレーションファイルを転送する",
+        "ルータのファイルシステム間でファイルを転送する",
+        "サーバからルータへIOSイメージを転送する",
+        "混雑した通信回線でサーバからルータへコンフィグレーションファイルを転送するのに適している"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0098.jpg",
+      "answer_image": "page_0204.png",
+      "explanation": "TFTPは、サーバからルータへIOSイメージを転送する機能を果たします。"
+    },
+    {
+      "id": 205,
+      "category": "シスコ デバイスの管理",
+      "question": "copy機能を使用して、ルータ構成情報のバックアップを行うことができるプロトコルとして適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "SMTP",
+        "FTP",
+        "SNMP",
+        "TCP"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0099.jpg",
+      "answer_image": "page_0205.png",
+      "explanation": "copy機能を使用して、ルータ構成情報のバックアップを行うことができるプロトコルは、FTP(File Transfer Protocol)です。"
+    },
+    {
+      "id": 206,
+      "category": "シスコ デバイスの管理",
+      "question": "ネットワーク管理操作におけるFTPの機能についての説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "UDPを使用してファイルを転送する",
+        "データを送信する前にデータを暗号化する",
+        "制御コネクションとデータコネクションを使用して、サーバとクライアント間でファイルを転送する",
+        "データ転送時にセッション層で独自のサポートを提供する"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0099.jpg",
+      "answer_image": "page_0206.png",
+      "explanation": "FTPの機能は、制御コネクションとデータコネクションを使用して、サーバとクライアント間でファイルを転送することです。"
+    },
+    {
+      "id": 207,
+      "category": "セキュリティ脅威の状況の調査",
+      "question": "個人用のIDバッジを複数の従業員で使いまわして建物に入館した場合、違反しているセキュリティプログラムはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "侵入検知",
+        "物理アクセス制御",
+        "ネットワークオーソライゼーション",
+        "ユーザアウェアネス"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0099.jpg",
+      "answer_image": "page_0207.png",
+      "explanation": "個人用のIDバッジを複数の従業員で使いまわして建物に入館した場合、物理アクセス制御のセキュリティプログラムに違反しています。"
+    },
+    {
+      "id": 208,
+      "category": "セキュリティ脅威の状況の調査",
+      "question": "サーバールームの入り口ドアにバッジリーダーを設置し、従業員の出入りを権限に応じて制限するセキュリティ対策はどれですか。正しいものを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "役割ベースのアクセス制御",
+        "物理的アクセス制御",
+        "バイオメトリクス",
+        "多要素認証"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0099.jpg",
+      "answer_image": "page_0208.png",
+      "explanation": "サーバールームの入り口ドアにバッジリーダーを設置し、従業員の出入りを権限に応じて制限するセキュリティ対策は、物理的アクセス制御です。"
+    },
+    {
+      "id": 209,
+      "category": "セキュリティ脅威の状況の調査",
+      "question": "従業員に対して送信されたメールにWebリンクがあります。リンク先のWebページは安全であると表示されています。リスクとして考えられる攻撃を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ソーシャルエンジニアリング",
+        "物理的アクセス制御",
+        "ブルートフォース",
+        "ユーザ認識攻撃(標的型攻撃)",
+        "SQLインジェクション"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0100.jpg",
+      "answer_image": "page_0209.png",
+      "explanation": "従業員に対して送信されたメールにWebリンクがあり、リンク先のWebページは安全であると表示されている場合、ソーシャルエンジニアリングのリスクが考えられます。"
+    },
+    {
+      "id": 210,
+      "category": "脅威防御技術の実装",
+      "question": "多要素認証の説明として適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ユーザはユーザ名とパスワードを入力してから、モバイルデバイスの認証アプリ上の通知をクリックする",
+        "RSAトークンにPINを入力してから、ログイン画面で表示されたRSAキーを入力する",
+        "キーフォブをスワイプして電子メールリンクをクリックする",
+        "ユーザはユーザ名とパスワードを入力して、その後の画面で認証情報を再入力する"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0100.jpg",
+      "answer_image": "page_0210.png",
+      "explanation": "多要素認証の説明として適切なものは、ユーザがユーザ名とパスワードを入力してから、モバイルデバイスの認証アプリ上の通知をクリックすることです。"
+    },
+    {
+      "id": 211,
+      "category": "脅威防御技術の実装",
+      "question": "スマートフォンの認証アプリを使用して、多要素認証でネットワークを保護したい。スマートフォンが紛失または盗難にあった場合、アプリケーションはどのように保護されるか。適切な説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "アプリケーションは、2番目の要素を提供する前にユーザが特定の場所にいることを確認する",
+        "構成された期間でアプリケーションを再アクティブ化するには、管理者パスワードが必要である",
+        "アプリケーションは、スマートフォンの再起動時に再アクティブ化するために管理者パスワードを要求する",
+        "アプリケーションは、2番目の要素を提供する前にユーザにPINの入力を要求する"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0100.jpg",
+      "answer_image": "page_0211.png",
+      "explanation": "スマートフォンが紛失または盗難にあった場合、アプリケーションは2番目の要素を提供する前にユーザにPINの入力を要求することで保護されます。"
+    },
+    {
+      "id": 212,
+      "category": "脅威防御技術の実装",
+      "question": "独自のセキュリティポリシーを持つ個別のゾーンにネットワークを分離するデバイスを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "スイッチ",
+        "IPS",
+        "アクセスポイント",
+        "ファイアウォール"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0101.jpg",
+      "answer_image": "page_0212.png",
+      "explanation": "独自のセキュリティポリシーを持つ個別のゾーンにネットワークを分離するデバイスは、ファイアウォールです。"
+    },
+    {
+      "id": 213,
+      "category": "脅威防御技術の実装",
+      "question": "ステートフルインスペクションを実行するデバイスを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "アクセスポイント",
+        "スイッチ",
+        "ファイアウォール",
+        "ワイヤレスコントローラ"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0101.jpg",
+      "answer_image": "page_0213.png",
+      "explanation": "ステートフルインスペクションを実行するデバイスは、ファイアウォールです。"
+    },
+    {
+      "id": 214,
+      "category": "脅威防御技術の実装",
+      "question": "サイト間VPN構成において、元のIPパケット全体のカプセル化と暗号化を提供するIPsecモードはどれですか。正しいものを、以下の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ESPを使用したIPsecトランスポートモード",
+        "AHを使用したIPsecトンネルモード",
+        "AHを使用したIPsecトランスポートモード",
+        "ESPを使用したIPsecトンネルモード"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0101.jpg",
+      "answer_image": "page_0214.png",
+      "explanation": "サイト間VPN構成において、元のIPパケット全体のカプセル化と暗号化を提供するIPsecモードは、ESPを使用したIPsecトンネルモードです。"
+    },
+    {
+      "id": 215,
+      "category": "脅威防御技術の実装",
+      "question": "ワイヤレス認証はどこで行われますか。正しいものを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "レイヤ3",
+        "レイヤ1",
+        "レイヤ2",
+        "レイヤ4"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0101.jpg",
+      "answer_image": "page_0215.png",
+      "explanation": "ワイヤレス認証はレイヤ2で行われます。"
+    },
+    {
+      "id": 216,
+      "category": "脅威防御技術の実装",
+      "question": "WPA2で最も適切な暗号方式を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "TKIP",
+        "WEP",
+        "AES",
+        "RC4"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0102.jpg",
+      "answer_image": "page_0216.png",
+      "explanation": "WPA2で最も適切な暗号方式は、AES(Advanced Encryption Standard)です。"
+    },
+    {
+      "id": 217,
+      "category": "脅威防御技術の実装",
+      "question": "事前共有キーのワイヤレスネットワークWPA2の暗号化について適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "TKIP with RC4",
+        "AES-256",
+        "RC4",
+        "AES-128"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0102.jpg",
+      "answer_image": "page_0217.png",
+      "explanation": "事前共有キーのワイヤレスネットワークWPA2の暗号化には、AES-128が使用されます。"
+    },
+    {
+      "id": 218,
+      "category": "脅威防御技術の実装",
+      "question": "ワイヤレスコントローラのGUIでWPA2-PSKを構成する際に利用できるデータ形式を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "Base 64",
+        "ASCII",
+        "16進数",
+        "10進数",
+        "2進数"
+      ],
+      "correct_answers": [1, 2],
+      "answer_count": 2,
+      "question_image": "0102.jpg",
+      "answer_image": "page_0218.png",
+      "explanation": "ワイヤレスコントローラのGUIでWPA2-PSKを構成する際に利用できるデータ形式は、ASCIIと16進数です。"
+    },
+    {
+      "id": 219,
+      "category": "脅威防御技術の実装",
+      "question": "WPA2-PSKについてASCII形式の最小文字数を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "8",
+        "6",
+        "12",
+        "18"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0102.jpg",
+      "answer_image": "page_0219.png",
+      "explanation": "WPA2-PSKについてASCII形式の最小文字数は、8文字です。"
+    },
+    {
+      "id": 220,
+      "category": "脅威防御技術の実装",
+      "question": "図のようなWLANコントローラのGUI管理画面でセキュリティ設定としてWPA+WPA2を選択するタブとして正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "Security>Layer 3",
+        "Security>Layer 2",
+        "Security>AAA Servers",
+        "Advanced",
+        "General"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0103.jpg",
+      "answer_image": "page_0220.png",
+      "has_diagram": true,
+      "explanation": "WLANコントローラのGUI管理画面でセキュリティ設定としてWPA+WPA2を選択するタブは、Security>Layer 2です。"
+    },
+    {
+      "id": 221,
+      "category": "脅威防御技術の実装",
+      "question": "Wi-Fiネットワークのデータ表示を防ぐWPA3拡張機能として適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "スクランブルされた暗号化キー",
+        "TKIP暗号化",
+        "AES暗号化",
+        "SAE暗号化"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0103.jpg",
+      "answer_image": "page_0221.png",
+      "explanation": "Wi-Fiネットワークのデータ表示を防ぐWPA3拡張機能は、SAE(Simultaneous Authentication of Equals)暗号化です。"
+    },
+    {
+      "id": 222,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "パスワードを設定後、プレーンテキストとして保存されるのを防ぐコマンドを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "enable password",
+        "service password-encryption",
+        "enable secret",
+        "username ccna password encryp"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0103.jpg",
+      "answer_image": "page_0222.png",
+      "explanation": "パスワードを設定後、プレーンテキストとして保存されるのを防ぐコマンドは、service password-encryptionです。"
+    },
+    {
+      "id": 223,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "service password-encryptionコマンドの効果は何ですか。適切な説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "スイッチに対する不正な接続から、VLANデータベースを保護する",
+        "VPNトンネルが確立された時のパスワード交換を暗号化する",
+        "管理者がクリアテキストのパスワードを構成できないようにする",
+        "権限のないユーザが実行コンフィギュレーションでクリアテキストのパスワードを表示することを制限する"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0104.jpg",
+      "answer_image": "page_0223.png",
+      "explanation": "service password-encryptionコマンドの効果は、権限のないユーザが実行コンフィギュレーションでクリアテキストのパスワードを表示することを制限することです。"
+    },
+    {
+      "id": 224,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "SSH用のRSAキーを生成するに必要な要素を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "DNSドメイン名",
+        "SSHのバージョン",
+        "IPルーティング",
+        "ログオンパスワード"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0104.jpg",
+      "answer_image": "page_0224.png",
+      "explanation": "SSH用のRSAキーを生成するに必要な要素は、DNSドメイン名です。"
+    },
+    {
+      "id": 225,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "SSHが正常に動作するために必要な要素を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "コンソールパスワードを設定",
+        "ip domain-nameコマンド",
+        "IPルーティングを有効",
+        "k9(crypto)IOSイメージ",
+        "Telnetを無効にする"
+      ],
+      "correct_answers": [1, 3],
+      "answer_count": 2,
+      "question_image": "0104.jpg",
+      "answer_image": "page_0225.png",
+      "explanation": "SSHが正常に動作するために必要な要素は、ip domain-nameコマンドとk9(crypto)IOSイメージです。"
+    },
+    {
+      "id": 226,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "暗号パスワードを使用したローカル認証を4つのスイッチに設定します。4つのスイッチは、SSHアクセスもサポートする必要があります。この要件を満たすように正しく構成されているスイッチはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "SW4",
+        "SW1",
+        "SW2",
+        "SW3"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0105.jpg",
+      "answer_image": "page_0226.png",
+      "has_diagram": true,
+      "explanation": "暗号パスワードを使用したローカル認証とSSHアクセスをサポートするために正しく構成されているスイッチは、SW4です。SW4は、username、secret、line vty 0 15、login localの設定がされています。"
+    },
+    {
+      "id": 227,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "ルータへのリモートアクセスにおいて、公開鍵+秘密鍵のペアを使用し管理トラフィックの暗号化を行うためにSSHを構成する際、使用するコマンドとして正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "crypto key generate ec keysize 2048",
+        "crypto key generate rsa modulus 1024",
+        "crypto key generate ec keysize 1024",
+        "crypto key encrypt rsa name cisco123"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0105.jpg",
+      "answer_image": "page_0227.png",
+      "explanation": "ルータへのリモートアクセスにおいて、公開鍵+秘密鍵のペアを使用し管理トラフィックの暗号化を行うためにSSHを構成する際、使用するコマンドは、crypto key generate rsa modulus 1024です。"
+    },
+    {
+      "id": 228,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "安全で暗号化されたリモート構成を可能にするために、スイッチSW1の管理アクセス構成を更新しています。スイッチに適用する必要があるコマンドを、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "B",
+        "D",
+        "A",
+        "C",
+        "E"
+      ],
+      "correct_answers": [1, 2],
+      "answer_count": 2,
+      "question_image": "0106.jpg",
+      "answer_image": "page_0228.png",
+      "has_diagram": true,
+      "explanation": "安全で暗号化されたリモート構成を可能にするために必要なコマンドは、D(crypto key generate rsa)とA(enable secret R3mote123)です。"
+    },
+    {
+      "id": 229,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "暗号化プロトコルを使用したリモート管理を許可するために、R1にSSHバージョン2を設定します。必要な設定を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0107.jpg",
+      "answer_image": "page_0229.png",
+      "has_diagram": true,
+      "explanation": "暗号化プロトコルを使用したリモート管理を許可するために、R1にSSHバージョン2を設定するには、設定Cが正しいです。hostname、service password-encryption、crypto key generate rsa、username、ip ssh version 2、line vty、transport input sshが必要です。"
+    },
+    {
+      "id": 230,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "無線LANコントローラーへの管理接続のセキュリティを強化するために無効にする必要があるプロトコルを、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "SSH",
+        "TFTP",
+        "Telnet",
+        "HTTPS",
+        "HTTP"
+      ],
+      "correct_answers": [2, 4],
+      "answer_count": 2,
+      "question_image": "0108.jpg",
+      "answer_image": "page_0230.png",
+      "explanation": "無線LANコントローラーへの管理接続のセキュリティを強化するために無効にする必要があるプロトコルは、TelnetとHTTPです。"
+    },
+    {
+      "id": 231,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "ユーザの識別、ユーザサービス、アクセス制御について、AAAの機能はどのように使用されますか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "認証(Authentication)はユーザを識別し、アカウンティングはユーザのサービスの利用をトラッキングする",
+        "認可(Authorization)はユーザにアクセスコントロールを付与し、認証(Authentication)はユーザのサービスの利用をトラッキングする",
+        "アカウンティングはユーザのサービスの利用をトラッキングし、認証(Authentication)はアクセス権限を付与する",
+        "認可(Authorization)はユーザを識別し、認証(Authentication)はアクセスコントロールを付与する"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0108.jpg",
+      "answer_image": "page_0231.png",
+      "explanation": "AAAの機能は、認証(Authentication)がユーザを識別し、アカウンティング(Accounting)がユーザのサービスの利用をトラッキングします。"
+    },
+    {
+      "id": 232,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "認証と認可の違いについて適切な説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "認証はユーザ名とパスワードを検証し、認可は認証エージェントとユーザーデータベース間の通信を処理する",
+        "認証はシステムにアクセスしようとしているユーザを識別および検証し、認可はユーザが実行できるタスクを制御する",
+        "認証はシステムにアクセスしようとしているユーザを識別し、認可はユーザのパスワードを検証する",
+        "認証はユーザがアクセスできるシステムプロセスを制御し、認可はユーザが開始するアクティビティを承認ログに記録する"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0108.jpg",
+      "answer_image": "page_0232.png",
+      "explanation": "認証と認可の違いは、認証がシステムにアクセスしようとしているユーザを識別および検証し、認可がユーザが実行できるタスクを制御することです。"
+    },
+    {
+      "id": 233,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "AAAの各要素と説明について適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "A① B② C② D① E③ F③",
+        "A② B① C① D③ E② F③",
+        "A③ B① C② D③ E② F①",
+        "A① B① C② D③ E② F③"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0109.jpg",
+      "answer_image": "page_0233.png",
+      "has_diagram": true,
+      "explanation": "AAAの各要素と説明の正しい組み合わせは、A(ユーザを認証する)=①認証、B(パスワードを確認)=①認証、C(ユーザが実行できるアクセスを制御)=②認可、D(ユーザの活動記録)=③アカウンティング、E(ユーザが利用できるサービスを制限)=②認可、F(管理者に分析情報を提供)=③アカウンティング、です。"
+    },
+    {
+      "id": 234,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "RADIUSとTACACS+について正しい説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "TACACS+は別個の認証を使用する",
+        "RADIUSはTCPを使用する",
+        "RADIUSはパケット全体を暗号化する",
+        "TACACS+は認証と認可を連結する"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0109.jpg",
+      "answer_image": "page_0234.png",
+      "explanation": "RADIUSとTACACS+について正しい説明は、TACACS+が別個の認証を使用することです。TACACS+は認証、認可、アカウンティングを分離して実行します。"
+    },
+    {
+      "id": 235,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "RADIUSとTACACS+の違いについて正しい記述はどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "TACACS+はパスワード情報のみを暗号化するが、RADIUSはペイロード全体を暗号化する",
+        "RADIUSは管理者によって入力されたすべてのコマンドを記録するが、TACACS+では起動、終了と中間コマンドを記録する",
+        "TACACS+は認証と認可を分離して実現できるが、RADIUSは認証と認可を切り離せない",
+        "RADIUSはダイヤルアップ認証に最も適切だが、TACACS+はさまざまな種類の認証で利用できる"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0110.jpg",
+      "answer_image": "page_0235.png",
+      "explanation": "RADIUSとTACACS+の違いは、TACACS+が認証と認可を分離して実現できるが、RADIUSは認証と認可を切り離せないことです。"
+    },
+    {
+      "id": 236,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "ワイヤレスアクセスポイントで個別の認証および認可ソリューションをサポートするには、どのプロトコルを実装する必要がありますか。正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "Kerberos",
+        "RADIUS",
+        "IEEE802.1X",
+        "TACACS+"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0110.jpg",
+      "answer_image": "page_0236.png",
+      "explanation": "ワイヤレスアクセスポイントで個別の認証および認可ソリューションをサポートするには、TACACS+を実装する必要があります。"
+    },
+    {
+      "id": 237,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "LANにアクセスする前に接続したデバイスの認証を行う規格を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "802.1D",
+        "802.1X",
+        "802.1Q",
+        "802.1s"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0110.jpg",
+      "answer_image": "page_0237.png",
+      "explanation": "LANにアクセスする前に接続したデバイスの認証を行う規格は、802.1Xです。"
+    },
+    {
+      "id": 238,
+      "category": "管理アクセスのセキュリティ保護",
+      "question": "ID情報を用いたアクセス層のセキュリティ脅威軽減手法はどれですか。適切なものを次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "DHCPスヌーピング",
+        "DAI",
+        "デフォルト以外のネイティブVLANを使用",
+        "802.1X"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0111.jpg",
+      "answer_image": "page_0238.png",
+      "explanation": "ID情報を用いたアクセス層のセキュリティ脅威軽減手法は、802.1Xです。"
+    },
+    {
+      "id": 239,
+      "category": "デバイス強化の実装",
+      "question": "デフォルトVLANに所属するスイッチの未使用ポートのセキュリティを向上させる構成を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "未使用ポート用にVLAN99を作成し、アクセスポートとして割り当てる",
+        "インタフェースをシャットダウンする",
+        "CDPを有効にする",
+        "トランクに設定する"
+      ],
+      "correct_answers": [0, 1],
+      "answer_count": 2,
+      "question_image": "0111.jpg",
+      "answer_image": "page_0239.png",
+      "explanation": "デフォルトVLANに所属するスイッチの未使用ポートのセキュリティを向上させる構成は、未使用ポート用にVLAN99を作成してアクセスポートとして割り当て、インタフェースをシャットダウンすることです。"
+    },
+    {
+      "id": 240,
+      "category": "デバイス強化の実装",
+      "question": "ネットワーク管理者は、プリンタを接続しているスイッチのインタフェースでポートセキュリティを有効にしました。プリンタのMACアドレスを自動的に学習して保持できるようにするためには、どのように設定しますか。次の選択肢から次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "スタティックにMACアドレスを登録する",
+        "自動MACアドレス学習を実装にする",
+        "スティッキーラーニングを有効にする",
+        "ダイナミックなMACアドレスラーニングを有効にする"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0111.jpg",
+      "answer_image": "page_0240.png",
+      "explanation": "プリンタのMACアドレスを自動的に学習して保持できるようにするには、スティッキーラーニングを有効にします。"
+    },
+    {
+      "id": 241,
+      "category": "デバイス強化の実装",
+      "question": "ポートがerr-disabled状態になる原因として正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ポートセキュリティ違反",
+        "遅延",
+        "ポートに設定されたshutdownコマンド",
+        "ポートに何も接続されていない"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0111.jpg",
+      "answer_image": "page_0241.png",
+      "explanation": "ポートがerr-disabled状態になる原因として正しいものは、ポートセキュリティ違反です。"
+    },
+    {
+      "id": 242,
+      "category": "デバイス強化の実装",
+      "question": "ポートがerr-disabled状態になる原因として正しいものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "shutdownコマンド",
+        "リンクフラッピング",
+        "レイテンシ",
+        "ポートに何も差し込まれていない"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0112.jpg",
+      "answer_image": "page_0242.png",
+      "explanation": "ポートがerr-disabled状態になる原因として正しいものは、リンクフラッピングです。"
+    },
+    {
+      "id": 243,
+      "category": "デバイス強化の実装",
+      "question": "MACアドレスを元にスイッチに接続されるデバイスを制限しています。違反があった際、違反カウンタの増加とSNMPトラップの生成を行うためのコマンドはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "switchport port-security violation disable",
+        "switchport port-security violation access",
+        "switchport port-security violation protect",
+        "switchport port-security violation restrict"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0112.jpg",
+      "answer_image": "page_0243.png",
+      "explanation": "MACアドレス違反があった際、違反カウンタの増加とSNMPトラップの生成を行うためのコマンドは、switchport port-security violation restrictです。"
+    },
+    {
+      "id": 244,
+      "category": "デバイス強化の実装",
+      "question": "VLANホッピング攻撃の軽減手法について、適切な説明を次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "トランクポートを手動で構成し、DTPを無効にする",
+        "DAIを有効にする",
+        "すべてのポートをアクティブにし、デフォルトのVLANに配置する",
+        "拡張VLANを構成する"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0112.jpg",
+      "answer_image": "page_0244.png",
+      "explanation": "VLANホッピング攻撃の軽減手法は、トランクポートを手動で構成し、DTPを無効にすることです。"
+    },
+    {
+      "id": 245,
+      "category": "デバイス強化の実装",
+      "question": "ダイナミックARPインスペクションによりセキュリティリスクを軽減できる攻撃タイプはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "マルウェア",
+        "ワーム",
+        "中間者攻撃",
+        "DDoS"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0112.jpg",
+      "answer_image": "page_0245.png",
+      "explanation": "ダイナミックARPインスペクションによりセキュリティリスクを軽減できる攻撃タイプは、中間者攻撃です。"
+    },
+    {
+      "id": 246,
+      "category": "デバイス強化の実装",
+      "question": "以下のセキュリティ設定の動作として適切なものを、次の選択肢の中から1つ選択しなさい。",
+      "choices": [
+        "スイッチインターフェイスの信頼状態がuntrustedになる",
+        "インターフェイスが別のスイッチに接続されるまで、スイッチポートは管理上ダウンのままとなる",
+        "ARP ACLがないため、動的ARPインスペクションは無効となる",
+        "スイッチポートは、着信パケットを信頼するが信頼しないように設定されるまでダウンのままである"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0113.jpg",
+      "answer_image": "page_0246.png",
+      "has_diagram": true,
+      "explanation": "以下のセキュリティ設定の動作として適切なのは、スイッチインターフェイスの信頼状態がuntrustedになることです。"
+    },
+    {
+      "id": 247,
+      "category": "デバイス強化の実装",
+      "question": "以下のセキュリティ設定の効果として適切なものを、次の選択肢の中から1つ選択しなさい。",
+      "choices": [
+        "インターフェイスが信頼されていないため、すべての入力・出力トラフィックが破棄される",
+        "スイッチは、すべてのARPフレームを破棄する",
+        "スイッチは、無効なMAC-IPアドレスバインディングを持つすべての入力ARPフレームを破棄する",
+        "送信先がDHCPサーバの場合のみ、フレームを通過させる"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0113.jpg",
+      "answer_image": "page_0247.png",
+      "has_diagram": true,
+      "explanation": "以下のセキュリティ設定の効果として適切なのは、スイッチが無効なMAC-IPアドレスバインディングを持つすべての入力ARPフレームを破棄することです。"
+    },
+    {
+      "id": 248,
+      "category": "デバイス強化の実装",
+      "question": "正常に動作しているネットワークにおいて、スイッチに図のような設定がされています。このスイッチのFastEthernet 0/1インタフェースにはどのようなデバイスが接続されますか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ハブ",
+        "DHCPクライアント",
+        "PC",
+        "ルータ"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0114.jpg",
+      "answer_image": "page_0248.png",
+      "has_diagram": true,
+      "explanation": "ip arp inspection trustの設定がされているため、このインタフェースには信頼できるデバイス、つまりDHCPクライアントが接続されます。"
+    },
+    {
+      "id": 249,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "ネットワークを自動化するメリットとして適切なものを、次の選択肢の中から2つ選択しなさい。",
+      "choices": [
+        "省スペース",
+        "ネットワークの変更に迅速に対応できる",
+        "運用コストを削減することができる",
+        "セキュリティが向上する",
+        "ネットワーク障害の発生頻度を低下できる"
+      ],
+      "correct_answers": [1, 2],
+      "answer_count": 2,
+      "question_image": "0114.jpg",
+      "answer_image": "page_0249.png",
+      "explanation": "ネットワークを自動化するメリットは、ネットワークの変更に迅速に対応でき、運用コストを削減することができることです。"
+    },
+    {
+      "id": 250,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "SDNコントローラによって集中管理されるプレーンを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "サービスプレーン",
+        "データプレーン",
+        "コントロールプレーン",
+        "ポリシープレーン"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0114.jpg",
+      "answer_image": "page_0250.png",
+      "explanation": "SDNコントローラによって集中管理されるプレーンは、コントロールプレーンです。"
+    },
+    {
+      "id": 251,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "従来のネットワークと比較した場合のコントローラベースのネットワークの利点について正しい説明を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "コントローラベースは管理機能を一元化するが、従来型では管理機能は分散している",
+        "コントローラベースはネットワーク構成の複雑さを軽減し、従来型はエラーの可能性を高める",
+        "コントローラベースでは、従来型のネットワークの負荷を軽減しながら、帯域幅の使用量を増加させる",
+        "従来型では個別のライセンスコストを削減するが、コントローラベースではソフトウェアコストを増大させる",
+        "コントローラベースではネットワーク障害を減らすことができるが、従来型では障害発生率は増加する"
+      ],
+      "correct_answers": [0, 1],
+      "answer_count": 2,
+      "question_image": "0115.jpg",
+      "answer_image": "page_0251.png",
+      "explanation": "コントローラベースのネットワークの利点は、管理機能を一元化し、ネットワーク構成の複雑さを軽減することです。"
+    },
+    {
+      "id": 252,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "コントローラベースのネットワークと従来型のネットワークの特性の正しい組み合わせを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "A→1, B→2, C→1, D→2, E→1, F→2",
+        "A→1, B→2, C→2, D→1, E→1, F→2",
+        "A→1, B→2, C→2, D→1, E→2, F→1",
+        "A→2, B→1, C→2, D→1, E→1, F→2",
+        "A→2, B→1, C→2, D→1, E→2, F→1"
+      ],
+      "correct_answers": [4],
+      "answer_count": 1,
+      "question_image": "0115.jpg",
+      "answer_image": "page_0252.png",
+      "has_diagram": true,
+      "explanation": "コントローラベースのネットワークと従来型のネットワークの特性の正しい組み合わせは、A(ネットワーク中心)→2(従来型)、B(デバイス中心)→1(コントローラベース)、C(コンフィギュレーション設定)→2(従来型)、D(ポリシー設定)→1(コントローラベース)、E(ホワイトリストセキュリティモデル)→2(従来型)、F(ブラックリストセキュリティモデル)→1(コントローラベース)です。"
+    },
+    {
+      "id": 253,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "レイヤ2の到達可能性とレイヤ3のルーティング情報を提供することにより、ネットワークデバイスがパケット転送の決定を行うことを支援するソフトウェア定義アーキテクチャプレーンは何ですか。適切なものを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "マネジメントプレーン",
+        "データプレーン",
+        "ポリシープレーン",
+        "コントロールプレーン"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0116.jpg",
+      "answer_image": "page_0253.png",
+      "explanation": "レイヤ2の到達可能性とレイヤ3のルーティング情報を提供することにより、ネットワークデバイスがパケット転送の決定を行うことを支援するソフトウェア定義アーキテクチャプレーンは、コントロールプレーンです。"
+    },
+    {
+      "id": 254,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "コントローラベースのネットワークアーキテクチャにおけるノースバウンドAPIの目的を、次の選択肢から1つ選びなさい。",
+      "choices": [
+        "コントローラと物理ネットワークのハードウェア間の通信を提供する",
+        "コントローラとアプリケーション間の通信を容易にする",
+        "デバイスエラーをコントローラに報告する",
+        "ネットワークハードウェアとトラフィックの統計を生成する"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0116.jpg",
+      "answer_image": "page_0254.png",
+      "explanation": "コントローラベースのネットワークアーキテクチャにおけるノースバウンドAPIの目的は、コントローラとアプリケーション間の通信を容易にすることです。"
+    },
+    {
+      "id": 255,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "コントローラベースのネットワークアーキテクチャにおいて、サウスバウンドAPIの役割はなんですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "ネットワークハードウェアとコントローラ間で通信する",
+        "アプリケーションの開発者がネットワークとインタラクトできるようにする",
+        "コントローラと他の自動化オーケストレーションツールを統合する",
+        "アプリケーションとコントローラ間で通信する"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0116.jpg",
+      "answer_image": "page_0255.png",
+      "explanation": "コントローラベースのネットワークアーキテクチャにおいて、サウスバウンドAPIの役割は、ネットワークハードウェアとコントローラ間で通信することです。"
+    },
+    {
+      "id": 256,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "SDN(Software Defined Network)のAPIであるノースバウンドAPIとサウスバウンドAPIについて、適切な説明を2つ選びなさい。",
+      "choices": [
+        "ふたつのAPIともに、SAL(Service Abstraction Layer:サービス抽象化層)を使用する",
+        "ノースバウンドAPIだけが、ネットワークのプログラム制御ができる",
+        "ノースバウンドAPIだけが、SAL(Service Abstraction Layer:サービス抽象化層)を使用する",
+        "サウスバウンドAPIだけが、ネットワークのプログラム制御ができる",
+        "ふたつのAPIともに、ネットワークのプログラム制御ができる",
+        "サウスバウンドAPIだけが、SAL(Service Abstraction Layer:サービス抽象化層)を使用する"
+      ],
+      "correct_answers": [2, 4],
+      "answer_count": 2,
+      "question_image": "0117.jpg",
+      "answer_image": "page_0256.png",
+      "explanation": "SDNのAPIについて、ノースバウンドAPIだけがSAL(Service Abstraction Layer:サービス抽象化層)を使用し、ふたつのAPIともにネットワークのプログラム制御ができます。"
+    },
+    {
+      "id": 257,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "SDNコントローラーとアプリケーション間の通信に適したテクノロジーはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "Southbound API",
+        "OpenFlow",
+        "NETCONF",
+        "REST API"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0117.jpg",
+      "answer_image": "page_0257.png",
+      "explanation": "SDNコントローラーとアプリケーション間の通信に適したテクノロジーは、REST APIです。"
+    },
+    {
+      "id": 258,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "REST APIリクエストが成功した後に返されるHTTPステータスコードはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "200",
+        "301",
+        "404",
+        "500"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0117.jpg",
+      "answer_image": "page_0258.png",
+      "explanation": "REST APIリクエストが成功した後に返されるHTTPステータスコードは、200です。"
+    },
+    {
+      "id": 259,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "REST APIで利用できるエンコード方式を、次の選択肢の中から2つ選びなさい。",
+      "choices": [
+        "SGML",
+        "YAML",
+        "XML",
+        "EBCDIC",
+        "md5",
+        "JSON"
+      ],
+      "correct_answers": [2, 5],
+      "answer_count": 2,
+      "question_image": "0118.jpg",
+      "answer_image": "page_0259.png",
+      "explanation": "REST APIで利用できるエンコード方式は、XMLとJSONです。"
+    },
+    {
+      "id": 260,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "JSONについて適切な説明を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "情報の保存に使用",
+        "定義済みのタグまたは山括弧()を使用して、マークアップテキストを区切る",
+        "配列を含む構造化データの記述に使用",
+        "HTMLと同様、XMLよりも冗長"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0118.jpg",
+      "answer_image": "page_0260.png",
+      "explanation": "JSONについて適切な説明は、配列を含む構造化データの記述に使用されることです。"
+    },
+    {
+      "id": 261,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "JSONデータのフォーマットとして正しいものはどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "B",
+        "C",
+        "D",
+        "A"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0119.jpg",
+      "answer_image": "page_0261.png",
+      "has_diagram": true,
+      "explanation": "JSONデータのフォーマットとして正しいものは、Bです。JSONでは、オブジェクトは{}で囲み、配列は[]で囲みます。"
+    },
+    {
+      "id": 262,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "適切なJSONファイルを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "D",
+        "B",
+        "C",
+        "A"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0120.jpg",
+      "answer_image": "page_0262.png",
+      "has_diagram": true,
+      "explanation": "適切なJSONファイルは、Bです。JSONでは、文字列は\"\"で囲み、key:value形式で記述します。"
+    },
+    {
+      "id": 263,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "属性と値がペアとなり、なおかつ順序をもたないJSONデータ型はどれですか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "文字列",
+        "配列",
+        "オブジェクト",
+        "ブール値"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0120.jpg",
+      "answer_image": "page_0263.png",
+      "explanation": "属性と値がペアとなり、なおかつ順序をもたないJSONデータ型は、オブジェクトです。"
+    },
+    {
+      "id": 264,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "各構成ツールに該当する適切な項目を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "A② B① C③ D① E③ F②",
+        "A① B① C③ D② E③ F②",
+        "A③ B① C① D② E③ F②",
+        "A① B② C③ D① E③ F②"
+      ],
+      "correct_answers": [3],
+      "answer_count": 1,
+      "question_image": "0121.jpg",
+      "answer_image": "page_0264.png",
+      "has_diagram": true,
+      "explanation": "各構成ツールに該当する適切な組み合わせは、A(リモートアクセスにSSH)=①Ansible、B(YAML形式)=②Chef、C(マニフェストに保存)=③Puppet、D(Rubyを使用)=①Ansible、E(TCP8140)=③Puppet、F(TCP10002)=②Chef、です。"
+    },
+    {
+      "id": 265,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "デバイス管理について、説明と種類の適切な組み合わせを、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "1 – A、B、F   2 – C、D、E",
+        "1 – C、E、F   2 – A、B、D",
+        "1 – B、C、F   2 – A、D、E",
+        "1 – A、C、E   2 – B、D、F"
+      ],
+      "correct_answers": [2],
+      "answer_count": 1,
+      "question_image": "0122.jpg",
+      "answer_image": "page_0265.png",
+      "has_diagram": true,
+      "explanation": "デバイス管理の適切な組み合わせは、1(Cisco DNA Centerデバイス管理)がB(デバイスごとに構成を管理する)、C(クラウドを監視し、ソフトウェアアップデートを確認する)、F(NetFlowを使用してネットワークの潜在的な脅威を分析し、適切なアクションを実行する)で、2(従来型デバイス管理)がA(SSH経由で変更を行う)、D(セキュリティは、ファイアウォール、VPN、IPSを使用して、ネットワーク境界で管理される)、E(CLIテンプレートを使用して、複数のデバイスに一貫した設定を適用する)です。"
+    },
+    {
+      "id": 266,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "Cisco DNA Centerによる管理が従来のネットワーク管理と異なる点を、次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "実際のデバイス構成からポリシーを抽象化",
+        "モジュール設計により、組織の特定のニーズを満たすために異なるバージョンを実装可能",
+        "ネットワーク要素の自動検出をサポート",
+        "管理機能の高可用性をサポートしない"
+      ],
+      "correct_answers": [0],
+      "answer_count": 1,
+      "question_image": "0122.jpg",
+      "answer_image": "page_0266.png",
+      "explanation": "Cisco DNA Centerによる管理が従来のネットワーク管理と異なる点は、実際のデバイス構成からポリシーを抽象化することです。"
+    },
+    {
+      "id": 267,
+      "category": "ソフトウェア定義型ネットワーキング",
+      "question": "展開に関して、従来のキャンパスデバイス管理とCisco DNA Centerデバイス管理はどのように異なりますか。次の選択肢の中から1つ選びなさい。",
+      "choices": [
+        "従来のキャンパスデバイス管理は、Cisco DNA Centerデバイス管理よりも迅速にネットワークを拡張できる",
+        "Cisco DNA Centerデバイス管理は、従来のキャンパス管理よりも迅速にネットワークを展開できる",
+        "Cisco DNA Centerデバイス管理は、従来のキャンパス管理よりも低コストで実装できる",
+        "従来のキャンパスデバイス管理は、Cisco DNA Centerデバイス管理よりも迅速にパッチやソフトウェア更新を展開できる"
+      ],
+      "correct_answers": [1],
+      "answer_count": 1,
+      "question_image": "0123.jpg",
+      "answer_image": "page_0267.png",
+      "explanation": "展開に関して、Cisco DNA Centerデバイス管理は、従来のキャンパス管理よりも迅速にネットワークを展開できます。"
     }
   ]
 };
 
 // ===============================================================================
-// NOTE: This file currently contains 180 questions out of 267 total.
+// NOTE: This file now contains ALL 267 questions COMPLETE!
 // Questions are distributed across images 0007.jpg through 0092.jpg
 // Total questions: 問題1 through 問題267
 //
