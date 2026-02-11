@@ -138,6 +138,8 @@ h1 {
     width: 100%;
     height: auto;
     display: block;
+    /* タッチイベントを有効化 */
+    touch-action: auto;
 }
 
 .question-text {
