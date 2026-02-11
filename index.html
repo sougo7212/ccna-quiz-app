@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCNA問題集アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CCNA問題集</h1>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressBar"></div>
+            </div>
+            <p class="progress-text" id="progressText">問題 1 / 10</p>
+        </header>
+
+        <!-- 開始画面 -->
+        <div id="startScreen" class="screen active">
+            <h2>問題演習を開始します</h2>
+            <div class="start-options">
+                <label for="startQuestion">開始問題番号:</label>
+                <input type="number" id="startQuestion" min="1" max="10" value="1">
+            </div>
+            <div class="button-group">
+                <button class="btn-primary" onclick="app.startQuiz()">開始する</button>
+                <button class="btn-secondary" onclick="app.startReview()" id="startReviewBtn" style="display: none;">復習モードで開始</button>
+            </div>
+        </div>
+
+        <!-- 問題画面 -->
+        <div id="quizScreen" class="screen">
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="category" id="category"></span>
+                    <span class="question-number" id="questionNumber"></span>
+                </div>
+
+                <div class="question-image">
+                    <img id="questionImage" src="" alt="問題画像">
+                </div>
+
+                <div class="question-text" id="questionText"></div>
+
+                <div class="choices" id="choices"></div>
+
+                <div class="button-group">
+                    <button class="btn-secondary" onclick="app.showAnswer()">解答を見る</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 解答画面 -->
+        <div id="answerScreen" class="screen">
+            <div class="answer-card">
+                <div class="answer-header">
+                    <h3 id="resultText"></h3>
+                </div>
+
+                <div class="answer-image">
+                    <img id="answerImage" src="" alt="解答画像">
+                </div>
+
+                <div class="your-answers">
+                    <h4>あなたの回答:</h4>
+                    <div id="yourAnswersText"></div>
+                </div>
+
+                <div class="correct-answers">
+                    <h4>正解:</h4>
+                    <div id="correctAnswersText"></div>
+                </div>
+
+                <div class="explanation" id="explanation"></div>
+
+                <div class="button-group">
+                    <button class="btn-primary" onclick="app.nextQuestion()">次の問題へ</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 結果画面 -->
+        <div id="resultScreen" class="screen">
+            <div class="result-card">
+                <h2>お疲れ様でした！</h2>
+                <div class="score">
+                    <p class="score-text">正解数: <span id="correctCount"></span> / <span id="totalCount"></span></p>
+                    <p class="score-percentage" id="scorePercentage"></p>
+                </div>
+
+                <div class="wrong-questions" id="wrongQuestions"></div>
+
+                <div class="button-group">
+                    <button class="btn-primary" onclick="app.restart()">最初から</button>
+                    <button class="btn-secondary" onclick="app.reviewWrong()" id="reviewBtn">間違えた問題を復習</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="quiz_data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
