@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #f5f5f5;
     min-height: 100vh;
     padding: 12px;
 }
@@ -32,8 +32,8 @@ header {
 #startScreen {
     background: white;
     padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
     text-align: center;
 }
 
@@ -57,8 +57,8 @@ header {
 .start-options input {
     padding: 10px;
     font-size: 16px;
-    border: 2px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
     width: 100px;
     text-align: center;
 }
@@ -67,8 +67,8 @@ header {
 .question-card, .answer-card, .result-card {
     background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
 }
 
 .question-header {
@@ -77,14 +77,14 @@ header {
     align-items: center;
     margin-bottom: 15px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .category {
-    background: #667eea;
+    background: #333;
     color: white;
     padding: 4px 12px;
-    border-radius: 20px;
+    border-radius: 2px;
     font-size: 12px;
 }
 
@@ -97,11 +97,11 @@ header {
 .question-image, .answer-image {
     width: 100%;
     margin-bottom: 15px;
-    border-radius: 8px;
+    border-radius: 2px;
     overflow: auto;
     max-height: 400px;
-    border: 2px solid #e0e0e0;
-    background: #f8f9fa;
+    border: 1px solid #ddd;
+    background: #fafafa;
 }
 
 .question-image img, .answer-image img {
@@ -166,27 +166,27 @@ header {
 }
 
 .choice {
-    background: #f8f9fa;
-    border: 2px solid #e0e0e0;
+    background: white;
+    border: 1px solid #ddd;
     padding: 10px 15px;
     margin-bottom: 8px;
-    border-radius: 6px;
+    border-radius: 2px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     font-size: 14px;
 }
 
 .choice:hover {
-    background: #e9ecef;
-    border-color: #667eea;
+    background: #f5f5f5;
+    border-color: #333;
 }
 
 .choice.selected {
-    background: #667eea;
+    background: #333;
     color: white;
-    border-color: #667eea;
+    border-color: #333;
 }
 
 .choice input[type="checkbox"] {
@@ -205,7 +205,7 @@ header {
     text-align: center;
     margin-bottom: 15px;
     padding-bottom: 10px;
-    border-bottom: 2px solid #f0f0f0;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .answer-header h3 {
@@ -213,11 +213,11 @@ header {
 }
 
 .answer-header h3.correct {
-    color: #28a745;
+    color: #333;
 }
 
 .answer-header h3.incorrect {
-    color: #dc3545;
+    color: #666;
 }
 
 .your-answers, .correct-answers {
@@ -240,25 +240,25 @@ header {
 }
 
 #yourAnswersText.correct {
-    color: #28a745;
+    color: #333;
 }
 
 #yourAnswersText.incorrect {
-    color: #dc3545;
+    color: #666;
 }
 
 #correctAnswersText {
-    color: #28a745;
+    color: #333;
     font-weight: bold;
 }
 
 .explanation {
-    background: #fff3cd;
-    border-left: 4px solid #ffc107;
+    background: #f5f5f5;
+    border-left: 3px solid #333;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-bottom: 15px;
-    color: #856404;
+    color: #333;
     line-height: 1.5;
     font-size: 14px;
 }
@@ -285,7 +285,7 @@ header {
 .score-percentage {
     font-size: 36px;
     font-weight: bold;
-    color: #667eea;
+    color: #333;
 }
 
 .wrong-questions {
@@ -305,8 +305,8 @@ header {
     padding: 8px;
     background: white;
     margin-bottom: 8px;
-    border-radius: 5px;
-    border-left: 4px solid #dc3545;
+    border-radius: 2px;
+    border-left: 3px solid #666;
     font-size: 13px;
 }
 
@@ -328,23 +328,22 @@ header {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #333;
     color: white;
 }
 
 .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    background: #000;
 }
 
 .btn-secondary {
-    background: #6c757d;
-    color: white;
+    background: white;
+    color: #333;
+    border: 1px solid #333;
 }
 
 .btn-secondary:hover {
-    background: #5a6268;
-    transform: translateY(-2px);
+    background: #f5f5f5;
 }
 
 /* レスポンシブ対応 */
