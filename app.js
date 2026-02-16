@@ -8,9 +8,12 @@ class QuizApp {
         this.isReviewMode = false;
         this.reviewQuestions = [];
         this.savedWrongQuestions = []; // 復習用に保存
+        this.lastAnswered = null;
 
         this.loadQuestions();
         this.checkSavedWrongQuestions();
+        this.lastAnswered = this.loadLastAnswered();
+        this.setupStartScreen();
     }
 
     loadQuestions() {
@@ -86,11 +89,98 @@ class QuizApp {
         }
     }
 
-    startQuiz() {
-        const startNum = parseInt(document.getElementById('startQuestion').value);
+    saveLastAnswered(questionId, index) {
+        localStorage.setItem('ccna_last_answered_id', String(questionId));
+        localStorage.setItem('ccna_last_answered_index', String(index));
+        this.lastAnswered = { id: questionId, index };
+    }
+
+    loadLastAnswered() {
+        const savedId = localStorage.getItem('ccna_last_answered_id');
+        const savedIndex = localStorage.getItem('ccna_last_answered_index');
+
+        if (savedId === null || savedIndex === null) {
+            return null;
+        }
+
+        const index = parseInt(savedIndex, 10);
+        if (Number.isNaN(index) || index < 0 || index >= this.questions.length) {
+            return null;
+        }
+
+        return {
+            id: savedId,
+            index
+        };
+    }
+
+    clearLastAnswered() {
+        localStorage.removeItem('ccna_last_answered_id');
+        localStorage.removeItem('ccna_last_answered_index');
+        this.lastAnswered = null;
+    }
+
+    setupStartScreen() {
+        const continueBtn = document.getElementById('continueBtn');
+        if (continueBtn) {
+            continueBtn.addEventListener('click', () => this.startFromLastAnswered());
+        }
+
+        this.updateProgressInfo();
+    }
+
+    updateProgressInfo() {
+        const progressInfo = document.getElementById('progressInfo');
+        if (!progressInfo) return;
+
+        this.lastAnswered = this.loadLastAnswered();
+
+        if (!this.lastAnswered) {
+            progressInfo.style.display = 'none';
+            return;
+        }
+
+        const lastIndex = this.lastAnswered.index;
+        const nextQuestionNumber = lastIndex + 2;
+
+        if (nextQuestionNumber > this.questions.length) {
+            progressInfo.style.display = 'none';
+            return;
+        }
+
+        document.getElementById('lastQuestionNumber').textContent = String(lastIndex + 1);
+        document.getElementById('progressCount').textContent = String(lastIndex + 1);
+        document.getElementById('nextQuestionNumber').textContent = String(nextQuestionNumber);
+        progressInfo.style.display = 'block';
+    }
+
+    startFromLastAnswered() {
+        this.lastAnswered = this.loadLastAnswered();
+        if (!this.lastAnswered) {
+            alert('再開できる進捗が見つかりません。');
+            return;
+        }
+
+        const startQuestion = this.lastAnswered.index + 2;
+        if (startQuestion > this.questions.length) {
+            alert('前回の進捗は完了済みです。最初から始めてください。');
+            this.clearLastAnswered();
+            this.updateProgressInfo();
+            return;
+        }
+
+        document.getElementById('startQuestion').value = String(startQuestion);
+        this.startQuizFromNumber(startQuestion, false);
+    }
+
+    startQuizFromNumber(startNum, shouldClearProgress = true) {
         if (startNum < 1 || startNum > this.questions.length) {
             alert(`1から${this.questions.length}の間で指定してください。`);
-            return;
+            return false;
+        }
+
+        if (shouldClearProgress) {
+            this.clearLastAnswered();
         }
 
         this.currentQuestionIndex = startNum - 1;
@@ -101,6 +191,12 @@ class QuizApp {
 
         this.showScreen('quizScreen');
         this.displayQuestion();
+        return true;
+    }
+
+    startQuiz() {
+        const startNum = parseInt(document.getElementById('startQuestion').value, 10);
+        this.startQuizFromNumber(startNum, true);
     }
 
     displayQuestion() {
@@ -213,6 +309,11 @@ class QuizApp {
         // 解答画面を表示
         this.displayAnswer(question, selectedAnswers, isCorrect);
         this.showScreen('answerScreen');
+
+        // 最後に解答した問題を保存
+        if (!this.isReviewMode) {
+            this.saveLastAnswered(question.id, this.currentQuestionIndex);
+        }
     }
 
     checkAnswer(selected, correct) {
@@ -290,6 +391,10 @@ class QuizApp {
             document.getElementById('reviewBtn').style.display = 'none';
         }
 
+        // 結果画面到達時は進捗をクリア（完了扱い）
+        this.clearLastAnswered();
+        this.updateProgressInfo();
+
         this.showScreen('resultScreen');
     }
 
@@ -341,6 +446,7 @@ class QuizApp {
 
         this.showScreen('startScreen');
         document.getElementById('startQuestion').value = '1';
+        this.updateProgressInfo();
     }
 
     showScreen(screenId) {
@@ -370,6 +476,108 @@ class QuizApp {
 
     closeImageModal() {
         const modal = document.getElementById('imageModal');
+        modal.classList.remove('active');
+    }
+
+    showDetailedExplanation() {
+        const question = this.isReviewMode
+            ? this.reviewQuestions[this.currentQuestionIndex]
+            : this.questions[this.currentQuestionIndex];
+
+        const modal = document.getElementById('explanationModal');
+        const modalBody = document.getElementById('explanationModalBody');
+
+        // 詳細解説を表示
+        if (question.detailed_explanation) {
+            // Markdownスタイルのテキストを整形して表示
+            modalBody.innerHTML = this.formatExplanation(question.detailed_explanation);
+        } else {
+            // 詳細解説がない場合は基本の解説を表示
+            modalBody.innerHTML = `<p>${question.explanation || '解説が登録されていません。'}</p>`;
+        }
+
+        modal.classList.add('active');
+
+        // 閉じるボタン
+        const closeBtn = modal.querySelector('.modal-close');
+        closeBtn.onclick = () => this.closeExplanationModal();
+
+        // 背景クリックで閉じる
+        modal.onclick = (e) => {
+            if (e.target === modal) {
+                this.closeExplanationModal();
+            }
+        };
+    }
+
+    formatExplanation(text) {
+        // Markdown風のテキストをHTMLに変換
+        let html = text;
+
+        // **太字** を <strong> に変換
+        html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
+        // ✅と❌を強調
+        html = html.replace(/✅/g, '<span class="correct-mark">✅</span>');
+        html = html.replace(/❌/g, '<span class="incorrect-mark">❌</span>');
+
+        // コードブロック ```...``` を <pre> に変換
+        html = html.replace(/```([^`]+)```/g, '<pre class="code-block">$1</pre>');
+
+        // 表形式 |...|...|... を <table> に変換（簡易版）
+        const lines = html.split('\n');
+        let inTable = false;
+        let tableHtml = '';
+        let newLines = [];
+
+        for (let i = 0; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (line.startsWith('|') && line.endsWith('|')) {
+                if (!inTable) {
+                    inTable = true;
+                    tableHtml = '<table class="explanation-table">';
+                }
+                const cells = line.split('|').filter(c => c.trim());
+                if (i === 0 || (i > 0 && !lines[i - 1].includes('---'))) {
+                    // ヘッダー行または通常行
+                    const isHeader = tableHtml === '<table class="explanation-table">';
+                    tableHtml += '<tr>';
+                    cells.forEach(cell => {
+                        tableHtml += isHeader ? `<th>${cell.trim()}</th>` : `<td>${cell.trim()}</td>`;
+                    });
+                    tableHtml += '</tr>';
+                }
+            } else {
+                if (inTable) {
+                    tableHtml += '</table>';
+                    newLines.push(tableHtml);
+                    inTable = false;
+                    tableHtml = '';
+                }
+                newLines.push(line);
+            }
+        }
+        if (inTable) {
+            tableHtml += '</table>';
+            newLines.push(tableHtml);
+        }
+
+        html = newLines.join('\n');
+
+        // 改行を <br> に変換（段落分け）
+        html = html.replace(/\n\n/g, '</p><p>');
+        html = html.replace(/\n/g, '<br>');
+
+        // 全体を <p> で囲む
+        if (!html.startsWith('<')) {
+            html = '<p>' + html + '</p>';
+        }
+
+        return html;
+    }
+
+    closeExplanationModal() {
+        const modal = document.getElementById('explanationModal');
         modal.classList.remove('active');
     }
 }

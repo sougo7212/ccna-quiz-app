@@ -63,6 +63,37 @@ header {
     text-align: center;
 }
 
+.progress-info {
+    margin: 0 auto 18px;
+    max-width: 460px;
+    background: #fafafa;
+    border: 1px solid #e5e5e5;
+    border-radius: 6px;
+    padding: 14px 16px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.progress-info p {
+    margin-bottom: 6px;
+}
+
+.progress-info p:last-child {
+    margin-bottom: 0;
+}
+
+.progress-info .progress-divider {
+    margin-top: 10px;
+    color: #999;
+    font-size: 12px;
+}
+
+#continueBtn {
+    margin-top: 8px;
+    width: 100%;
+}
+
 /* 問題画面 */
 .question-card, .answer-card, .result-card {
     background: white;
@@ -151,6 +182,121 @@ header {
 
 .modal-close:hover {
     color: #ccc;
+}
+
+/* 詳細解説モーダル */
+.explanation-modal .modal-content {
+    max-width: none;
+}
+
+.explanation-modal-content {
+    background: white;
+    border-radius: 8px;
+    max-width: 800px;
+    width: 90%;
+    max-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.explanation-modal-header {
+    padding: 20px;
+    border-bottom: 2px solid #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.explanation-modal-header h3 {
+    font-size: 20px;
+    color: #333;
+    margin: 0;
+}
+
+.explanation-modal-header .modal-close {
+    position: static;
+    color: #666;
+    font-size: 30px;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.explanation-modal-header .modal-close:hover {
+    color: #333;
+}
+
+.explanation-modal-body {
+    padding: 25px;
+    overflow-y: auto;
+    flex: 1;
+    line-height: 1.8;
+    color: #333;
+}
+
+.explanation-modal-body p {
+    margin-bottom: 15px;
+}
+
+.explanation-modal-body strong {
+    color: #000;
+    font-weight: bold;
+}
+
+.explanation-modal-body .correct-mark {
+    color: #28a745;
+    font-size: 1.1em;
+}
+
+.explanation-modal-body .incorrect-mark {
+    color: #dc3545;
+    font-size: 1.1em;
+}
+
+.explanation-modal-body .code-block {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 15px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.explanation-modal-body .explanation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+}
+
+.explanation-modal-body .explanation-table th,
+.explanation-modal-body .explanation-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.explanation-modal-body .explanation-table th {
+    background: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+}
+
+.explanation-modal-body .explanation-table tr:hover {
+    background: #f8f9fa;
+}
+
+.explanation-modal-footer {
+    padding: 15px 20px;
+    border-top: 1px solid #e0e0e0;
+    text-align: right;
+}
+
+.explanation-modal-footer .btn-primary {
+    min-width: 120px;
 }
 
 .question-text {
@@ -367,6 +513,12 @@ header {
 
     .start-options {
         margin-bottom: 20px;
+    }
+
+    .progress-info {
+        max-width: 100%;
+        padding: 12px;
+        font-size: 12px;
     }
 
     .question-card, .answer-card, .result-card {

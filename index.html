@@ -23,8 +23,14 @@
                 <label for="startQuestion">開始問題番号:</label>
                 <input type="number" id="startQuestion" min="1" max="10" value="1">
             </div>
+            <div id="progressInfo" class="progress-info" style="display: none;">
+                <p>前回: 問題<span id="lastQuestionNumber"></span>まで完了</p>
+                <p>(進捗: <span id="progressCount"></span>問)</p>
+                <button id="continueBtn" class="btn-secondary">続きから始める（問題<span id="nextQuestionNumber"></span>から）</button>
+                <p class="progress-divider">─── または ───</p>
+            </div>
             <div class="button-group">
-                <button class="btn-primary" onclick="app.startQuiz()">開始する</button>
+                <button class="btn-primary" onclick="app.startQuiz()">最初から始める</button>
                 <button class="btn-secondary" onclick="app.startReview()" id="startReviewBtn" style="display: none;">復習モードで開始</button>
             </div>
         </div>
@@ -75,6 +81,7 @@
                 <div class="explanation" id="explanation"></div>
 
                 <div class="button-group">
+                    <button class="btn-secondary" onclick="app.showDetailedExplanation()">詳しい解説を見る</button>
                     <button class="btn-primary" onclick="app.nextQuestion()">次の問題へ</button>
                 </div>
             </div>
@@ -103,6 +110,22 @@
     <div id="imageModal" class="modal">
         <span class="modal-close">&times;</span>
         <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- 詳細解説モーダル -->
+    <div id="explanationModal" class="modal explanation-modal">
+        <div class="explanation-modal-content">
+            <div class="explanation-modal-header">
+                <h3>詳しい解説</h3>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="explanation-modal-body" id="explanationModalBody">
+                <!-- 詳細解説がここに表示されます -->
+            </div>
+            <div class="explanation-modal-footer">
+                <button class="btn-primary" onclick="app.closeExplanationModal()">閉じる</button>
+            </div>
+        </div>
     </div>
 
     <script src="quiz_data.js"></script>
