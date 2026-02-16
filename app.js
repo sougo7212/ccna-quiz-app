@@ -493,7 +493,7 @@ class QuizApp {
             modalBody.innerHTML = this.formatExplanation(question.detailed_explanation);
         } else {
             // 詳細解説がない場合は基本の解説を表示
-            modalBody.innerHTML = `<p>${question.explanation || '解説が登録されていません。'}</p>`;
+            modalBody.innerHTML = this.formatExplanation(question.explanation || '解説が登録されていません。');
         }
 
         modal.classList.add('active');
