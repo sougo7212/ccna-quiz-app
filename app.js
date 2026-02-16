@@ -522,58 +522,125 @@ class QuizApp {
         html = html.replace(/❌/g, '<span class="incorrect-mark">❌</span>');
 
         // コードブロック ```...``` を <pre> に変換
-        html = html.replace(/```([^`]+)```/g, '<pre class="code-block">$1</pre>');
+        html = html.replace(/```([\s\S]*?)```/g, '<pre class="code-block">$1</pre>');
 
         // 表形式 |...|...|... を <table> に変換（簡易版）
         const lines = html.split('\n');
         let inTable = false;
         let tableHtml = '';
-        let newLines = [];
+        let processedLines = [];
 
         for (let i = 0; i < lines.length; i++) {
-            const line = lines[i].trim();
+            const rawLine = lines[i];
+            const line = rawLine.trim();
+
+            // HTMLブロック（preなど）はそのまま扱う
+            if (line.startsWith('<pre') || line.endsWith('</pre>')) {
+                if (inTable) {
+                    tableHtml += '</table>';
+                    processedLines.push(tableHtml);
+                    inTable = false;
+                    tableHtml = '';
+                }
+                processedLines.push(rawLine);
+                continue;
+            }
+
             if (line.startsWith('|') && line.endsWith('|')) {
                 if (!inTable) {
                     inTable = true;
                     tableHtml = '<table class="explanation-table">';
                 }
-                const cells = line.split('|').filter(c => c.trim());
-                if (i === 0 || (i > 0 && !lines[i - 1].includes('---'))) {
-                    // ヘッダー行または通常行
-                    const isHeader = tableHtml === '<table class="explanation-table">';
-                    tableHtml += '<tr>';
-                    cells.forEach(cell => {
-                        tableHtml += isHeader ? `<th>${cell.trim()}</th>` : `<td>${cell.trim()}</td>`;
-                    });
-                    tableHtml += '</tr>';
+
+                // 区切り線（|---|---|）はスキップ
+                if (/^\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)+\|?$/.test(line)) {
+                    continue;
                 }
+
+                const cells = line.split('|').filter(c => c.trim());
+                const isHeader = tableHtml === '<table class="explanation-table">';
+                tableHtml += '<tr>';
+                cells.forEach(cell => {
+                    tableHtml += isHeader ? `<th>${cell.trim()}</th>` : `<td>${cell.trim()}</td>`;
+                });
+                tableHtml += '</tr>';
             } else {
                 if (inTable) {
                     tableHtml += '</table>';
-                    newLines.push(tableHtml);
+                    processedLines.push(tableHtml);
                     inTable = false;
                     tableHtml = '';
                 }
-                newLines.push(line);
+                processedLines.push(rawLine);
             }
         }
+
         if (inTable) {
             tableHtml += '</table>';
-            newLines.push(tableHtml);
+            processedLines.push(tableHtml);
         }
 
-        html = newLines.join('\n');
+        // Markdownリスト（- ...）を <ul><li> に変換（ネスト対応）
+        const listConverted = [];
+        const listStack = [];
 
-        // 改行を <br> に変換（段落分け）
-        html = html.replace(/\n\n/g, '</p><p>');
-        html = html.replace(/\n/g, '<br>');
+        const closeListToDepth = (depth) => {
+            while (listStack.length > depth) {
+                listConverted.push('</li></ul>');
+                listStack.pop();
+            }
+        };
 
-        // 全体を <p> で囲む
-        if (!html.startsWith('<')) {
-            html = '<p>' + html + '</p>';
+        for (let i = 0; i < processedLines.length; i++) {
+            const line = processedLines[i];
+            const listMatch = line.match(/^(\s*)-\s+(.+)$/);
+
+            if (listMatch) {
+                const indent = listMatch[1].length;
+                const depth = Math.floor(indent / 2);
+                const content = listMatch[2].trim();
+
+                if (listStack.length < depth + 1) {
+                    while (listStack.length < depth + 1) {
+                        listConverted.push('<ul>');
+                        listStack.push(listStack.length);
+                    }
+                    listConverted.push(`<li>${content}`);
+                } else {
+                    if (listStack.length === depth + 1) {
+                        listConverted.push('</li>');
+                    } else {
+                        closeListToDepth(depth + 1);
+                        listConverted.push('</li>');
+                    }
+                    listConverted.push(`<li>${content}`);
+                }
+            } else {
+                if (listStack.length > 0) {
+                    closeListToDepth(0);
+                }
+                listConverted.push(line);
+            }
         }
 
-        return html;
+        if (listStack.length > 0) {
+            closeListToDepth(0);
+        }
+
+        // 段落分け：空行ごとにブロック化し、通常テキストのみ <p> + <br> を適用
+        const blocks = listConverted.join('\n').split(/\n{2,}/);
+        const formattedBlocks = blocks.map(block => {
+            const trimmed = block.trim();
+            if (!trimmed) return '';
+
+            if (/^<(ul|table|pre|p|h[1-6]|blockquote)\b/i.test(trimmed)) {
+                return trimmed;
+            }
+
+            return `<p>${trimmed.replace(/\n/g, '<br>')}</p>`;
+        }).filter(Boolean);
+
+        return formattedBlocks.join('');
     }
 
     closeExplanationModal() {
