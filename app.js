@@ -245,11 +245,23 @@ class QuizApp {
             choiceDiv.appendChild(checkbox);
             choiceDiv.appendChild(label);
 
-            // クリックで選択状態を切り替え
+            // ブロック全体のタップ/クリックで選択できるようにする（PC/iPhone対応）
             choiceDiv.addEventListener('click', (e) => {
-                if (e.target !== checkbox) {
+                // デフォルト動作（label経由の自動トグル）と二重反映を防ぐ
+                e.preventDefault();
+
+                if (checkbox.type === 'radio') {
+                    // 単一選択：同グループの選択を解除してから現在を選択
+                    const radios = document.querySelectorAll('input[name="answer"]');
+                    radios.forEach(r => {
+                        r.checked = false;
+                    });
+                    checkbox.checked = true;
+                } else {
+                    // 複数選択：トグル
                     checkbox.checked = !checkbox.checked;
                 }
+
                 this.updateChoiceStyle();
             });
 
