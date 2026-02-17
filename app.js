@@ -473,9 +473,10 @@ class QuizApp {
 
         modal.classList.add('active');
         modalImg.src = imageSrc;
+        this.lockBodyScroll();
 
         // 閉じるボタン
-        const closeBtn = document.querySelector('.modal-close');
+        const closeBtn = modal.querySelector('.modal-close');
         closeBtn.onclick = () => this.closeImageModal();
 
         // 背景クリックで閉じる
@@ -489,6 +490,7 @@ class QuizApp {
     closeImageModal() {
         const modal = document.getElementById('imageModal');
         modal.classList.remove('active');
+        this.unlockBodyScrollIfNoModal();
     }
 
     showDetailedExplanation() {
@@ -509,6 +511,7 @@ class QuizApp {
         }
 
         modal.classList.add('active');
+        this.lockBodyScroll();
 
         // 閉じるボタン
         const closeBtn = modal.querySelector('.modal-close');
@@ -661,9 +664,31 @@ class QuizApp {
         return formattedBlocks.join('');
     }
 
+    lockBodyScroll() {
+        // iPhone Safariの背面スクロールを防止
+        if (document.body.classList.contains('modal-open')) return;
+
+        const scrollY = window.scrollY || window.pageYOffset || 0;
+        document.body.dataset.scrollY = String(scrollY);
+        document.body.classList.add('modal-open');
+        document.body.style.top = `-${scrollY}px`;
+    }
+
+    unlockBodyScrollIfNoModal() {
+        const anyModalOpen = document.querySelector('.modal.active');
+        if (anyModalOpen) return;
+
+        const scrollY = parseInt(document.body.dataset.scrollY || '0', 10);
+        document.body.classList.remove('modal-open');
+        document.body.style.top = '';
+        delete document.body.dataset.scrollY;
+        window.scrollTo(0, scrollY);
+    }
+
     closeExplanationModal() {
         const modal = document.getElementById('explanationModal');
         modal.classList.remove('active');
+        this.unlockBodyScrollIfNoModal();
     }
 }
 
