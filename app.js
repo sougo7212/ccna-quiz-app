@@ -348,8 +348,8 @@ class QuizApp {
         }).join('<br>');
         document.getElementById('correctAnswersText').innerHTML = correctAnswersText;
 
-        // 解説を表示
-        document.getElementById('explanation').textContent = question.explanation || '';
+        // 解説を表示（Markdown風整形）
+        document.getElementById('explanation').innerHTML = this.formatExplanation(question.explanation || '');
     }
 
     nextQuestion() {
@@ -517,11 +517,17 @@ class QuizApp {
         // **太字** を <strong> に変換
         html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
 
+        // 見出し (#, ##, ###) をHTMLに変換
+        html = html.replace(/^###\s+(.+)$/gm, '<h3>$1</h3>');
+        html = html.replace(/^##\s+(.+)$/gm, '<h2>$1</h2>');
+        html = html.replace(/^#\s+(.+)$/gm, '<h1>$1</h1>');
+
         // ✅と❌を強調
         html = html.replace(/✅/g, '<span class="correct-mark">✅</span>');
         html = html.replace(/❌/g, '<span class="incorrect-mark">❌</span>');
 
-        // コードブロック ```...``` を <pre> に変換
+        // コードブロック ```...``` / ```lang ...``` を <pre> に変換
+        html = html.replace(/```(?:\w+)?\n([\s\S]*?)```/g, '<pre class="code-block">$1</pre>');
         html = html.replace(/```([\s\S]*?)```/g, '<pre class="code-block">$1</pre>');
 
         // 表形式 |...|...|... を <table> に変換（簡易版）
