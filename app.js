@@ -252,7 +252,7 @@ class QuizApp {
 
                 if (checkbox.type === 'radio') {
                     // 単一選択：同グループの選択を解除してから現在を選択
-                    const radios = document.querySelectorAll('input[name="answer"]');
+                    const radios = choicesContainer.querySelectorAll('input[name="answer"]');
                     radios.forEach(r => {
                         r.checked = false;
                     });
@@ -529,6 +529,19 @@ class QuizApp {
         // Markdown風のテキストをHTMLに変換
         let html = text;
 
+        // 先にコードブロックを退避（見出し変換がコード内に作用しないようにする）
+        const codeBlocks = [];
+        html = html.replace(/```(?:\w+)?\n([\s\S]*?)```/g, (_, code) => {
+            const token = `__CODE_BLOCK_${codeBlocks.length}__`;
+            codeBlocks.push(`<pre class="code-block">${code}</pre>`);
+            return token;
+        });
+        html = html.replace(/```([\s\S]*?)```/g, (_, code) => {
+            const token = `__CODE_BLOCK_${codeBlocks.length}__`;
+            codeBlocks.push(`<pre class="code-block">${code}</pre>`);
+            return token;
+        });
+
         // **太字** を <strong> に変換
         html = html.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
 
@@ -541,9 +554,8 @@ class QuizApp {
         html = html.replace(/✅/g, '<span class="correct-mark">✅</span>');
         html = html.replace(/❌/g, '<span class="incorrect-mark">❌</span>');
 
-        // コードブロック ```...``` / ```lang ...``` を <pre> に変換
-        html = html.replace(/```(?:\w+)?\n([\s\S]*?)```/g, '<pre class="code-block">$1</pre>');
-        html = html.replace(/```([\s\S]*?)```/g, '<pre class="code-block">$1</pre>');
+        // 退避したコードブロックを復元
+        html = html.replace(/__CODE_BLOCK_(\d+)__/g, (_, idx) => codeBlocks[Number(idx)] || '');
 
         // 表形式 |...|...|... を <table> に変換（簡易版）
         const lines = html.split('\n');
