@@ -137,8 +137,8 @@ const QUIZ_DATA = {
       ],
       "correct_answers": [
         1,
-        3,
-        5
+        2,
+        3
       ],
       "answer_count": 3,
       "question_image": "0009.jpg",
@@ -199,7 +199,7 @@ const QUIZ_DATA = {
         "このサブネットのサブネットアドレスは 10.15.24.0である"
       ],
       "correct_answers": [
-        3,
+        0,
         4
       ],
       "answer_count": 2,
@@ -280,7 +280,7 @@ const QUIZ_DATA = {
         "集約アドレスが192.168.0.0/23、各フロアに割り当てるアドレスが192.168.0.0/25"
       ],
       "correct_answers": [
-        2
+        1
       ],
       "answer_count": 1,
       "question_image": "0012.jpg",
@@ -337,7 +337,7 @@ const QUIZ_DATA = {
         "A→4, B→2, C→5, D→1, E→3"
       ],
       "correct_answers": [
-        1
+        0
       ],
       "answer_count": 1,
       "question_image": "0014.jpg",
@@ -518,7 +518,7 @@ const QUIZ_DATA = {
         "E"
       ],
       "correct_answers": [
-        0,
+        2,
         4
       ],
       "answer_count": 2,
@@ -558,7 +558,7 @@ const QUIZ_DATA = {
         "パス上のすべてのルータ"
       ],
       "correct_answers": [
-        1
+        0
       ],
       "answer_count": 1,
       "question_image": "0020.jpg",
@@ -615,7 +615,7 @@ const QUIZ_DATA = {
         "A=③  B=②  C=①  D=④  E=⑤"
       ],
       "correct_answers": [
-        3
+        0
       ],
       "answer_count": 1,
       "question_image": "0021.jpg",
@@ -735,7 +735,7 @@ const QUIZ_DATA = {
         "EIGRP"
       ],
       "correct_answers": [
-        2
+        4
       ],
       "answer_count": 1,
       "question_image": "0025.jpg",
@@ -850,7 +850,7 @@ const QUIZ_DATA = {
         "③"
       ],
       "correct_answers": [
-        0
+        2
       ],
       "answer_count": 1,
       "question_image": "0028.jpg",
@@ -890,7 +890,7 @@ const QUIZ_DATA = {
         "パケットを破棄する"
       ],
       "correct_answers": [
-        1
+        3
       ],
       "answer_count": 1,
       "question_image": "0029.jpg",
@@ -910,7 +910,7 @@ const QUIZ_DATA = {
         "192.168.16.0/21"
       ],
       "correct_answers": [
-        1
+        2
       ],
       "answer_count": 1,
       "question_image": "0029.jpg",
@@ -930,7 +930,7 @@ const QUIZ_DATA = {
         "アドミニストレイティブディスタンスが最も低いため、EIGRPルートを選択する"
       ],
       "correct_answers": [
-        3
+        0
       ],
       "answer_count": 1,
       "question_image": "0030.jpg",
@@ -970,7 +970,7 @@ const QUIZ_DATA = {
         "165.209.200.250 via Serial0/0/0"
       ],
       "correct_answers": [
-        0
+        1
       ],
       "answer_count": 1,
       "question_image": "0031.jpg",
@@ -990,7 +990,7 @@ const QUIZ_DATA = {
         "192.168.1.254 via FastEthernet0/0"
       ],
       "correct_answers": [
-        3
+        0
       ],
       "answer_count": 1,
       "question_image": "0031.jpg",
@@ -1010,7 +1010,7 @@ const QUIZ_DATA = {
         "20.1.1.3"
       ],
       "correct_answers": [
-        3
+        2
       ],
       "answer_count": 1,
       "question_image": "0032.jpg",
@@ -1052,7 +1052,7 @@ const QUIZ_DATA = {
         "shutdownコマンド"
       ],
       "correct_answers": [
-        3
+        0
       ],
       "answer_count": 1,
       "question_image": "0033.jpg",
@@ -1173,7 +1173,7 @@ const QUIZ_DATA = {
         "A"
       ],
       "correct_answers": [
-        2
+        3
       ],
       "answer_count": 1,
       "question_image": "0035.jpg",
@@ -1409,7 +1409,7 @@ const QUIZ_DATA = {
         "他のホストと重複しないユニークなアドレスを設定する"
       ],
       "correct_answers": [
-        3
+        0
       ],
       "answer_count": 1,
       "question_image": "0039.jpg",
@@ -1508,7 +1508,8 @@ const QUIZ_DATA = {
         "2001:DB8:0:0:0:0:0:1"
       ],
       "correct_answers": [
-        1
+        0,
+        4
       ],
       "answer_count": 1,
       "question_image": "0041.jpg",
@@ -1566,7 +1567,7 @@ const QUIZ_DATA = {
         "D"
       ],
       "correct_answers": [
-        0
+        2
       ],
       "answer_count": 1,
       "question_image": "0043.jpg",
@@ -1709,7 +1710,7 @@ const QUIZ_DATA = {
         "D"
       ],
       "correct_answers": [
-        0
+        1
       ],
       "answer_count": 1,
       "question_image": "0047.jpg",
@@ -1767,7 +1768,7 @@ const QUIZ_DATA = {
         "D"
       ],
       "correct_answers": [
-        3
+        2
       ],
       "answer_count": 1,
       "question_image": "0049.jpg",
@@ -1888,7 +1889,7 @@ const QUIZ_DATA = {
         "トランクは形成され、VLAN 99とVLAN 999はリンクを通過できる"
       ],
       "correct_answers": [
-        3
+        2
       ],
       "answer_count": 1,
       "question_image": "0052.jpg",
@@ -2147,7 +2148,7 @@ const QUIZ_DATA = {
         "OSPFのプロセスIDが一致していない"
       ],
       "correct_answers": [
-        2
+        1
       ],
       "answer_count": 1,
       "question_image": "0059.jpg",
@@ -2245,7 +2246,7 @@ const QUIZ_DATA = {
         "C"
       ],
       "correct_answers": [
-        3
+        1
       ],
       "answer_count": 1,
       "question_image": "0061.jpg",
@@ -2265,7 +2266,7 @@ const QUIZ_DATA = {
         "ポイントツーマルチポイント"
       ],
       "correct_answers": [
-        0
+        1
       ],
       "answer_count": 1,
       "question_image": "0061.jpg",
@@ -2303,7 +2304,7 @@ const QUIZ_DATA = {
         "B"
       ],
       "correct_answers": [
-        2
+        3
       ],
       "answer_count": 1,
       "question_image": "0062.jpg",
@@ -2323,7 +2324,7 @@ const QUIZ_DATA = {
         "R1のインターネット側のインタフェースでOSPFを有効にする"
       ],
       "correct_answers": [
-        1
+        2
       ],
       "answer_count": 1,
       "question_image": "0063.jpg",
@@ -2343,7 +2344,7 @@ const QUIZ_DATA = {
         "SWD"
       ],
       "correct_answers": [
-        1
+        2
       ],
       "answer_count": 1,
       "question_image": "0064.jpg",
@@ -2508,7 +2509,7 @@ const QUIZ_DATA = {
         "トランクポート"
       ],
       "correct_answers": [
-        1
+        0
       ],
       "answer_count": 1,
       "question_image": "0067.jpg",
@@ -2587,7 +2588,7 @@ const QUIZ_DATA = {
         "D"
       ],
       "correct_answers": [
-        0
+        2
       ],
       "answer_count": 1,
       "question_image": "0069.jpg",
@@ -2648,7 +2649,7 @@ const QUIZ_DATA = {
         "Fa0/23のspeedが異なる"
       ],
       "correct_answers": [
-        1
+        3
       ],
       "answer_count": 1,
       "question_image": "0071.jpg",
@@ -2668,7 +2669,7 @@ const QUIZ_DATA = {
         "desirable"
       ],
       "correct_answers": [
-        0
+        1
       ],
       "answer_count": 1,
       "question_image": "0072.jpg",
@@ -2689,7 +2690,7 @@ const QUIZ_DATA = {
         "D"
       ],
       "correct_answers": [
-        1,
+        0,
         4
       ],
       "answer_count": 2,
@@ -2790,9 +2791,9 @@ const QUIZ_DATA = {
         "HSRP仮想IPアドレスには、実ルータのインタフェースと同じアドレスを割り振る"
       ],
       "correct_answers": [
+        1,
         2,
-        3,
-        5
+        3
       ],
       "answer_count": 3,
       "question_image": "0075.jpg",
@@ -2889,7 +2890,7 @@ const QUIZ_DATA = {
         "GLBP"
       ],
       "correct_answers": [
-        3
+        0
       ],
       "answer_count": 1,
       "question_image": "0076.jpg",
@@ -2908,11 +2909,11 @@ const QUIZ_DATA = {
         "ハブアンドスポーク"
       ],
       "correct_answers": [
-        2
+        0
       ],
       "answer_count": 1,
       "question_image": "0076.jpg",
-      "answer_image": "page_0130.png",
+      "answer_image": "page_0129.png",
       "explanation": "**正解**: (3)ポイントツーポイント\n\nポイントツーポイントトポロジは、シンプルな品質と可用性を提供するWANトポロジです。\n\n**各選択肢の解説**:\n1. ❌ **フルメッシュ** - 不正解。\n2. ❌ **パーシャルメッシュ** - 不正解。\n3. ✅ **ポイントツーポイント** - 正解。\n4. ❌ **ハブアンドスポーク** - 不正解。\n\n**学習ポイント**: CCNA試験では、ネットワークの基礎概念、設定、トラブルシューティングの理解が求められます。実機またはシミュレータでの練習も重要です。",
       "detailed_explanation": "### 技術的な背景\nポイントツーポイントWANは構成が単純で遅延特性を把握しやすく、品質と可用性を予測しやすいのが利点です。\n\n### コマンド例（該当時）\n`show crypto isakmp sa` / `show crypto ipsec sa` / `show dmvpn`\n\n### 関連技術との比較（表）\n| 項目 | 対象技術 | 比較対象 | 使い分けの要点 |\n|---|---|---|---|\n| トポロジ | ポイントツーポイント | ハブ&スポーク/メッシュ | 要件に応じてコストと可用性をトレードオフ |\n| 暗号化 | IPsec | GRE単体 | GREは暗号化しない |\n| 拡張性 | DMVPN | 静的フルメッシュ | 拠点増加時の運用負荷を削減 |\n\n### よくある間違い\n- IKEとIPsecの役割を逆に覚える\n- GRE単体で機密性が確保できると誤解する\n\n### 実務での活用例\n拠点間接続、クラウド接続、バックアップ回線設計で、暗号化と運用性の両立に活用されます。\n\n### 関連する他の試験範囲\nWAN、VPN、ルーティング、トンネリング、QoS設計などの範囲と関連します。"
     },
@@ -2952,7 +2953,7 @@ const QUIZ_DATA = {
       ],
       "answer_count": 1,
       "question_image": "0077.jpg",
-      "answer_image": "page_0131.png",
+      "answer_image": "page_0130.png",
       "explanation": "**正解**: (4)IPSec\n\nサイト間VPNを使用する場合、ユーザデータの転送を担当するプロトコルはIPSecです。\n\n**各選択肢の解説**:\n1. ❌ **MD5** - 不正解。\n2. ❌ **IKEv1** - 不正解。\n3. ❌ **IKEv2** - 不正解。\n4. ✅ **IPSec** - 正解。\n\n**学習ポイント**: CCNA試験では、ネットワークの基礎概念、設定、トラブルシューティングの理解が求められます。実機またはシミュレータでの練習も重要です。",
       "detailed_explanation": "### 技術的な背景\nサイト間VPNの実データ保護はIPsecが担当し、IKEv1/v2は鍵交換・SA確立を担当します。\n\n### コマンド例（該当時）\n`show crypto isakmp sa` / `show crypto ipsec sa` / `show dmvpn`\n\n### 関連技術との比較（表）\n| 項目 | 対象技術 | 比較対象 | 使い分けの要点 |\n|---|---|---|---|\n| トポロジ | ポイントツーポイント | ハブ&スポーク/メッシュ | 要件に応じてコストと可用性をトレードオフ |\n| 暗号化 | IPsec | GRE単体 | GREは暗号化しない |\n| 拡張性 | DMVPN | 静的フルメッシュ | 拠点増加時の運用負荷を削減 |\n\n### よくある間違い\n- IKEとIPsecの役割を逆に覚える\n- GRE単体で機密性が確保できると誤解する\n\n### 実務での活用例\n拠点間接続、クラウド接続、バックアップ回線設計で、暗号化と運用性の両立に活用されます。\n\n### 関連する他の試験範囲\nWAN、VPN、ルーティング、トンネリング、QoS設計などの範囲と関連します。"
     },
@@ -2990,7 +2991,7 @@ const QUIZ_DATA = {
       ],
       "answer_count": 1,
       "question_image": "0077.jpg",
-      "answer_image": "page_0132.png",
+      "answer_image": "page_0131.png",
       "explanation": "**正解**: (4)GRE over IPsec\n\nリモートサイト間でマルチキャストトラフィックを伝送し、暗号化をサポートするメカニズムは GRE over IPsec です。\n\n**各選択肢の解説**:\n1. ❌ **GRE** - 不正解。\n2. ❌ **ISATAP** - 不正解。\n3. ❌ **IPsec over ISATAP** - 不正解。\n4. ✅ **GRE over IPsec** - 正解。\n\n**学習ポイント**: CCNA試験では、ネットワークの基礎概念、設定、トラブルシューティングの理解が求められます。実機またはシミュレータでの練習も重要です。",
       "detailed_explanation": "### 技術的な背景\nマルチキャストを通すにはGREでカプセル化し、暗号化は外側でIPsecを適用するGRE over IPsecが実務定番です。\n\n### コマンド例（該当時）\n`show crypto isakmp sa` / `show crypto ipsec sa` / `show dmvpn`\n\n### 関連技術との比較（表）\n| 項目 | 対象技術 | 比較対象 | 使い分けの要点 |\n|---|---|---|---|\n| トポロジ | ポイントツーポイント | ハブ&スポーク/メッシュ | 要件に応じてコストと可用性をトレードオフ |\n| 暗号化 | IPsec | GRE単体 | GREは暗号化しない |\n| 拡張性 | DMVPN | 静的フルメッシュ | 拠点増加時の運用負荷を削減 |\n\n### よくある間違い\n- IKEとIPsecの役割を逆に覚える\n- GRE単体で機密性が確保できると誤解する\n\n### 実務での活用例\n拠点間接続、クラウド接続、バックアップ回線設計で、暗号化と運用性の両立に活用されます。\n\n### 関連する他の試験範囲\nWAN、VPN、ルーティング、トンネリング、QoS設計などの範囲と関連します。"
     },
@@ -3104,8 +3105,8 @@ const QUIZ_DATA = {
         "ACLの先頭にpermit anyを追加する"
       ],
       "correct_answers": [
-        1,
-        2
+        0,
+        1
       ],
       "answer_count": 2,
       "question_image": "0081.jpg",
@@ -3145,7 +3146,7 @@ const QUIZ_DATA = {
         "access-list 101 permit tcp 20.1.1.0 0.0.0.255 172.16.1.0 0.0.0.255 eq telnet"
       ],
       "correct_answers": [
-        3
+        0
       ],
       "answer_count": 1,
       "question_image": "0083.jpg",
@@ -3166,7 +3167,7 @@ const QUIZ_DATA = {
         "一致する拒否ステートメントが他の条件より先に評価されている"
       ],
       "correct_answers": [
-        0,
+        1,
         3
       ],
       "answer_count": 2,
@@ -3282,7 +3283,7 @@ const QUIZ_DATA = {
         "172.16.1.2"
       ],
       "correct_answers": [
-        2
+        0
       ],
       "answer_count": 1,
       "question_image": "0086.jpg",
@@ -3321,7 +3322,7 @@ const QUIZ_DATA = {
         "ACLをNATプールに適用する"
       ],
       "correct_answers": [
-        3
+        0
       ],
       "answer_count": 1,
       "question_image": "0087.jpg",
@@ -3341,7 +3342,7 @@ const QUIZ_DATA = {
         "ジッターを増やす"
       ],
       "correct_answers": [
-        2
+        0
       ],
       "answer_count": 1,
       "question_image": "0087.jpg",
@@ -3419,7 +3420,7 @@ const QUIZ_DATA = {
         "ラウンドロビンスケジューリング"
       ],
       "correct_answers": [
-        1
+        2
       ],
       "answer_count": 1,
       "question_image": "0088.jpg",
@@ -3515,7 +3516,7 @@ const QUIZ_DATA = {
         "ローカル"
       ],
       "correct_answers": [
-        3
+        0
       ],
       "answer_count": 1,
       "question_image": "0090.jpg",
@@ -3592,7 +3593,7 @@ const QUIZ_DATA = {
         "LAP"
       ],
       "correct_answers": [
-        0
+        2
       ],
       "answer_count": 1,
       "question_image": "0092.jpg",
@@ -3611,7 +3612,7 @@ const QUIZ_DATA = {
         "1、6、11"
       ],
       "correct_answers": [
-        1
+        3
       ],
       "answer_count": 1,
       "question_image": "0092.jpg",
@@ -3649,7 +3650,7 @@ const QUIZ_DATA = {
         "コントローラ自体の管理を行うためのインターフェイスである"
       ],
       "correct_answers": [
-        0
+        2
       ],
       "answer_count": 1,
       "question_image": "0092.jpg",
@@ -3668,7 +3669,7 @@ const QUIZ_DATA = {
         "service"
       ],
       "correct_answers": [
-        3
+        1
       ],
       "answer_count": 1,
       "question_image": "0092.jpg",
@@ -3729,8 +3730,8 @@ const QUIZ_DATA = {
         "SCP"
       ],
       "correct_answers": [
-        3,
-        4
+        0,
+        3
       ],
       "answer_count": 2,
       "question_image": "0094.jpg",
@@ -3751,7 +3752,7 @@ const QUIZ_DATA = {
       ],
       "correct_answers": [
         1,
-        2
+        4
       ],
       "answer_count": 2,
       "question_image": "0094.jpg",
@@ -3946,8 +3947,8 @@ const QUIZ_DATA = {
         "Error"
       ],
       "correct_answers": [
+        0,
         1,
-        3,
         5,
         6
       ],
@@ -4470,7 +4471,7 @@ const QUIZ_DATA = {
         "SW3"
       ],
       "correct_answers": [
-        0
+        3
       ],
       "answer_count": 1,
       "question_image": "0105.jpg",
@@ -4510,8 +4511,8 @@ const QUIZ_DATA = {
         "E"
       ],
       "correct_answers": [
-        1,
-        2
+        2,
+        3
       ],
       "answer_count": 2,
       "question_image": "0106.jpg",
@@ -4531,7 +4532,7 @@ const QUIZ_DATA = {
         "D"
       ],
       "correct_answers": [
-        2
+        0
       ],
       "answer_count": 1,
       "question_image": "0107.jpg",
@@ -4899,7 +4900,7 @@ const QUIZ_DATA = {
         "ルータ"
       ],
       "correct_answers": [
-        1
+        3
       ],
       "answer_count": 1,
       "question_image": "0114.jpg",
@@ -5060,8 +5061,8 @@ const QUIZ_DATA = {
         "サウスバウンドAPIだけが、SAL(Service Abstraction Layer:サービス抽象化層)を使用する"
       ],
       "correct_answers": [
-        2,
-        4
+        1,
+        5
       ],
       "answer_count": 2,
       "question_image": "0117.jpg",
@@ -5159,7 +5160,7 @@ const QUIZ_DATA = {
         "A"
       ],
       "correct_answers": [
-        0
+        2
       ],
       "answer_count": 1,
       "question_image": "0119.jpg",
@@ -5179,7 +5180,7 @@ const QUIZ_DATA = {
         "A"
       ],
       "correct_answers": [
-        1
+        3
       ],
       "answer_count": 1,
       "question_image": "0120.jpg",
@@ -5258,7 +5259,7 @@ const QUIZ_DATA = {
         "管理機能の高可用性をサポートしない"
       ],
       "correct_answers": [
-        0
+        2
       ],
       "answer_count": 1,
       "question_image": "0122.jpg",
