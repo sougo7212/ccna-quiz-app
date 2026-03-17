@@ -280,7 +280,7 @@ const QUIZ_DATA = {
         "集約アドレスが192.168.0.0/23、各フロアに割り当てるアドレスが192.168.0.0/25"
       ],
       "correct_answers": [
-        3
+        2
       ],
       "answer_count": 1,
       "question_image": "0012.jpg",
@@ -337,7 +337,7 @@ const QUIZ_DATA = {
         "A→4, B→2, C→5, D→1, E→3"
       ],
       "correct_answers": [
-        0
+        1
       ],
       "answer_count": 1,
       "question_image": "0014.jpg",
@@ -357,7 +357,7 @@ const QUIZ_DATA = {
         "A①  B⑤  C②  D④  E③"
       ],
       "correct_answers": [
-        3
+        1
       ],
       "answer_count": 1,
       "question_image": "0015.jpg",
@@ -456,7 +456,7 @@ const QUIZ_DATA = {
         "A②  B①  C①  D②  E①"
       ],
       "correct_answers": [
-        3
+        2
       ],
       "answer_count": 1,
       "question_image": "0017.jpg",
@@ -655,7 +655,7 @@ const QUIZ_DATA = {
         "1-D, 2-E, 3-B, 4-C, 8-A"
       ],
       "correct_answers": [
-        0
+        1
       ],
       "answer_count": 1,
       "question_image": "0023.jpg",
@@ -890,7 +890,7 @@ const QUIZ_DATA = {
         "パケットを破棄する"
       ],
       "correct_answers": [
-        3
+        1
       ],
       "answer_count": 1,
       "question_image": "0029.jpg",
@@ -2382,7 +2382,7 @@ const QUIZ_DATA = {
         "PVST+は802.1sベース、RPVST+は802.1Dベース"
       ],
       "correct_answers": [
-        1
+        0
       ],
       "answer_count": 1,
       "question_image": "0064.jpg",
@@ -3243,7 +3243,7 @@ const QUIZ_DATA = {
         "D"
       ],
       "correct_answers": [
-        0
+        1
       ],
       "answer_count": 1,
       "question_image": "0085.jpg",
@@ -3572,7 +3572,7 @@ const QUIZ_DATA = {
         "A=⑤ B=④ C=② D=① E=③"
       ],
       "correct_answers": [
-        0
+        3
       ],
       "answer_count": 1,
       "question_image": "0091.jpg",
@@ -4293,7 +4293,7 @@ const QUIZ_DATA = {
         "AES-128"
       ],
       "correct_answers": [
-        3
+        1
       ],
       "answer_count": 1,
       "question_image": "0102.jpg",
@@ -5218,7 +5218,7 @@ const QUIZ_DATA = {
         "A① B② C③ D① E③ F②"
       ],
       "correct_answers": [
-        3
+        1
       ],
       "answer_count": 1,
       "question_image": "0121.jpg",
