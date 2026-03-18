@@ -322,8 +322,9 @@ class QuizApp {
             const response = await fetch(imageSrc);
             const blob = await response.blob();
 
-            if (navigator.share && navigator.canShare) {
-                // iPhone: ネイティブ共有シート
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+            if (isMobile && navigator.share && navigator.canShare) {
+                // スマホ: ネイティブ共有シート
                 const file = new File([blob], 'answer.png', { type: blob.type });
                 if (navigator.canShare({ files: [file] })) {
                     await navigator.share({
