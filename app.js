@@ -292,6 +292,31 @@ class QuizApp {
         });
     }
 
+    dontKnow() {
+        const question = this.isReviewMode
+            ? this.reviewQuestions[this.currentQuestionIndex]
+            : this.questions[this.currentQuestionIndex];
+
+        // 不正解扱いで記録
+        this.wrongQuestions.push(question);
+        this.addWrongQuestion(question);
+
+        this.userAnswers.push({
+            questionId: question.id,
+            selected: [],
+            correct: question.correct_answers,
+            isCorrect: false
+        });
+
+        // 解答画面を表示（selectedAnswers は空 = わからない）
+        this.displayAnswer(question, [], false, true);
+        this.showScreen('answerScreen');
+
+        if (!this.isReviewMode) {
+            this.saveLastAnswered(question.id, this.currentQuestionIndex);
+        }
+    }
+
     showAnswer() {
         const question = this.isReviewMode
             ? this.reviewQuestions[this.currentQuestionIndex]
@@ -346,11 +371,11 @@ class QuizApp {
         return sortedSelected.every((val, idx) => val === sortedCorrect[idx]);
     }
 
-    displayAnswer(question, selectedAnswers, isCorrect) {
+    displayAnswer(question, selectedAnswers, isCorrect, isDontKnow = false) {
         // 正解/不正解の表示
         const resultText = document.getElementById('resultText');
-        resultText.textContent = isCorrect ? '正解！' : '不正解';
-        resultText.className = isCorrect ? 'correct' : 'incorrect';
+        resultText.textContent = isDontKnow ? 'わからない' : (isCorrect ? '正解！' : '不正解');
+        resultText.className = isDontKnow ? 'dont-know' : (isCorrect ? 'correct' : 'incorrect');
 
         // 解答画像を表示
         const answerImg = document.getElementById('answerImage');
@@ -358,12 +383,12 @@ class QuizApp {
         answerImg.onclick = () => this.openImageModal(answerImg.src);
 
         // あなたの回答を表示
-        const yourAnswersText = selectedAnswers.map(index => {
-            return `(${index + 1}) ${question.choices[index]}`;
-        }).join('<br>');
+        const yourAnswersText = isDontKnow
+            ? 'わからない'
+            : selectedAnswers.map(index => `(${index + 1}) ${question.choices[index]}`).join('<br>');
         const yourAnswersElement = document.getElementById('yourAnswersText');
         yourAnswersElement.innerHTML = yourAnswersText;
-        yourAnswersElement.className = isCorrect ? 'correct' : 'incorrect';
+        yourAnswersElement.className = isDontKnow ? 'dont-know' : (isCorrect ? 'correct' : 'incorrect');
 
         // 正解の選択肢を表示
         const correctAnswersText = question.correct_answers.map(index => {
