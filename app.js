@@ -292,7 +292,7 @@ class QuizApp {
         });
     }
 
-    dontKnow() {
+    async dontKnow() {
         const question = this.isReviewMode
             ? this.reviewQuestions[this.currentQuestionIndex]
             : this.questions[this.currentQuestionIndex];
@@ -314,6 +314,31 @@ class QuizApp {
 
         if (!this.isReviewMode) {
             this.saveLastAnswered(question.id, this.currentQuestionIndex);
+        }
+
+        // ChatGPT連携：解答画像を共有 or クリップボードコピー
+        const imageSrc = `解答画像/${question.answer_image}`;
+        try {
+            const response = await fetch(imageSrc);
+            const blob = await response.blob();
+
+            if (navigator.share && navigator.canShare) {
+                // iPhone: ネイティブ共有シート
+                const file = new File([blob], 'answer.png', { type: blob.type });
+                if (navigator.canShare({ files: [file] })) {
+                    await navigator.share({
+                        files: [file],
+                        text: 'この問題の解説をお願いします。'
+                    });
+                }
+            } else if (navigator.clipboard && navigator.clipboard.write) {
+                // PC: クリップボードにコピーしてChatGPTを開く
+                const clipboardItem = new ClipboardItem({ [blob.type]: blob });
+                await navigator.clipboard.write([clipboardItem]);
+                window.open('https://chatgpt.com', '_blank');
+            }
+        } catch (e) {
+            // キャンセルやアクセス拒否は無視
         }
     }
 
