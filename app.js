@@ -328,14 +328,15 @@ class QuizApp {
                 if (navigator.canShare({ files: [file] })) {
                     await navigator.share({
                         files: [file],
-                        text: 'この問題の解説をお願いします。'
+                        text: `問題${question.id}番がわからないので解説をお願いします。`
                     });
                 }
             } else if (navigator.clipboard && navigator.clipboard.write) {
-                // PC: クリップボードにコピーしてChatGPTを開く
+                // PC: クリップボードに画像をコピーしてChatGPTをプロンプト付きで開く
                 const clipboardItem = new ClipboardItem({ [blob.type]: blob });
                 await navigator.clipboard.write([clipboardItem]);
-                window.open('https://chatgpt.com', '_blank');
+                const prompt = encodeURIComponent(`問題${question.id}番がわからないので解説をお願いします。`);
+                window.open(`https://chatgpt.com/?q=${prompt}`, '_blank');
             }
         } catch (e) {
             // キャンセルやアクセス拒否は無視
