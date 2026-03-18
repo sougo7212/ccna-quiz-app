@@ -526,8 +526,8 @@ class QuizApp {
     }
 
     formatExplanation(text) {
-        // Markdown風のテキストをHTMLに変換
-        let html = text;
+        // 学習ポイントセクションを除去
+        let html = text.replace(/\n\n\*\*学習ポイント\*\*:.*/s, '');
 
         // 先にコードブロックを退避（見出し変換がコード内に作用しないようにする）
         const codeBlocks = [];
