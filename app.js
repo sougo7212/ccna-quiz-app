@@ -247,6 +247,17 @@ class QuizApp {
 
             // ブロック全体のタップ/クリックで選択できるようにする（PC/iPhone対応）
             choiceDiv.addEventListener('click', (e) => {
+                // チェックボックス直接クリックの場合はブラウザのネイティブ動作を活かす
+                if (e.target === checkbox) {
+                    if (checkbox.type === 'radio') {
+                        const radios = choicesContainer.querySelectorAll('input[name="answer"]');
+                        radios.forEach(r => { r.checked = false; });
+                        checkbox.checked = true;
+                    }
+                    this.updateChoiceStyle();
+                    return;
+                }
+
                 // デフォルト動作（label経由の自動トグル）と二重反映を防ぐ
                 e.preventDefault();
 
