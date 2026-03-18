@@ -333,11 +333,11 @@ class QuizApp {
                     });
                 }
             } else if (navigator.clipboard && navigator.clipboard.write) {
-                // PC: クリップボードに画像をコピーしてChatGPTをプロンプト付きで開く
+                // PC: クリップボードに画像をコピーしてChatGPTを開く
                 const clipboardItem = new ClipboardItem({ [blob.type]: blob });
                 await navigator.clipboard.write([clipboardItem]);
-                const prompt = encodeURIComponent(`問題${question.id}番がわからないので解説をお願いします。`);
-                window.open(`https://chatgpt.com/?q=${prompt}`, '_blank');
+                window.open('https://chatgpt.com', '_blank');
+                this.showToast(`画像をコピーしました！ChatGPTでCtrl+Vで貼り付けてください（問題${question.id}番）`);
             }
         } catch (e) {
             // キャンセルやアクセス拒否は無視
@@ -764,6 +764,18 @@ class QuizApp {
         const modal = document.getElementById('explanationModal');
         modal.classList.remove('active');
         this.unlockBodyScrollIfNoModal();
+    }
+
+    showToast(message) {
+        const toast = document.createElement('div');
+        toast.className = 'toast';
+        toast.textContent = message;
+        document.body.appendChild(toast);
+        setTimeout(() => toast.classList.add('show'), 10);
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => toast.remove(), 300);
+        }, 4000);
     }
 }
 
