@@ -318,18 +318,11 @@ class QuizApp {
 
         // ChatGPT連携：解答画像を共有 or クリップボードコピー
         const imageSrc = `解答画像/${question.answer_image}`;
-        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-
-        if (!isMobile && navigator.clipboard && navigator.clipboard.write) {
-            // PC: ユーザージェスチャーのタイミングでChatGPTを開く（ポップアップブロッカー対策）
-            window.open('https://chatgpt.com', '_blank');
-            this.showToast(`画像をコピー中...（問題${question.id}番）`);
-        }
-
         try {
             const response = await fetch(imageSrc);
             const blob = await response.blob();
 
+            const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
             if (isMobile && navigator.share && navigator.canShare) {
                 // スマホ: ネイティブ共有シート
                 const file = new File([blob], 'answer.png', { type: blob.type });
@@ -340,10 +333,11 @@ class QuizApp {
                     });
                 }
             } else if (navigator.clipboard && navigator.clipboard.write) {
-                // PC: クリップボードに画像をコピー
+                // PC: クリップボードに画像をコピーしてChatGPTを開く
                 const clipboardItem = new ClipboardItem({ [blob.type]: blob });
                 await navigator.clipboard.write([clipboardItem]);
-                this.showToast(`画像をコピーしました！ChatGPTのタブでCtrl+Vで貼り付けてください（問題${question.id}番）`);
+                window.open('https://chatgpt.com', '_blank');
+                this.showToast(`画像をコピーしました！ChatGPTでCtrl+Vで貼り付けてください（問題${question.id}番）`);
             }
         } catch (e) {
             // キャンセルやアクセス拒否は無視
