@@ -329,7 +329,7 @@ class QuizApp {
                 if (navigator.canShare({ files: [file] })) {
                     await navigator.share({
                         files: [file],
-                        text: `問題${question.id}番がわからないので解説をお願いします。`
+                        text: `問題${question.id}番がわかりませんでした。なぜその答えになるのか、途中の理由や考え方を省かずに、順を追って丁寧に説明してください。`
                     });
                 }
             } else if (navigator.clipboard && navigator.clipboard.write) {
@@ -337,7 +337,7 @@ class QuizApp {
                 const clipboardItem = new ClipboardItem({ [blob.type]: blob });
                 await navigator.clipboard.write([clipboardItem]);
                 window.open('https://chatgpt.com', '_blank');
-                this.showToast(`画像をコピーしました！ChatGPTでCtrl+Vで貼り付けてください（問題${question.id}番）`);
+                this.showToast(`画像をコピーしました！ChatGPTでCtrl+Vで貼り付けて送信してください（問題${question.id}番）`);
             }
         } catch (e) {
             // キャンセルやアクセス拒否は無視
