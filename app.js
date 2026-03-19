@@ -316,8 +316,18 @@ class QuizApp {
             this.saveLastAnswered(question.id, this.currentQuestionIndex);
         }
 
-        // ChatGPT連携：解答画像を共有 or クリップボードコピー
+        // ChatGPT連携
+        this.shareToGPT();
+    }
+
+    async shareToGPT() {
+        const question = this.isReviewMode
+            ? this.reviewQuestions[this.currentQuestionIndex]
+            : this.questions[this.currentQuestionIndex];
+
         const imageSrc = `解答画像/${question.answer_image}`;
+        const promptText = `問題${question.id}番がわかりませんでした。なぜその答えになるのか、途中の理由や考え方を省かずに、順を追って丁寧に説明してください。`;
+
         try {
             const response = await fetch(imageSrc);
             const blob = await response.blob();
@@ -327,16 +337,13 @@ class QuizApp {
                 // スマホ: ネイティブ共有シート
                 const file = new File([blob], 'answer.png', { type: blob.type });
                 if (navigator.canShare({ files: [file] })) {
-                    await navigator.share({
-                        files: [file],
-                        text: `問題${question.id}番がわかりませんでした。なぜその答えになるのか、途中の理由や考え方を省かずに、順を追って丁寧に説明してください。`
-                    });
+                    await navigator.share({ files: [file], text: promptText });
                 }
             } else if (navigator.clipboard && navigator.clipboard.write) {
                 // PC: クリップボードに画像をコピーしてChatGPTを開く
                 const clipboardItem = new ClipboardItem({ [blob.type]: blob });
                 await navigator.clipboard.write([clipboardItem]);
-                const prompt = encodeURIComponent(`問題${question.id}番がわかりませんでした。なぜその答えになるのか、途中の理由や考え方を省かずに、順を追って丁寧に説明してください。`);
+                const prompt = encodeURIComponent(promptText);
                 window.open(`https://chatgpt.com/?q=${prompt}`, '_blank');
                 this.showToast(`画像をコピーしました！ChatGPTのタブでCtrl+Vで貼り付けてください（問題${question.id}番）`);
             }
